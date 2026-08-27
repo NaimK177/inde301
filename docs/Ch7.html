@@ -1,0 +1,975 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Chapter 7 Rate of Return Analysis: Multiple Alternatives</title>
+<!--Generated on Thu Aug 27 16:14:42 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="start" href="./" title="">
+<link rel="prev" href="Ch6.html" title="Chapter 6 Rate of Return Analysis: Single Alternative">
+<link rel="next" href="Chx3.html" title="Formula Sheet">
+<link rel="chapter" href="Chx1.html" title="Acknowledgements">
+<link rel="chapter" href="Chx2.html" title="Abstract">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Foundation of Engineering Economy">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 How Time and Interest affect money">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Nominal and Effective Interest Rates">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 Annual Worth Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Rate of Return Analysis: Single Alternative">
+<link rel="chapter" href="Chx3.html" title="Formula Sheet">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div class="ltx_align_center">
+<a href="Ch6.html" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Rate of Return Analysis: Single Alternative</span></a><a href="Chx3.html" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title">Formula Sheet</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_chapter">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 7 </span>Rate of Return Analysis: Multiple Alternatives</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">This chapter presents methods to evaluate two or more alternatives using a rate of return (ROR) comparison.
+While a correctly performed ROR evaluation yields the same selection as Present Worth (PW) and Annual Worth (AW) analyses, its computational procedure differs significantly.
+Crucially, simply selecting the alternative with the highest individual ROR will not necessarily identify the best option.
+An alternative might have a high ROR but generate very little total value.
+Therefore, to compare alternatives on the basis of ROR, an incremental analysis is required.</p>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7.1 </span>Why Incremental Analysis Is Necessary</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">When comparing <span class="ltx_text ltx_font_bold">mutually exclusive alternatives</span>, incremental analysis ensures proper comparison as highlighted in the following example.</p>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">Sarah’s father gives her a gift of $10,000 and motivates her to put it in a savings account with a guaranteed APR of 3%.
+However, Sarah, having taken the Engineering Economy course, learned that she can do better, but with some risks.
+Hence, she is evaluating two investment alternatives:</p>
+<ol id="S1.I1" class="ltx_enumerate">
+<li id="S1.I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">A:</span></span> 
+<div id="S1.I1.ix1.p1" class="ltx_para">
+<p class="ltx_p">Peer-to-peer lending opportunity that requires an investment of $5,000 and has an internal rate of return <math id="S1.I1.ix1.p1.m1" class="ltx_Math" alttext="i_{A}^{*}" display="inline"><msubsup><mi>i</mi><mi>A</mi><mo>∗</mo></msubsup></math> of 20% per year.</p>
+</div>
+</li>
+<li id="S1.I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">B:</span></span> 
+<div id="S1.I1.ix2.p1" class="ltx_para">
+<p class="ltx_p">Investment in a stock portfolio that requires $9,000 and has an <math id="S1.I1.ix2.p1.m1" class="ltx_Math" alttext="i_{B}^{*}" display="inline"><msubsup><mi>i</mi><mi>B</mi><mo>∗</mo></msubsup></math> of 15% per year.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Intuitively, Sarah might conclude that the better alternative is the one with the larger return, which is A in this case.
+However, this is not necessarily true.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">While A has the higher projected return, its initial investment ($5,000) is much less than her total available savings ($10,000).
+What happens to the investment capital that is left over?</p>
+</div>
+<div id="S1.p4" class="ltx_para">
+<p class="ltx_p">It is assumed that her excess funds will be invested at her baseline MARR of 3% (the savings account).
+Using this assumption, it is possible to determine the true financial consequences of the two alternative investments.</p>
+</div>
+<div id="S1.p5" class="ltx_para">
+<p class="ltx_p">If alternative A is selected, $5,000 will yield a return of 20% per year.
+The remaining $5,000 will be invested at her MARR of 3% per year.
+The overall rate of return on her total savings will be the weighted average.
+Thus, if alternative A is selected, the overall ROR is calculated as follows:</p>
+<table id="Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex1.m1" class="ltx_Math" alttext="\text{Overall ROR}_{A}=\frac{5,000(0.20)+5,000(0.03)}{10,000}=11.50\%" display="block"><mrow><msub><mtext>Overall ROR</mtext><mi>A</mi></msub><mo>=</mo><mfrac><mrow><mn>5</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.20</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>5</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.03</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mn>10</mn><mo>,</mo><mn>000</mn></mrow></mfrac><mo>=</mo><mrow><mn>11.50</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S1.p6" class="ltx_para">
+<p class="ltx_p">Conversely, if alternative B is selected, $9,000 will be invested at 15% per year, and the remaining $1,000 will earn 3% per year.
+The weighted average for alternative B is:</p>
+<table id="Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex2.m1" class="ltx_Math" alttext="\text{Overall ROR}_{B}=\frac{9,000(0.15)+1,000(0.03)}{10,000}=13.80\%" display="block"><mrow><msub><mtext>Overall ROR</mtext><mi>B</mi></msub><mo>=</mo><mfrac><mrow><mn>9</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.15</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.03</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mn>10</mn><mo>,</mo><mn>000</mn></mrow></mfrac><mo>=</mo><mrow><mn>13.80</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S1.p7" class="ltx_para">
+<p class="ltx_p">This demonstrates that alternative B, despite having a lower individual rate of return, yields a higher overall return on Sarah’s total available capital.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Present Worth Verification</h6>
+<div id="S1.p8" class="ltx_para">
+<p class="ltx_p">We can also verify this conclusion by calculating the Present Worth (PW) of each alternative over a one-year period.
+For alternative A, the initial $5,000 investment grows by 20%:</p>
+<table id="Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex3.m1" class="ltx_Math" alttext="\text{PW}_{A}=-5,000+\frac{5,000(1.20)}{1.03}=\$825.24" display="block"><mrow><mrow><msub><mtext>PW</mtext><mi>A</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>5</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>+</mo><mfrac><mrow><mn>5</mn><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1.20</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>1.03</mn></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>825.24</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">For alternative B, the initial $9,000 investment grows by 15%:</p>
+<table id="Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex4.m1" class="ltx_Math" alttext="\text{PW}_{B}=-9,000+\frac{9,000(1.15)}{1.03}=\$1,048.54" display="block"><mrow><mrow><msub><mtext>PW</mtext><mi>B</mi></msub><mo>=</mo><mrow><mo>−</mo><mn>9</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>+</mo><mfrac><mrow><mn>9</mn><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1.15</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mn>1.03</mn></mfrac></mrow><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>1</mn></mrow><mo>,</mo><mn>048.54</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math id="S1.p8.m1" class="ltx_Math" alttext="\text{PW}_{B}&gt;\text{PW}_{A}" display="inline"><mrow><msub><mtext>PW</mtext><mi>B</mi></msub><mo>&gt;</mo><msub><mtext>PW</mtext><mi>A</mi></msub></mrow></math>, the PW analysis aligns perfectly with the overall ROR comparison.</p>
+</div>
+</div>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Individual Projects</h6>
+<div id="S1.p9" class="ltx_para">
+<p class="ltx_p">When independent projects are evaluated, no incremental analysis is necessary between projects.</p>
+</div>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7.2 </span>Calculation of Incremental Cash Flows</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">The incremental ROR method strictly requires that the alternatives be evaluated over an equal-service study period (such as the LCM of their useful lives).
+Hence, for unequal life alternatives, the cash flows must be developed using the LCM or the study period methods (see Section <a href="Ch4.html#S2.SS2" title="4.2.2 Present Worth Analysis of Different-Life Alternatives ‣ 4.2 Present Worth Analysis ‣ Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.2</span></a> of Ch. <a href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>).</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Incremental Cash Flow</h6>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">The incremental cash flow is the difference between two cash flows, <math id="S2.p2.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="S2.p2.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, where alternative <math id="S2.p2.m3" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> has the higher initial investment:</p>
+<table id="Chx3.S5.EGx64" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Incremental Cash Flow</span></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex5.m2" class="ltx_Math" alttext="\displaystyle=\text{Cash Flow}_{B}-\text{Cash Flow}_{A}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mtext>Cash Flow</mtext><mi>B</mi></msub><mo>−</mo><msub><mtext>Cash Flow</mtext><mi>A</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex6.m1" class="ltx_Math" alttext="\displaystyle\Delta CF_{t}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><msub><mi>F</mi><mi>t</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex6.m2" class="ltx_Math" alttext="\displaystyle=CF_{B,t}-CF_{A,t}\quad\text{for }t=0,1,2,\dots,\text{LCM}" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>F</mi><mrow><mi>B</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow><mo>−</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>F</mi><mrow><mi>A</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mrow><mtext>for </mtext><mo>⁢</mo><mi>t</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mtext>LCM</mtext></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">The incremental cash flow represents the extra investment or cost required if the alternative with the larger first cost is selected.</p>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7.3 </span>ROR Evaluation Using PW</h2>
+
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">7.3.1 </span>Comparing Two Alternatives</h3>
+
+<div id="S3.SS1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S3.SS1.p1.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow></math> denote the ROR of the incremental cash flow series <math id="S3.SS1.p1.m2" class="ltx_Math" alttext="\Delta CF_{t}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>C</mi><mo>⁢</mo><msub><mi>F</mi><mi>t</mi></msub></mrow></math>.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: </h6>
+<div id="S3.SS1.p2" class="ltx_para">
+<p class="ltx_p">If the rate of return available through the incremental cash flow equals or exceeds the MARR, the alternative associated with the extra investment should be selected:</p>
+<ul id="S3.I1" class="ltx_itemize">
+<li id="S3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="S3.I1.i1.p1.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}&lt;MARR" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math> <math id="S3.I1.i1.p1.m2" class="ltx_Math" alttext="\rightarrow" display="inline"><mo stretchy="false">→</mo></math> Select A.</p>
+</div>
+</li>
+<li id="S3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="S3.I1.i2.p1.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}\geq MARR" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math> <math id="S3.I1.i2.p1.m2" class="ltx_Math" alttext="\rightarrow" display="inline"><mo stretchy="false">→</mo></math> Select B.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="S3.SS1.p3" class="ltx_para">
+<p class="ltx_p">The rationale for making the selection decision is the same as if only one alternative is under consideration, that alternative being the one represented by the incremental cash flow series.
+When viewed in this manner, it is obvious that unless this investment yields a rate of return equal to or greater than the MARR, the extra investment should not be made.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Why Compare to MARR, Not Zero?</h6>
+<div id="S3.SS1.p4" class="ltx_para">
+<p class="ltx_p">The MARR represents the <span class="ltx_text ltx_font_bold">opportunity cost of capital</span>: it is the return your money would earn if invested elsewhere.
+For instance, U.S. Treasury bonds offer a virtually risk-free return and can serve as a natural MARR baseline.
+A positive return alone is not sufficient: the project must <span class="ltx_text ltx_font_italic">outperform</span> this guaranteed alternative.</p>
+</div>
+<div id="S3.SS1.p5" class="ltx_para">
+<p class="ltx_p">If <math id="S3.SS1.p5.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}=5\%" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mn>5</mn><mo>%</mo></mrow></mrow></math> but <math id="S3.SS1.p5.m2" class="ltx_Math" alttext="MARR=10\%" display="inline"><mrow><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow><mo>=</mo><mrow><mn>10</mn><mo>%</mo></mrow></mrow></math>, the extra capital invested in B earns less than it would in the baseline.
+You would be better off choosing the cheaper alternative and investing the difference at the MARR rate.</p>
+</div>
+</div>
+<div id="S3.SS1.p6" class="ltx_para">
+<p class="ltx_p">Not only must the return on the extra investment meet or exceed the <math id="S3.SS1.p6.m1" class="ltx_Math" alttext="MARR" display="inline"><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></math>, but also the return on the investment that is common to both alternatives must meet or exceed the <math id="S3.SS1.p6.m2" class="ltx_Math" alttext="MARR" display="inline"><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></math>.
+Accordingly, prior to performing an incremental ROR analysis, it is advisable to determine the internal rate of return <math id="S3.SS1.p6.m3" class="ltx_Math" alttext="i^{*}" display="inline"><msup><mi>i</mi><mo>∗</mo></msup></math> for each alternative.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Revenue Alternatives Case</h6>
+<div id="S3.SS1.p7" class="ltx_para">
+<p class="ltx_p">This can be done <span class="ltx_text ltx_font_bold">only</span> for <span class="ltx_text ltx_font_italic">revenue alternatives</span>, because cost alternatives have only cost (negative) cash flows and no positive <math id="S3.SS1.p7.m1" class="ltx_Math" alttext="i^{*}" display="inline"><msup><mi>i</mi><mo>∗</mo></msup></math> can be determined.
+For cost alternatives, skip this step and proceed directly to the incremental pairwise comparisons.</p>
+</div>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: Incremental Cash Flow Analysis</h6>
+<div id="S3.SS1.p8" class="ltx_para">
+<p class="ltx_p">A company is evaluating two mutually exclusive machines.
+The MARR is 10% per year.
+The cash flow details are as follows:</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_th ltx_th_row ltx_border_tt"></th>
+<td class="ltx_td ltx_align_center ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine A</span></td>
+<td class="ltx_td ltx_align_center ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine B</span></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t">First Cost</th>
+<td class="ltx_td ltx_align_center ltx_border_t">-$10,000</td>
+<td class="ltx_td ltx_align_center ltx_border_t">-$25,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">Annual Revenue</th>
+<td class="ltx_td ltx_align_center">$5,000</td>
+<td class="ltx_td ltx_align_center">$9,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">Salvage Value</th>
+<td class="ltx_td ltx_align_center">$2,000</td>
+<td class="ltx_td ltx_align_center">$5,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_bb">Life (years)</th>
+<td class="ltx_td ltx_align_center ltx_border_bb">5</td>
+<td class="ltx_td ltx_align_center ltx_border_bb">5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S3.SS1.p9" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<div id="S3.SS1.p10" class="ltx_para">
+<p class="ltx_p">Since both alternatives are revenue alternatives, determine the individual ROR for each.
+For Machine A:</p>
+<table id="Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex7.m1" class="ltx_Math" alttext="PW_{A}=-10,000+5,000(P/A,i,5)+2,000(P/F,i,5)=0\quad\Rightarrow\quad i_{A}^{*}=%
+43.11\%" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>10</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>5</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mspace width="1em"></mspace><mo stretchy="false">⇒</mo></mrow></mrow><mspace width="1em"></mspace><mrow><msubsup><mi>i</mi><mi>A</mi><mo>∗</mo></msubsup><mo>=</mo><mrow><mn>43.11</mn><mo>%</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">For Machine B:</p>
+<table id="Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex8.m1" class="ltx_Math" alttext="PW_{B}=-25,000+9,000(P/A,i,5)+5,000(P/F,i,5)=0\quad\Rightarrow\quad i_{B}^{*}=%
+26.54\%" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>25</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>9</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>5</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mspace width="1em"></mspace><mo stretchy="false">⇒</mo></mrow></mrow><mspace width="1em"></mspace><mrow><msubsup><mi>i</mi><mi>B</mi><mo>∗</mo></msubsup><mo>=</mo><mrow><mn>26.54</mn><mo>%</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Both <math id="S3.SS1.p10.m1" class="ltx_Math" alttext="i_{A}^{*}" display="inline"><msubsup><mi>i</mi><mi>A</mi><mo>∗</mo></msubsup></math> and <math id="S3.SS1.p10.m2" class="ltx_Math" alttext="i_{B}^{*}" display="inline"><msubsup><mi>i</mi><mi>B</mi><mo>∗</mo></msubsup></math> exceed the MARR of 10%, so both alternatives are economically viable.
+At this point, Machine A has the higher ROR, but the incremental analysis must be performed to determine which is the better choice.</p>
+</div>
+<div id="S3.SS1.p11" class="ltx_para">
+<p class="ltx_p">Since Machine B has the higher first cost, the incremental cash flow is computed as <math id="S3.SS1.p11.m1" class="ltx_Math" alttext="B-A" display="inline"><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow></math>:</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_th_row ltx_border_tt"><span class="ltx_text ltx_font_bold">Year</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine A</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine B</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Incremental (B<math id="S3.SS1.p11.m2" class="ltx_Math" alttext="-" display="inline"><mo>−</mo></math>A)</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_t">0</th>
+<td class="ltx_td ltx_align_right ltx_border_t">-$10,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">-$25,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">-$15,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">1</th>
+<td class="ltx_td ltx_align_right">$5,000</td>
+<td class="ltx_td ltx_align_right">$9,000</td>
+<td class="ltx_td ltx_align_right">$4,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">2</th>
+<td class="ltx_td ltx_align_right">$5,000</td>
+<td class="ltx_td ltx_align_right">$9,000</td>
+<td class="ltx_td ltx_align_right">$4,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">3</th>
+<td class="ltx_td ltx_align_right">$5,000</td>
+<td class="ltx_td ltx_align_right">$9,000</td>
+<td class="ltx_td ltx_align_right">$4,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">4</th>
+<td class="ltx_td ltx_align_right">$5,000</td>
+<td class="ltx_td ltx_align_right">$9,000</td>
+<td class="ltx_td ltx_align_right">$4,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_bb">5</th>
+<td class="ltx_td ltx_align_right ltx_border_bb">$7,000</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$14,000</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$7,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure id="F1" class="ltx_figure"><svg id="F1.pic1" class="ltx_picture ltx_centering" height="137.93" overflow="visible" version="1.1" width="380.7"><g transform="translate(0,137.93) matrix(1 0 0 -1 0 0) translate(59.74,0) translate(0,82.01)"><g fill="#000000" stroke="#000000"><g stroke-width="0.8pt"><path d="M 0 0 L 282.48 0" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.64pt" transform="matrix(1.0 0.0 0.0 1.0 282.48 0)"><path d="M -2.16 2.88 C -1.98 1.8 0 0.18 0.54 0 C 0 -0.18 -1.98 -1.8 -2.16 -2.88" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 288.63 -4.73)"><foreignObject height="9.46" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="27.71">Year</foreignObject></g></g><g stroke-width="0.4pt"><path d="M 0 4.72 L 0 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -3.46 -18.53)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92">0</foreignObject></g><path d="M 47.24 4.72 L 47.24 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 43.78 -18.53)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92">1</foreignObject></g><path d="M 94.49 4.72 L 94.49 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 91.03 -18.53)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92">2</foreignObject></g><path d="M 141.73 4.72 L 141.73 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 138.27 -18.53)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92">3</foreignObject></g><path d="M 188.98 4.72 L 188.98 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 185.52 -18.53)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92">4</foreignObject></g><path d="M 236.22 4.72 L 236.22 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 232.76 -18.53)"><foreignObject height="8.92" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.92">5</foreignObject></g></g></g><g color="#FF0000" fill="#FF0000" stroke="#FF0000" stroke-width="0.8pt"><path d="M 0 0 L 0 -69.88" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.64pt" transform="matrix(0.0 -1.0 1.0 0.0 0 -69.88)"><path d="M -2.16 2.88 C -1.98 1.8 0 0.18 0.54 0 C 0 -0.18 -1.98 -1.8 -2.16 -2.88" style="fill:none"></path></g><g fill="#FF0000" stroke="#FF0000" transform="matrix(1.0 0.0 0.0 1.0 -55.13 -74.71)"><foreignObject height="13.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="49.97">-$15,000</foreignObject></g></g><g color="#0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.8pt"><path d="M 47.24 0 L 47.24 17.91" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.64pt" transform="matrix(0.0 1.0 -1.0 0.0 47.24 17.91)"><path d="M -2.16 2.88 C -1.98 1.8 0 0.18 0.54 0 C 0 -0.18 -1.98 -1.8 -2.16 -2.88" style="fill:none"></path></g><g fill="#0000FF" stroke="#0000FF" transform="matrix(1.0 0.0 0.0 1.0 28.03 26.75)"><foreignObject height="13.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="38.44">$4,000</foreignObject></g></g><g color="#0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.8pt"><path d="M 94.49 0 L 94.49 17.91" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.64pt" transform="matrix(0.0 1.0 -1.0 0.0 94.49 17.91)"><path d="M -2.16 2.88 C -1.98 1.8 0 0.18 0.54 0 C 0 -0.18 -1.98 -1.8 -2.16 -2.88" style="fill:none"></path></g><g fill="#0000FF" stroke="#0000FF" transform="matrix(1.0 0.0 0.0 1.0 75.27 26.75)"><foreignObject height="13.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="38.44">$4,000</foreignObject></g></g><g color="#0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.8pt"><path d="M 141.73 0 L 141.73 17.91" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.64pt" transform="matrix(0.0 1.0 -1.0 0.0 141.73 17.91)"><path d="M -2.16 2.88 C -1.98 1.8 0 0.18 0.54 0 C 0 -0.18 -1.98 -1.8 -2.16 -2.88" style="fill:none"></path></g><g fill="#0000FF" stroke="#0000FF" transform="matrix(1.0 0.0 0.0 1.0 122.51 26.75)"><foreignObject height="13.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="38.44">$4,000</foreignObject></g></g><g color="#0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.8pt"><path d="M 188.98 0 L 188.98 17.91" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.64pt" transform="matrix(0.0 1.0 -1.0 0.0 188.98 17.91)"><path d="M -2.16 2.88 C -1.98 1.8 0 0.18 0.54 0 C 0 -0.18 -1.98 -1.8 -2.16 -2.88" style="fill:none"></path></g><g fill="#0000FF" stroke="#0000FF" transform="matrix(1.0 0.0 0.0 1.0 169.76 26.75)"><foreignObject height="13.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="38.44">$4,000</foreignObject></g></g><g color="#0000FF" fill="#0000FF" stroke="#0000FF" stroke-width="0.8pt"><path d="M 236.22 0 L 236.22 32.09" style="fill:none"></path><g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.64pt" transform="matrix(0.0 1.0 -1.0 0.0 236.22 32.09)"><path d="M -2.16 2.88 C -1.98 1.8 0 0.18 0.54 0 C 0 -0.18 -1.98 -1.8 -2.16 -2.88" style="fill:none"></path></g><g fill="#0000FF" stroke="#0000FF" transform="matrix(1.0 0.0 0.0 1.0 217 40.93)"><foreignObject height="13.07" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="38.44">$7,000</foreignObject></g></g></g></svg>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 7.1: </span>Cash Flow Diagram for the Incremental Series (B<math id="F1.m2" class="ltx_Math" alttext="-" display="inline"><mo>−</mo></math>A).</figcaption>
+</figure>
+<div id="S3.SS1.p12" class="ltx_para">
+<p class="ltx_p">To find <math id="S3.SS1.p12.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow></math>, decompose the incremental series into a uniform $4,000/yr over 5 years plus the $3,000 salvage value difference at year 5, and solve:</p>
+<table id="Ex9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex9.m1" class="ltx_Math" alttext="PW_{\Delta}=-15,000+4,000(P/A,i,5)+3,000(P/F,i,5)=0" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi mathvariant="normal">Δ</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>15</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>4</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>3</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Trial at <math id="S3.SS1.p12.m2" class="ltx_Math" alttext="i=14\%" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>14</mn><mo>%</mo></mrow></mrow></math>:</p>
+<table id="Ex10" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex10.m1" class="ltx_Math" alttext="PW_{\Delta}=-15,000+4,000(3.4331)+3,000(0.5194)=\$290.43&gt;0" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi mathvariant="normal">Δ</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>15</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>4</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3.4331</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>3</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.5194</mn><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>290.43</mn></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Trial at <math id="S3.SS1.p12.m3" class="ltx_Math" alttext="i=16\%" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>16</mn><mo>%</mo></mrow></mrow></math>:</p>
+<table id="Ex11" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex11.m1" class="ltx_Math" alttext="PW_{\Delta}=-15,000+4,000(3.2743)+3,000(0.4761)=-\$474.51&lt;0" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi mathvariant="normal">Δ</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>15</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>4</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3.2743</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>3</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.4761</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>474.51</mn></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Interpolating between 14% and 16%:</p>
+<table id="Ex12" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex12.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}=14\%+\frac{290.43}{290.43+474.51}(2\%)=14.76\%" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mrow><mn>14</mn><mo>%</mo></mrow><mo>+</mo><mrow><mfrac><mn>290.43</mn><mrow><mn>290.43</mn><mo>+</mo><mn>474.51</mn></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>%</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>14.76</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.p13" class="ltx_para">
+<p class="ltx_p">Since <math id="S3.SS1.p13.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}=14.76\%\geq MARR=10\%" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mn>14.76</mn><mo>%</mo></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow><mo>=</mo><mrow><mn>10</mn><mo>%</mo></mrow></mrow></math>, the extra investment in Machine B is justified.
+Therefore, <span class="ltx_text ltx_font_bold">select Machine B</span>.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: </h6>
+<div id="S3.SS1.p14" class="ltx_para">
+<p class="ltx_p">Despite Machine A having a significantly higher individual ROR (43.11% vs. 26.54%), Machine B is the correct choice.
+The incremental analysis shows that the additional $15,000 investment earns 14.76%, which exceeds the MARR.</p>
+</div>
+</div>
+</div>
+<section id="S3.SS1.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Solution by Excel</h4>
+
+<div id="S3.SS1.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">This problem is solved using the <span class="ltx_text ltx_font_typewriter">IRR</span> function in Excel.
+Each alternative’s net cash flows are entered in a column, and the incremental column is computed as <math id="S3.SS1.SSS0.Px1.p1.m1" class="ltx_Math" alttext="B-A" display="inline"><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow></math>.
+The <span class="ltx_text ltx_font_typewriter">IRR</span> function is applied to each column:</p>
+<p class="ltx_p ltx_align_center"><span class="ltx_text ltx_font_typewriter">=IRR(B5:B10)</span> <math id="S3.SS1.SSS0.Px1.p1.m2" class="ltx_Math" alttext="\rightarrow" display="inline"><mo stretchy="false">→</mo></math> 43.11%  <span class="ltx_text ltx_font_typewriter">=IRR(C5:C10)</span> <math id="S3.SS1.SSS0.Px1.p1.m3" class="ltx_Math" alttext="\rightarrow" display="inline"><mo stretchy="false">→</mo></math> 26.54%  <span class="ltx_text ltx_font_typewriter">=IRR(D5:D10)</span> <math id="S3.SS1.SSS0.Px1.p1.m4" class="ltx_Math" alttext="\rightarrow" display="inline"><mo stretchy="false">→</mo></math> 14.74%</p>
+</div>
+<figure id="F2" class="ltx_figure"><img src="" id="F2.g1" class="ltx_graphics ltx_centering ltx_missing ltx_missing_image" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 7.2: </span>Excel solution for the incremental ROR analysis.</figcaption>
+</figure>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: Incremental Analysis with Unequal Lives</h6>
+<div id="S3.SS1.SSS0.Px1.p2" class="ltx_para">
+<p class="ltx_p">Consider two revenue alternatives with different service lives.
+The MARR is 10% per year.</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_th ltx_th_row ltx_border_tt"></th>
+<td class="ltx_td ltx_align_center ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine A</span></td>
+<td class="ltx_td ltx_align_center ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine B</span></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t">First Cost</th>
+<td class="ltx_td ltx_align_center ltx_border_t">-$8,000</td>
+<td class="ltx_td ltx_align_center ltx_border_t">-$20,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">Annual Revenue</th>
+<td class="ltx_td ltx_align_center">$6,000</td>
+<td class="ltx_td ltx_align_center">$7,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">Salvage Value</th>
+<td class="ltx_td ltx_align_center">$1,000</td>
+<td class="ltx_td ltx_align_center">$3,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_bb">Life (years)</th>
+<td class="ltx_td ltx_align_center ltx_border_bb">3</td>
+<td class="ltx_td ltx_align_center ltx_border_bb">6</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS0.Px1.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<div id="S3.SS1.SSS0.Px1.p4" class="ltx_para">
+<p class="ltx_p">Since the lives differ, the LCM of 3 and 6 is <span class="ltx_text ltx_font_bold">6 years</span>.
+Machine A must be purchased twice over the 6-year study period: once at year 0 and again at year 3.</p>
+</div>
+<div id="S3.SS1.SSS0.Px1.p5" class="ltx_para">
+<p class="ltx_p">The individual ROR for each alternative (computed over its own life) is:</p>
+<table id="Ex13" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex13.m1" class="ltx_Math" alttext="i_{A}^{*}=57.72\%\qquad i_{B}^{*}=28.00\%" display="block"><mrow><mrow><msubsup><mi>i</mi><mi>A</mi><mo>∗</mo></msubsup><mo>=</mo><mrow><mn>57.72</mn><mo>%</mo></mrow></mrow><mspace width="2em"></mspace><mrow><msubsup><mi>i</mi><mi>B</mi><mo>∗</mo></msubsup><mo>=</mo><mrow><mn>28.00</mn><mo>%</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Both exceed the MARR, so both are viable candidates.</p>
+</div>
+<div id="S3.SS1.SSS0.Px1.p6" class="ltx_para">
+<p class="ltx_p">At year 3, Machine A reaches the end of its first life.
+The net cash flow at that point combines three items: the salvage of the old machine ($1,000), the purchase of the replacement (-$8,000), and the annual revenue ($6,000).
+This yields a net of <math id="S3.SS1.SSS0.Px1.p6.m1" class="ltx_Math" alttext="6,000+1,000-8,000=-\$1,000" display="inline"><mrow><mrow><mrow><mn>6</mn><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>−</mo><mn>8</mn></mrow><mo>,</mo><mn>000</mn></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>1</mn></mrow></mrow></mrow><mo>,</mo><mn>000</mn></mrow></math>.</p>
+</div>
+<div id="S3.SS1.SSS0.Px1.p7" class="ltx_para">
+<p class="ltx_p">The LCM cash flows and the incremental series are:</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_th_row ltx_border_tt"><span class="ltx_text ltx_font_bold">Year</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine A</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Machine B</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Incremental (B<math id="S3.SS1.SSS0.Px1.p7.m1" class="ltx_Math" alttext="-" display="inline"><mo>−</mo></math>A)</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_t">0</th>
+<td class="ltx_td ltx_align_right ltx_border_t">-$8,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">-$20,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">-$12,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">1</th>
+<td class="ltx_td ltx_align_right">$6,000</td>
+<td class="ltx_td ltx_align_right">$7,000</td>
+<td class="ltx_td ltx_align_right">$1,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">2</th>
+<td class="ltx_td ltx_align_right">$6,000</td>
+<td class="ltx_td ltx_align_right">$7,000</td>
+<td class="ltx_td ltx_align_right">$1,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">3</th>
+<td class="ltx_td ltx_align_right">-$1,000</td>
+<td class="ltx_td ltx_align_right">$7,000</td>
+<td class="ltx_td ltx_align_right">$8,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">4</th>
+<td class="ltx_td ltx_align_right">$6,000</td>
+<td class="ltx_td ltx_align_right">$7,000</td>
+<td class="ltx_td ltx_align_right">$1,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row">5</th>
+<td class="ltx_td ltx_align_right">$6,000</td>
+<td class="ltx_td ltx_align_right">$7,000</td>
+<td class="ltx_td ltx_align_right">$1,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_bb">6</th>
+<td class="ltx_td ltx_align_right ltx_border_bb">$7,000</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$10,000</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$3,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS0.Px1.p8" class="ltx_para">
+<p class="ltx_p">The incremental series can be decomposed as a uniform $1,000/yr for 6 years, plus $7,000 at year 3, plus $2,000 at year 6:</p>
+<table id="Ex14" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex14.m1" class="ltx_Math" alttext="PW_{\Delta}=-12,000+1,000(P/A,i,6)+7,000(P/F,i,3)+2,000(P/F,i,6)=0" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi mathvariant="normal">Δ</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>12</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>7</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Trial at <math id="S3.SS1.SSS0.Px1.p8.m1" class="ltx_Math" alttext="i=6\%" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>6</mn><mo>%</mo></mrow></mrow></math>:</p>
+<table id="Ex15" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex15.m1" class="ltx_Math" alttext="PW_{\Delta}=-12,000+1,000(4.9173)+7,000(0.8396)+2,000(0.7050)=\$204.58&gt;0" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi mathvariant="normal">Δ</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>12</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4.9173</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>7</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.8396</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.7050</mn><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>204.58</mn></mrow><mo>&gt;</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Trial at <math id="S3.SS1.SSS0.Px1.p8.m2" class="ltx_Math" alttext="i=8\%" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>8</mn><mo>%</mo></mrow></mrow></math>:</p>
+<table id="Ex16" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex16.m1" class="ltx_Math" alttext="PW_{\Delta}=-12,000+1,000(4.6229)+7,000(0.7938)+2,000(0.6302)=-\$559.96&lt;0" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi mathvariant="normal">Δ</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>12</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4.6229</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>7</mn></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.7938</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.6302</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>559.96</mn></mrow></mrow><mo>&lt;</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Interpolating between 6% and 8%:</p>
+<table id="Ex17" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex17.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}=6\%+\frac{204.58}{204.58+559.96}(2\%)=6.54\%" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mrow><mn>6</mn><mo>%</mo></mrow><mo>+</mo><mrow><mfrac><mn>204.58</mn><mrow><mn>204.58</mn><mo>+</mo><mn>559.96</mn></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>%</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mn>6.54</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S3.SS1.SSS0.Px1.p9" class="ltx_para">
+<p class="ltx_p">Since <math id="S3.SS1.SSS0.Px1.p9.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}=6.54\%&lt;MARR=10\%" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mn>6.54</mn><mo>%</mo></mrow><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow><mo>=</mo><mrow><mn>10</mn><mo>%</mo></mrow></mrow></math>, the extra investment in Machine B is <span class="ltx_text ltx_font_bold">not</span> justified.
+Therefore, <span class="ltx_text ltx_font_bold">select Machine A</span>.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: </h6>
+<div id="S3.SS1.SSS0.Px1.p10" class="ltx_para">
+<p class="ltx_p">Even though Machine B avoids the reinvestment hassle and provides steady cash flows, the incremental return of 6.54% does not meet the MARR.
+The cheaper Machine A, replaced every 3 years, is the economically superior choice.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="S3.SS1.SSS0.Px2" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Visualizing the Decision (PW vs. MARR):</h4>
+
+<div id="S3.SS1.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">Plotting the Present Worth of both alternatives across various MARR values provides a clear visual explanation of the incremental decision (see Figure <a href="#F3" title="Figure 7.3 ‣ Visualizing the Decision (PW vs. MARR): ‣ 7.3.1 Comparing Two Alternatives ‣ 7.3 ROR Evaluation Using PW ‣ Chapter 7 Rate of Return Analysis: Multiple Alternatives" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.3</span></a>).
+The blue curve represents the PW of Machine A and the red curve represents that of Machine B.</p>
+<ul id="S3.I2" class="ltx_itemize">
+<li id="S3.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">The curves intersect at exactly <math id="S3.I2.i1.p1.m1" class="ltx_Math" alttext="MARR=6.54\%" display="inline"><mrow><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow><mo>=</mo><mrow><mn>6.54</mn><mo>%</mo></mrow></mrow></math>, which is the incremental rate of return (<math id="S3.I2.i1.p1.m2" class="ltx_Math" alttext="\Delta i^{*}_{B-A}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow></math>). This is the “breakeven” interest rate.</p>
+</div>
+</li>
+<li id="S3.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">For any <math id="S3.I2.i2.p1.m1" class="ltx_Math" alttext="MARR&lt;6.54\%" display="inline"><mrow><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow><mo>&lt;</mo><mrow><mn>6.54</mn><mo>%</mo></mrow></mrow></math>, the PW of Machine B (red curve) is higher than Machine A, meaning the extra investment in B is economically justified.</p>
+</div>
+</li>
+<li id="S3.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">For any <math id="S3.I2.i3.p1.m1" class="ltx_Math" alttext="MARR&gt;6.54\%" display="inline"><mrow><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow><mo>&gt;</mo><mrow><mn>6.54</mn><mo>%</mo></mrow></mrow></math> (including the company’s actual MARR of 10%), the PW of Machine A (blue curve) is higher, confirming that Machine A is the superior choice.</p>
+</div>
+</li>
+</ul>
+</div>
+<figure id="F3" class="ltx_figure"><img src="figures/ch8/pw_vs_marr.png" id="F3.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="479" height="320" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 7.3: </span>Present Worth of Machine A and Machine B plotted against the MARR. The crossover point at <math id="F3.m2" class="ltx_Math" alttext="6.54\%" display="inline"><mrow><mn>6.54</mn><mo>%</mo></mrow></math> is the incremental rate of return.</figcaption>
+</figure>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Steps for Incremental ROR Analysis</h6>
+<div id="S3.SS1.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">The procedure for an incremental ROR analysis of two mutually exclusive alternatives is as follows:</p>
+<ol id="S3.I3" class="ltx_enumerate">
+<li id="S3.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S3.I3.i1.p1" class="ltx_para">
+<p class="ltx_p">Order the alternatives by increasing first cost.</p>
+</div>
+</li>
+<li id="S3.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S3.I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">(Revenue alternatives only)</span> Compute <math id="S3.I3.i2.p1.m1" class="ltx_Math" alttext="i^{*}" display="inline"><msup><mi>i</mi><mo>∗</mo></msup></math> for each alternative. Any alternative with <math id="S3.I3.i2.p1.m2" class="ltx_Math" alttext="i^{*}&lt;MARR" display="inline"><mrow><msup><mi>i</mi><mo>∗</mo></msup><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math> is eliminated.</p>
+</div>
+</li>
+<li id="S3.I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S3.I3.i3.p1" class="ltx_para">
+<p class="ltx_p">Calculate the incremental cash flow: <math id="S3.I3.i3.p1.m1" class="ltx_Math" alttext="\Delta F_{t}=CF_{B,t}-CF_{A,t}" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>F</mi><mi>t</mi></msub></mrow><mo>=</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>F</mi><mrow><mi>B</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow><mo>−</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>F</mi><mrow><mi>A</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></mrow></mrow></math>, where B has the higher first cost.</p>
+</div>
+</li>
+<li id="S3.I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S3.I3.i4.p1" class="ltx_para">
+<p class="ltx_p">Determine the incremental rate of return <math id="S3.I3.i4.p1.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow></math> from the incremental cash flow series.</p>
+</div>
+</li>
+<li id="S3.I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S3.I3.i5.p1" class="ltx_para">
+<p class="ltx_p">If <math id="S3.I3.i5.p1.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}\geq MARR" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math>, select the higher-cost alternative (B). Otherwise, select the lower-cost alternative (A).</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">7.3.2 </span>Comparing Multiple Alternatives</h3>
+
+<div id="S3.SS2.p1" class="ltx_para">
+<p class="ltx_p">When more than two mutually exclusive alternatives exist, the incremental ROR method extends naturally by performing successive pairwise comparisons.
+The alternatives are ranked by initial investment, and the winning alternative from each comparison advances to face the next challenger.</p>
+</div>
+<div id="S3.SS2.p2" class="ltx_para">
+<p class="ltx_p">The steps for incremental ROR evaluation for multiple alternatives are summarized below:</p>
+<ol id="S3.I4" class="ltx_enumerate">
+<li id="S3.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S3.I4.i1.p1" class="ltx_para">
+<p class="ltx_p">Rank the alternatives from <span class="ltx_text ltx_font_bold">smallest to largest</span> initial investment.</p>
+</div>
+</li>
+<li id="S3.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S3.I4.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">(Revenue alternatives only)</span> Compute <math id="S3.I4.i2.p1.m1" class="ltx_Math" alttext="i^{*}" display="inline"><msup><mi>i</mi><mo>∗</mo></msup></math> for each alternative. Discard any alternative with <math id="S3.I4.i2.p1.m2" class="ltx_Math" alttext="i^{*}&lt;MARR" display="inline"><mrow><msup><mi>i</mi><mo>∗</mo></msup><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S3.I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S3.I4.i3.p1" class="ltx_para">
+<p class="ltx_p">Compute the incremental cash flow between the first surviving alternative and the next one (using the LCM of their lives if they differ).</p>
+</div>
+</li>
+<li id="S3.I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S3.I4.i4.p1" class="ltx_para">
+<p class="ltx_p">Determine <math id="S3.I4.i4.p1.m1" class="ltx_Math" alttext="\Delta i^{*}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>i</mi><mo>∗</mo></msup></mrow></math>. If <math id="S3.I4.i4.p1.m2" class="ltx_Math" alttext="\Delta i^{*}\geq MARR" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>i</mi><mo>∗</mo></msup></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math>, the challenger wins; otherwise, the current alternative survives.</p>
+</div>
+</li>
+<li id="S3.I4.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S3.I4.i5.p1" class="ltx_para">
+<p class="ltx_p">Repeat steps 3–4 with the winner against the next alternative until all have been compared.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: The “Do Nothing” Baseline</h6>
+<div id="S3.SS2.p3" class="ltx_para">
+<p class="ltx_p">For revenue alternatives, the “Do Nothing” (DN) alternative is implicitly the first defender with an initial cost of $0.
+Screening out alternatives with an individual <math id="S3.SS2.p3.m1" class="ltx_Math" alttext="i^{*}&lt;MARR" display="inline"><mrow><msup><mi>i</mi><mo>∗</mo></msup><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math> is mathematically equivalent to performing an incremental comparison against DN.
+If all individual ROR values fall below the MARR, all alternatives lose to DN, and no investment should be made.</p>
+</div>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: Multiple Alternatives with Different Lives</h6>
+<div id="S3.SS2.p4" class="ltx_para">
+<p class="ltx_p">A logistics company is considering four mutually exclusive Automated Storage and Retrieval Systems to upgrade its main warehouse.
+The MARR is 10% per year.</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Alternative</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Initial Cost</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Annual Revenue</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Salvage</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Life</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t">B (Semi-Automated)</td>
+<td class="ltx_td ltx_align_right ltx_border_t">-$2,500,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$1,100,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$200,000</td>
+<td class="ltx_td ltx_align_center ltx_border_t">3 yr</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">D (Refurbished)</td>
+<td class="ltx_td ltx_align_right">-$3,500,000</td>
+<td class="ltx_td ltx_align_right">$950,000</td>
+<td class="ltx_td ltx_align_right">$150,000</td>
+<td class="ltx_td ltx_align_center">4 yr</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">C (Standard AS/RS)</td>
+<td class="ltx_td ltx_align_right">-$5,000,000</td>
+<td class="ltx_td ltx_align_right">$1,600,000</td>
+<td class="ltx_td ltx_align_right">$400,000</td>
+<td class="ltx_td ltx_align_center">4 yr</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_bb">A (Fully Automated)</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">-$7,000,000</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$1,900,000</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$500,000</td>
+<td class="ltx_td ltx_align_center ltx_border_bb">6 yr</td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">The alternatives are already ordered by increasing initial cost.</p>
+</div>
+<div id="S3.SS2.p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+</div>
+<section id="S3.SS2.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Step 1: Screen individual ROR values.</h4>
+
+<div id="S3.SS2.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Since these are revenue alternatives, compute <math id="S3.SS2.SSS0.Px1.p1.m1" class="ltx_Math" alttext="i^{*}" display="inline"><msup><mi>i</mi><mo>∗</mo></msup></math> for each:</p>
+<table id="Chx3.S5.EGx65" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex18.m1" class="ltx_Math" alttext="\displaystyle i_{B}^{*}" display="inline"><msubsup><mi>i</mi><mi>B</mi><mo>∗</mo></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex18.m2" class="ltx_Math" alttext="\displaystyle=18.33\%\geq MARR" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>18.33</mn><mo>%</mo></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">viable</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex19.m1" class="ltx_Math" alttext="\displaystyle i_{D}^{*}" display="inline"><msubsup><mi>i</mi><mi>D</mi><mo>∗</mo></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex19.m2" class="ltx_Math" alttext="\displaystyle=4.90\%&lt;MARR" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>4.90</mn><mo>%</mo></mrow><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath ltx_font_bold">discard</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex20.m1" class="ltx_Math" alttext="\displaystyle i_{C}^{*}" display="inline"><msubsup><mi>i</mi><mi>C</mi><mo>∗</mo></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex20.m2" class="ltx_Math" alttext="\displaystyle=13.04\%\geq MARR" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>13.04</mn><mo>%</mo></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">viable</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex21.m1" class="ltx_Math" alttext="\displaystyle i_{A}^{*}" display="inline"><msubsup><mi>i</mi><mi>A</mi><mo>∗</mo></msubsup></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex21.m2" class="ltx_Math" alttext="\displaystyle=17.08\%\geq MARR" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>17.08</mn><mo>%</mo></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">viable</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Alternative D is eliminated.
+The surviving alternatives are B, C, and A.</p>
+</div>
+</section>
+<section id="S3.SS2.SSS0.Px2" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Step 2: Pairwise comparison C vs. B.</h4>
+
+<div id="S3.SS2.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">The LCM of the remaining lives (3, 4, 6) is <span class="ltx_text ltx_font_bold">12 years</span>.
+To find the 12-year incremental ROR, one could set up the PW of each alternative over 12 years and equate them, or use the <span class="ltx_text ltx_font_typewriter">IRR</span> function in Excel on the expanded 12-year incremental cash flows <math id="S3.SS2.SSS0.Px2.p1.m1" class="ltx_Math" alttext="(C-B)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>C</mi><mo>−</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></math>. Solving <math id="S3.SS2.SSS0.Px2.p1.m2" class="ltx_Math" alttext="PW_{C}(i)-PW_{B}(i)=0" display="inline"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>C</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> yields:</p>
+<table id="Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex22.m1" class="ltx_Math" alttext="\Delta i^{*}_{C-B}=7.26\%" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>C</mi><mo>−</mo><mi>B</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mn>7.26</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math id="S3.SS2.SSS0.Px2.p1.m3" class="ltx_Math" alttext="7.26\%&lt;MARR" display="inline"><mrow><mrow><mn>7.26</mn><mo>%</mo></mrow><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math>, the extra investment in C is not justified.
+<span class="ltx_text ltx_font_bold">B survives.</span></p>
+</div>
+</section>
+<section id="S3.SS2.SSS0.Px3" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Step 3: Pairwise comparison A vs. B.</h4>
+
+<div id="S3.SS2.SSS0.Px3.p1" class="ltx_para">
+<p class="ltx_p">Similarly, equating the PW of alternatives A and B over the 12-year LCM, <math id="S3.SS2.SSS0.Px3.p1.m1" class="ltx_Math" alttext="PW_{A}(i)-PW_{B}(i)=0" display="inline"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, yields:</p>
+<table id="Ex23" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex23.m1" class="ltx_Math" alttext="\Delta i^{*}_{A-B}=16.37\%" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mn>16.37</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math id="S3.SS2.SSS0.Px3.p1.m2" class="ltx_Math" alttext="16.37\%\geq MARR" display="inline"><mrow><mrow><mn>16.37</mn><mo>%</mo></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math>, the extra investment in A is justified.
+<span class="ltx_text ltx_font_bold">A wins.</span></p>
+</div>
+</section>
+<section id="S3.SS2.SSS0.Px4" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Conclusion:</h4>
+
+<div id="S3.SS2.SSS0.Px4.p1" class="ltx_para">
+<p class="ltx_p">Select Alternative A (Fully Automated system).</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: </h6>
+<div id="S3.SS2.SSS0.Px4.p2" class="ltx_para">
+<p class="ltx_p">Note that Alternative B had the highest individual ROR (18.33%), yet Alternative A (17.08%) is the correct choice.
+This illustrates exactly why incremental analysis is necessary: the alternative with the highest ROR is not always the best investment.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7.4 </span>ROR Evaluation Using AW</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">The incremental ROR analysis can also be performed using the Annual Worth (AW) method instead of Present Worth.
+The primary advantage of using AW is that it naturally satisfies the equal-service requirement without needing the Lowest Common Multiple (LCM) of lives.
+Because the AW of one life cycle is equivalent to the AW over any number of identical life cycles, alternatives with different service lives can be compared directly using their single-cycle cash flows.</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p">To find the incremental rate of return <math id="S4.p2.m1" class="ltx_Math" alttext="\Delta i^{*}_{B-A}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow><mo>∗</mo></msubsup></mrow></math> using the AW method, set the Annual Worth of both alternatives equal to each other and solve for <math id="S4.p2.m2" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math>:</p>
+<table id="Ex24" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex24.m1" class="ltx_Math" alttext="AW_{A}(i)=AW_{B}(i)\quad\Rightarrow\quad\Delta AW_{B-A}(i)=AW_{B}(i)-AW_{A}(i)=0" display="block"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mo stretchy="false">⇒</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mrow><mi>B</mi><mo>−</mo><mi>A</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The resulting <math id="S4.p2.m3" class="ltx_Math" alttext="\Delta i^{*}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>i</mi><mo>∗</mo></msup></mrow></math> will be exactly the same as the one found using the PW method over the LCM.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Why Calculate ROR Instead of Just AW?</h6>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p">Since evaluating the <math id="S4.p3.m1" class="ltx_Math" alttext="AW" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow></math> (or <math id="S4.p3.m2" class="ltx_Math" alttext="PW" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mi>W</mi></mrow></math>) at the MARR immediately identifies the best alternative and is computationally simpler, you might wonder why we perform ROR analysis at all.
+There are two primary reasons:</p>
+<ul id="S4.I1" class="ltx_itemize">
+<li id="S4.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Management Preference:</span> Decision-makers often prefer percentage rates over absolute dollar amounts because percentages are easier to intuitively compare against corporate hurdle rates.</p>
+</div>
+</li>
+<li id="S4.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Sensitivity Analysis:</span> The incremental rate of return <math id="S4.I1.i2.p1.m1" class="ltx_Math" alttext="\Delta i^{*}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>i</mi><mo>∗</mo></msup></mrow></math> is the exact “breakeven” interest rate between two alternatives.
+Knowing this value tells you exactly how sensitive your decision is to fluctuations in the MARR.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: Incremental ROR using AW</h6>
+<div id="S4.p4" class="ltx_para">
+<p class="ltx_p">Reconsider the pairwise comparisons from the previous AS/RS example.
+Instead of using the 12-year LCM, we can find the incremental ROR using the AW of their single life cycles.</p>
+</div>
+</div>
+<section id="S4.SS0.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Comparison C vs. B:</h4>
+
+<div id="S4.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Set <math id="S4.SS0.SSS0.Px1.p1.m1" class="ltx_Math" alttext="AW_{C}=AW_{B}" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>C</mi></msub></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub></mrow></mrow></math>:</p>
+<table id="Chx3.S5.EGx66" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex25.m1" class="ltx_Math" alttext="\displaystyle AW_{C}(i)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>C</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex25.m2" class="ltx_Math" alttext="\displaystyle=-5,000,000(A/P,i,4)+1,600,000+400,000(A/F,i,4)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>5</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>600</mn><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>400</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex26.m1" class="ltx_Math" alttext="\displaystyle AW_{B}(i)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex26.m2" class="ltx_Math" alttext="\displaystyle=-2,500,000(A/P,i,3)+1,100,000+200,000(A/F,i,3)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mn>500</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>100</mn><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>200</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Solving <math id="S4.SS0.SSS0.Px1.p1.m2" class="ltx_Math" alttext="AW_{C}(i)-AW_{B}(i)=0" display="inline"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>C</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> yields:</p>
+<table id="Ex27" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex27.m1" class="ltx_Math" alttext="\Delta i^{*}_{C-B}=7.26\%" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>C</mi><mo>−</mo><mi>B</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mn>7.26</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This exactly matches the PW result. Since <math id="S4.SS0.SSS0.Px1.p1.m3" class="ltx_Math" alttext="7.26\%&lt;MARR" display="inline"><mrow><mrow><mn>7.26</mn><mo>%</mo></mrow><mo>&lt;</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math>, B survives.</p>
+</div>
+</section>
+<section id="S4.SS0.SSS0.Px2" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Comparison A vs. B:</h4>
+
+<div id="S4.SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">Set <math id="S4.SS0.SSS0.Px2.p1.m1" class="ltx_Math" alttext="AW_{A}=AW_{B}" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub></mrow></mrow></math>:</p>
+<table id="Chx3.S5.EGx67" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex28.m1" class="ltx_Math" alttext="\displaystyle AW_{A}(i)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex28.m2" class="ltx_Math" alttext="\displaystyle=-7,000,000(A/P,i,6)+1,900,000+500,000(A/F,i,6)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>7</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>900</mn><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>500</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex29.m1" class="ltx_Math" alttext="\displaystyle AW_{B}(i)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex29.m2" class="ltx_Math" alttext="\displaystyle=-2,500,000(A/P,i,3)+1,100,000+200,000(A/F,i,3)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mn>500</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>100</mn><mo>,</mo><mrow><mn>000</mn><mo>+</mo><mn>200</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Solving <math id="S4.SS0.SSS0.Px2.p1.m2" class="ltx_Math" alttext="AW_{A}(i)-AW_{B}(i)=0" display="inline"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> yields:</p>
+<table id="Ex30" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex30.m1" class="ltx_Math" alttext="\Delta i^{*}_{A-B}=16.37\%" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msubsup><mi>i</mi><mrow><mi>A</mi><mo>−</mo><mi>B</mi></mrow><mo>∗</mo></msubsup></mrow><mo>=</mo><mrow><mn>16.37</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Since <math id="S4.SS0.SSS0.Px2.p1.m3" class="ltx_Math" alttext="16.37\%\geq MARR" display="inline"><mrow><mrow><mn>16.37</mn><mo>%</mo></mrow><mo>≥</mo><mrow><mi>M</mi><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math>, Alternative A is the winner, perfectly mirroring the PW approach without expanding the cash flows to 12 years.
+</p>
+</div>
+</section>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">7.5 </span>Summary</h2>
+
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_align_center">
+<a href="Ch6.html" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Rate of Return Analysis: Single Alternative</span></a><a href="Chx3.html" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title">Formula Sheet</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Aug 27 16:14:42 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>

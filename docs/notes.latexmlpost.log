@@ -1,0 +1,516 @@
+latexmlpost (LaTeXML version 0.8.8) paginating /Users/naim/Small Projects/Engineering Economy Codebase/Course Notes/Notes/notes.xml
+(post-processing...
+(Split index.html processing...
+ [Split into in 55 TOCs]
+ 0.13 sec)
+(Scan index.html processing...
+Scan: DBStatus: 4/0 objects
+ 0.00 sec)
+(Scan Chx1.html processing...
+Scan: DBStatus: 12/0 objects
+ 0.00 sec)
+(Scan Chx2.html processing...
+Scan: DBStatus: 14/0 objects
+ 0.00 sec)
+(Scan Ch1.html processing...
+Scan: DBStatus: 34/0 objects
+ 0.00 sec)
+(Scan Ch1.S1.html processing...
+Scan: DBStatus: 73/0 objects
+ 0.00 sec)
+(Scan Ch1.S2.html processing...
+Scan: DBStatus: 80/0 objects
+ 0.00 sec)
+(Scan Ch1.S3.html processing...
+Scan: DBStatus: 152/0 objects
+ 0.01 sec)
+(Scan Ch1.S4.html processing...
+Scan: DBStatus: 177/0 objects
+ 0.00 sec)
+(Scan Ch1.S5.html processing...
+Scan: DBStatus: 324/0 objects
+ 0.01 sec)
+(Scan Ch1.S6.html processing...
+Scan: DBStatus: 403/0 objects
+ 0.01 sec)
+(Scan Ch1.S7.html processing...
+Scan: DBStatus: 467/0 objects
+ 0.00 sec)
+(Scan Ch1.S8.html processing...
+Scan: DBStatus: 491/0 objects
+ 0.00 sec)
+(Scan Ch1.S9.html processing...
+Scan: DBStatus: 510/0 objects
+ 0.00 sec)
+(Scan Ch2.html processing...
+Scan: DBStatus: 515/0 objects
+ 0.00 sec)
+(Scan Ch2.S1.html processing...
+Scan: DBStatus: 541/0 objects
+ 0.00 sec)
+(Scan Ch2.S2.html processing...
+Scan: DBStatus: 646/0 objects
+ 0.01 sec)
+(Scan Ch2.S3.html processing...
+Scan: DBStatus: 1000/0 objects
+ 0.03 sec)
+(Scan Ch2.S4.html processing...
+Scan: DBStatus: 1026/0 objects
+ 0.00 sec)
+(Scan Ch2.S5.html processing...
+Scan: DBStatus: 1292/0 objects
+ 0.02 sec)
+(Scan Ch2.S6.html processing...
+Scan: DBStatus: 1573/0 objects
+ 0.02 sec)
+(Scan Ch2.S7.html processing...
+Scan: DBStatus: 1801/0 objects
+ 0.02 sec)
+(Scan Ch2.S8.html processing...
+Scan: DBStatus: 1891/0 objects
+ 0.01 sec)
+(Scan Ch3.html processing...
+Scan: DBStatus: 1910/0 objects
+ 0.00 sec)
+(Scan Ch3.S1.html processing...
+Scan: DBStatus: 1931/0 objects
+ 0.00 sec)
+(Scan Ch3.S2.html processing...
+Scan: DBStatus: 1986/0 objects
+ 0.00 sec)
+(Scan Ch3.S3.html processing...
+Scan: DBStatus: 2031/0 objects
+ 0.00 sec)
+(Scan Ch3.S4.html processing...
+Scan: DBStatus: 2129/0 objects
+ 0.01 sec)
+(Scan Ch3.S5.html processing...
+Scan: DBStatus: 2302/0 objects
+ 0.01 sec)
+(Scan Ch3.S6.html processing...
+Scan: DBStatus: 2507/0 objects
+ 0.01 sec)
+(Scan Ch3.S7.html processing...
+Scan: DBStatus: 2525/0 objects
+ 0.00 sec)
+(Scan Ch4.html processing...
+Scan: DBStatus: 2531/0 objects
+ 0.00 sec)
+(Scan Ch4.S1.html processing...
+Scan: DBStatus: 2588/0 objects
+ 0.00 sec)
+(Scan Ch4.S2.html processing...
+Scan: DBStatus: 3514/0 objects
+ 0.06 sec)
+(Scan Ch4.S3.html processing...
+Scan: DBStatus: 3568/0 objects
+ 0.00 sec)
+(Scan Ch4.S4.html processing...
+Scan: DBStatus: 3870/0 objects
+ 0.02 sec)
+(Scan Ch4.S5.html processing...
+Scan: DBStatus: 3935/0 objects
+ 0.00 sec)
+(Scan Ch4.S6.html processing...
+Scan: DBStatus: 3983/0 objects
+ 0.00 sec)
+(Scan Ch5.html processing...
+Scan: DBStatus: 4008/0 objects
+ 0.00 sec)
+(Scan Ch5.S1.html processing...
+Scan: DBStatus: 4124/0 objects
+ 0.01 sec)
+(Scan Ch5.S2.html processing...
+Scan: DBStatus: 4137/0 objects
+ 0.00 sec)
+(Scan Ch5.S3.html processing...
+Scan: DBStatus: 4156/0 objects
+ 0.00 sec)
+(Scan Ch5.S4.html processing...
+Scan: DBStatus: 4675/0 objects
+ 0.03 sec)
+(Scan Ch5.S5.html processing...
+Scan: DBStatus: 4931/0 objects
+ 0.02 sec)
+(Scan Ch6.html processing...
+Scan: DBStatus: 4935/0 objects
+ 0.00 sec)
+(Scan Ch6.S1.html processing...
+Scan: DBStatus: 4971/0 objects
+ 0.00 sec)
+(Scan Ch6.S2.html processing...
+Scan: DBStatus: 5274/0 objects
+ 0.02 sec)
+(Scan Ch6.S3.html processing...
+Scan: DBStatus: 5344/0 objects
+ 0.01 sec)
+(Scan Ch6.S4.html processing...
+Scan: DBStatus: 5347/0 objects
+ 0.00 sec)
+(Scan Ch7.html processing...
+Scan: DBStatus: 5351/0 objects
+ 0.00 sec)
+(Scan Ch7.S1.html processing...
+Scan: DBStatus: 5405/0 objects
+ 0.00 sec)
+(Scan Ch7.S2.html processing...
+Scan: DBStatus: 5444/0 objects
+ 0.00 sec)
+(Scan Ch7.S3.html processing...
+Scan: DBStatus: 5739/0 objects
+ 0.02 sec)
+(Scan Ch7.S4.html processing...
+Scan: DBStatus: 5908/0 objects
+ 0.01 sec)
+(Scan Ch7.S5.html processing...
+Scan: DBStatus: 5910/0 objects
+ 0.00 sec)
+(Scan Chx3.html processing...
+Scan: DBStatus: 6055/0 objects
+ 0.01 sec)
+(CrossRef index.html processing... 0.00 sec)
+(CrossRef Chx1.html processing... 0.00 sec)
+(CrossRef Chx2.html processing... 0.00 sec)
+(CrossRef Ch1.html processing... 0.01 sec)
+(CrossRef Ch1.S1.html processing... 0.01 sec)
+(CrossRef Ch1.S2.html processing... 0.01 sec)
+(CrossRef Ch1.S3.html processing... 0.01 sec)
+(CrossRef Ch1.S4.html processing... 0.01 sec)
+(CrossRef Ch1.S5.html processing... 0.01 sec)
+(CrossRef Ch1.S6.html processing... 0.01 sec)
+(CrossRef Ch1.S7.html processing... 0.01 sec)
+(CrossRef Ch1.S8.html processing... 0.01 sec)
+(CrossRef Ch1.S9.html processing... 0.01 sec)
+(CrossRef Ch2.html processing... 0.01 sec)
+(CrossRef Ch2.S1.html processing... 0.01 sec)
+(CrossRef Ch2.S2.html processing... 0.01 sec)
+(CrossRef Ch2.S3.html processing... 0.02 sec)
+(CrossRef Ch2.S4.html processing... 0.01 sec)
+(CrossRef Ch2.S5.html processing... 0.02 sec)
+(CrossRef Ch2.S6.html processing... 0.02 sec)
+(CrossRef Ch2.S7.html processing... 0.02 sec)
+(CrossRef Ch2.S8.html processing... 0.01 sec)
+(CrossRef Ch3.html processing... 0.01 sec)
+(CrossRef Ch3.S1.html processing... 0.01 sec)
+(CrossRef Ch3.S2.html processing... 0.01 sec)
+(CrossRef Ch3.S3.html processing... 0.01 sec)
+(CrossRef Ch3.S4.html processing... 0.01 sec)
+(CrossRef Ch3.S5.html processing... 0.02 sec)
+(CrossRef Ch3.S6.html processing... 0.02 sec)
+(CrossRef Ch3.S7.html processing... 0.01 sec)
+(CrossRef Ch4.html processing... 0.01 sec)
+(CrossRef Ch4.S1.html processing... 0.01 sec)
+(CrossRef Ch4.S2.html processing... 0.04 sec)
+(CrossRef Ch4.S3.html processing... 0.01 sec)
+(CrossRef Ch4.S4.html processing... 0.02 sec)
+(CrossRef Ch4.S5.html processing... 0.01 sec)
+(CrossRef Ch4.S6.html processing... 0.01 sec)
+(CrossRef Ch5.html processing... 0.01 sec)
+(CrossRef Ch5.S1.html processing... 0.01 sec)
+(CrossRef Ch5.S2.html processing... 0.01 sec)
+(CrossRef Ch5.S3.html processing... 0.01 sec)
+(CrossRef Ch5.S4.html processing... 0.03 sec)
+(CrossRef Ch5.S5.html processing... 0.02 sec)
+(CrossRef Ch6.html processing... 0.01 sec)
+(CrossRef Ch6.S1.html processing... 0.01 sec)
+(CrossRef Ch6.S2.html processing... 0.02 sec)
+(CrossRef Ch6.S3.html processing... 0.01 sec)
+(CrossRef Ch6.S4.html processing... 0.01 sec)
+(CrossRef Ch7.html processing... 0.01 sec)
+(CrossRef Ch7.S1.html processing... 0.01 sec)
+(CrossRef Ch7.S2.html processing... 0.01 sec)
+(CrossRef Ch7.S3.html processing... 0.02 sec)
+(CrossRef Ch7.S4.html processing... 0.01 sec)
+(CrossRef Ch7.S5.html processing... 0.01 sec)
+(CrossRef Chx3.html processing... 0.01 sec)
+(Graphics Ch1.S3.html processing...
+Warning:expected:source No graphic source found; skipping
+	source was ch1/interest.pdf
+	In Post::Graphics[@0x12d390650] ->processGraphic
+ 0.00 sec)
+(Graphics Ch1.S5.html processing...
+Warning:expected:source No graphic source found; skipping
+	source was ch1/simple_vs_compound.png
+	In Post::Graphics[@0x12d390650] ->processGraphic
+ 0.00 sec)
+(Graphics Ch1.S6.html processing...
+Warning:expected:source No graphic source found; skipping
+	source was ch1/ex1-6.pdf
+	In Post::Graphics[@0x12d390650] ->processGraphic
+ 0.00 sec)
+(Graphics Ch2.S4.html processing...
+Warning:expected:source No graphic source found; skipping
+	source was ch2/loanAmortization.png
+	In Post::Graphics[@0x12d390650] ->processGraphic
+ 0.00 sec)
+(Graphics Ch3.S5.html 2 to process...
+Warning:expected:source No graphic source found; skipping
+	source was ch4/us_treasury_bond.jpg
+	In Post::Graphics[@0x12d390650] ->processGraphic
+Warning:expected:source No graphic source found; skipping
+	source was ch4/pricetoyield.png
+	In Post::Graphics[@0x12d390650] ->processGraphic
+ 0.00 sec)
+(Graphics Ch4.S1.html processing...
+Warning:expected:source No graphic source found; skipping
+	source was ch5/steps.pdf
+	In Post::Graphics[@0x12d390650] ->processGraphic
+ 0.00 sec)
+(Graphics Ch4.S6.html 2 to process...
+Error:imageprocessing:imageclass No image processing module found to convert types
+	Skipping /Users/naim/Small Projects/Engineering Economy Codebase/Course Notes/Notes/figures/ch5/costs.pdf=>png.
+	Please install one of: Graphics::Magick,Image::Magick
+	In Post::Graphics[@0x12d390650] ->transformGraphic
+Error:imageprocessing:imageclass No image processing module found to convert types
+	Skipping /Users/naim/Small Projects/Engineering Economy Codebase/Course Notes/Notes/figures/ch5/lcc_curve.pdf=>png.
+	Please install one of: Graphics::Magick,Image::Magick
+	In Post::Graphics[@0x12d390650] ->transformGraphic
+ 0.00 sec)
+(Graphics Ch6.S1.html processing...
+Error:imageprocessing:imageclass No image processing module found to convert types
+	Skipping /Users/naim/Small Projects/Engineering Economy Codebase/Course Notes/Notes/figures/ch7/pw_vs_i.pdf=>png.
+	Please install one of: Graphics::Magick,Image::Magick
+	In Post::Graphics[@0x12d390650] ->transformGraphic
+ 0.00 sec)
+(Graphics Ch6.S3.html processing...
+Warning:expected:source No graphic source found; skipping
+	source was ch7/pw-i-multiple-root.pdf
+	In Post::Graphics[@0x12d390650] ->processGraphic
+ 0.00 sec)
+(Graphics Ch7.S3.html 2 to process...
+Error:imageprocessing:imageclass No image processing module found to convert types
+	Skipping /Users/naim/Small Projects/Engineering Economy Codebase/Course Notes/Notes/figures/ch8/incremental_ror_excel.pdf=>png.
+	Please install one of: Graphics::Magick,Image::Magick
+	In Post::Graphics[@0x12d390650] ->transformGraphic
+ 0.00 sec)
+(MathML::Presentation Ch1.S3.html 18 to process...
+converted 18 Maths
+ 0.01 sec)
+(MathML::Presentation Ch1.S4.html 2 to process...
+converted 2 Maths
+ 0.00 sec)
+(MathML::Presentation Ch1.S5.html 39 to process...
+converted 39 Maths
+ 0.04 sec)
+(MathML::Presentation Ch1.S6.html 2 to process...
+converted 2 Maths
+ 0.00 sec)
+(MathML::Presentation Ch1.S7.html 12 to process...
+converted 12 Maths
+ 0.01 sec)
+(MathML::Presentation Ch1.S8.html 5 to process...
+converted 5 Maths
+ 0.00 sec)
+(MathML::Presentation Ch1.S9.html processing...
+converted 1 Maths
+ 0.00 sec)
+(MathML::Presentation Ch2.S1.html 7 to process...
+converted 7 Maths
+ 0.00 sec)
+(MathML::Presentation Ch2.S2.html 37 to process...
+converted 37 Maths
+ 0.02 sec)
+(MathML::Presentation Ch2.S3.html 100 to process...
+converted 100 Maths
+ 0.10 sec)
+(MathML::Presentation Ch2.S4.html 8 to process...
+converted 8 Maths
+ 0.00 sec)
+(MathML::Presentation Ch2.S5.html 95 to process...
+converted 95 Maths
+ 0.08 sec)
+(MathML::Presentation Ch2.S6.html 97 to process...
+converted 97 Maths
+ 0.08 sec)
+(MathML::Presentation Ch2.S7.html 77 to process...
+converted 77 Maths
+ 0.05 sec)
+(MathML::Presentation Ch2.S8.html 28 to process...
+converted 28 Maths
+ 0.03 sec)
+(MathML::Presentation Ch3.html 5 to process...
+converted 5 Maths
+ 0.00 sec)
+(MathML::Presentation Ch3.S1.html 8 to process...
+converted 8 Maths
+ 0.00 sec)
+(MathML::Presentation Ch3.S2.html 25 to process...
+converted 25 Maths
+ 0.02 sec)
+(MathML::Presentation Ch3.S3.html 12 to process...
+converted 12 Maths
+ 0.01 sec)
+(MathML::Presentation Ch3.S4.html 40 to process...
+converted 40 Maths
+ 0.03 sec)
+(MathML::Presentation Ch3.S5.html 58 to process...
+converted 58 Maths
+ 0.04 sec)
+(MathML::Presentation Ch3.S6.html 37 to process...
+converted 37 Maths
+ 0.05 sec)
+(MathML::Presentation Ch3.S7.html 12 to process...
+converted 12 Maths
+ 0.00 sec)
+(MathML::Presentation Ch4.S2.html 216 to process...
+converted 216 Maths
+ 0.17 sec)
+(MathML::Presentation Ch4.S3.html 25 to process...
+converted 25 Maths
+ 0.01 sec)
+(MathML::Presentation Ch4.S4.html 93 to process...
+converted 93 Maths
+ 0.07 sec)
+(MathML::Presentation Ch4.S5.html 18 to process...
+converted 18 Maths
+ 0.01 sec)
+(MathML::Presentation Ch5.html 5 to process...
+converted 5 Maths
+ 0.01 sec)
+(MathML::Presentation Ch5.S1.html 31 to process...
+converted 31 Maths
+ 0.05 sec)
+(MathML::Presentation Ch5.S3.html 3 to process...
+converted 3 Maths
+ 0.00 sec)
+(MathML::Presentation Ch5.S4.html 98 to process...
+converted 98 Maths
+ 0.11 sec)
+(MathML::Presentation Ch5.S5.html 80 to process...
+converted 80 Maths
+ 0.06 sec)
+(MathML::Presentation Ch6.S1.html 8 to process...
+converted 8 Maths
+ 0.00 sec)
+(MathML::Presentation Ch6.S2.html 88 to process...
+converted 88 Maths
+ 0.07 sec)
+(MathML::Presentation Ch6.S3.html 29 to process...
+converted 29 Maths
+ 0.01 sec)
+(MathML::Presentation Ch7.S1.html 7 to process...
+converted 7 Maths
+ 0.01 sec)
+(MathML::Presentation Ch7.S2.html 8 to process...
+converted 8 Maths
+ 0.01 sec)
+(MathML::Presentation Ch7.S3.html 78 to process...
+converted 78 Maths
+ 0.07 sec)
+(MathML::Presentation Ch7.S4.html 27 to process...
+converted 27 Maths
+ 0.04 sec)
+(MathML::Presentation Chx3.html 44 to process...
+converted 44 Maths
+ 0.04 sec)
+(XSLT[using LaTeXML-html5.xsl] index.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Chx1.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Chx2.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S1.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S2.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S3.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S4.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S5.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S6.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S7.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S8.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch1.S9.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S1.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S2.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S3.html processing... 0.02 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S4.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S5.html processing... 0.02 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S6.html processing... 0.05 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S7.html processing... 0.03 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch2.S8.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.S1.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.S2.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.S3.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.S4.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.S5.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.S6.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch3.S7.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch4.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch4.S1.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch4.S2.html processing... 0.04 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch4.S3.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch4.S4.html processing... 0.02 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch4.S5.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch4.S6.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch5.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch5.S1.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch5.S2.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch5.S3.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch5.S4.html processing... 0.02 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch5.S5.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch6.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch6.S1.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch6.S2.html processing... 0.02 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch6.S3.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch6.S4.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch7.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch7.S1.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch7.S2.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch7.S3.html processing... 0.02 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch7.S4.html processing... 0.01 sec)
+(XSLT[using LaTeXML-html5.xsl] Ch7.S5.html processing... 0.00 sec)
+(XSLT[using LaTeXML-html5.xsl] Chx3.html processing... 0.01 sec)
+(Writer index.html processing... 0.00 sec)
+(Writer Chx1.html processing... 0.00 sec)
+(Writer Chx2.html processing... 0.00 sec)
+(Writer Ch1.html processing... 0.00 sec)
+(Writer Ch1.S1.html processing... 0.00 sec)
+(Writer Ch1.S2.html processing... 0.00 sec)
+(Writer Ch1.S3.html processing... 0.00 sec)
+(Writer Ch1.S4.html processing... 0.00 sec)
+(Writer Ch1.S5.html processing... 0.00 sec)
+(Writer Ch1.S6.html processing... 0.00 sec)
+(Writer Ch1.S7.html processing... 0.00 sec)
+(Writer Ch1.S8.html processing... 0.00 sec)
+(Writer Ch1.S9.html processing... 0.00 sec)
+(Writer Ch2.html processing... 0.00 sec)
+(Writer Ch2.S1.html processing... 0.00 sec)
+(Writer Ch2.S2.html processing... 0.00 sec)
+(Writer Ch2.S3.html processing... 0.00 sec)
+(Writer Ch2.S4.html processing... 0.00 sec)
+(Writer Ch2.S5.html processing... 0.00 sec)
+(Writer Ch2.S6.html processing... 0.00 sec)
+(Writer Ch2.S7.html processing... 0.00 sec)
+(Writer Ch2.S8.html processing... 0.00 sec)
+(Writer Ch3.html processing... 0.00 sec)
+(Writer Ch3.S1.html processing... 0.00 sec)
+(Writer Ch3.S2.html processing... 0.00 sec)
+(Writer Ch3.S3.html processing... 0.00 sec)
+(Writer Ch3.S4.html processing... 0.00 sec)
+(Writer Ch3.S5.html processing... 0.00 sec)
+(Writer Ch3.S6.html processing... 0.00 sec)
+(Writer Ch3.S7.html processing... 0.00 sec)
+(Writer Ch4.html processing... 0.00 sec)
+(Writer Ch4.S1.html processing... 0.00 sec)
+(Writer Ch4.S2.html processing... 0.00 sec)
+(Writer Ch4.S3.html processing... 0.00 sec)
+(Writer Ch4.S4.html processing... 0.00 sec)
+(Writer Ch4.S5.html processing... 0.00 sec)
+(Writer Ch4.S6.html processing... 0.00 sec)
+(Writer Ch5.html processing... 0.00 sec)
+(Writer Ch5.S1.html processing... 0.00 sec)
+(Writer Ch5.S2.html processing... 0.00 sec)
+(Writer Ch5.S3.html processing... 0.00 sec)
+(Writer Ch5.S4.html processing... 0.00 sec)
+(Writer Ch5.S5.html processing... 0.00 sec)
+(Writer Ch6.html processing... 0.00 sec)
+(Writer Ch6.S1.html processing... 0.00 sec)
+(Writer Ch6.S2.html processing... 0.00 sec)
+(Writer Ch6.S3.html processing... 0.00 sec)
+(Writer Ch6.S4.html processing... 0.00 sec)
+(Writer Ch7.html processing... 0.00 sec)
+(Writer Ch7.S1.html processing... 0.00 sec)
+(Writer Ch7.S2.html processing... 0.00 sec)
+(Writer Ch7.S3.html processing... 0.00 sec)
+(Writer Ch7.S4.html processing... 0.00 sec)
+(Writer Ch7.S5.html processing... 0.00 sec)
+(Writer Chx3.html processing... 0.00 sec) 3.11 sec)
+Postprocessing complete 8 warnings; 4 errors (See /Users/naim/Small Projects/Engineering Economy Codebase/web_trial/notes.latexmlpost.log) (reqd. 3.45s)

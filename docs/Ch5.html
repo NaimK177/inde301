@@ -1,0 +1,811 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Chapter 5 Annual Worth Analysis</title>
+<!--Generated on Thu Aug 27 16:14:42 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="start" href="./" title="">
+<link rel="prev" href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria">
+<link rel="next" href="Ch6.html" title="Chapter 6 Rate of Return Analysis: Single Alternative">
+<link rel="chapter" href="Chx1.html" title="Acknowledgements">
+<link rel="chapter" href="Chx2.html" title="Abstract">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Foundation of Engineering Economy">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 How Time and Interest affect money">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Nominal and Effective Interest Rates">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Rate of Return Analysis: Single Alternative">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Rate of Return Analysis: Multiple Alternatives">
+<link rel="chapter" href="Chx3.html" title="Formula Sheet">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div class="ltx_align_center">
+<a href="Ch4.html" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Present Worth and Related Economic Criteria</span></a><a href="Ch6.html" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Rate of Return Analysis: Single Alternative</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_chapter">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 5 </span>Annual Worth Analysis</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Annual Worth (AW) analysis is an economic evaluation technique that expresses all cash flows of an alternative as an equivalent uniform annual amount over a specified period.
+The Annual Worth criterion is mathematically equivalent to the Present Worth (PW) and Future Worth (FW) criteria.
+Given an interest rate <math id="p1.m1" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> (typically the MARR) and a planning horizon of <math id="p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> years, the AW is determined directly from PW or FW as:</p>
+<table id="Chx3.S5.EGx44" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E1.m1" class="ltx_Math" alttext="\displaystyle AW" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E1.m2" class="ltx_Math" alttext="\displaystyle=PW\times(A/P,i,n)=FW\times(A/F,i,n)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mi>W</mi></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mi>W</mi></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5.1)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Despite this mathematical equivalence, AW analysis is frequently the preferred method in engineering practice because it is easier to compute and offers a direct financial interpretation in terms of annual operational budgets.</p>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5.1 </span>Advantages of AW Analysis</h2>
+
+<section id="S1.SS0.SSS0.Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Ease of Understanding</h3>
+
+<div id="S1.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">The AW value represents the equivalent uniform annual cash flow (expressed in dollars per year) of all estimated receipts and disbursements over the life of an asset.
+Because corporate budgets, profit-and-loss statements, and financial reports are routinely prepared on an annual basis, AW values are immediately understandable to management and decision-makers without requiring conversion from large present-value lump sums.</p>
+</div>
+</section>
+<section id="S1.SS0.SSS0.Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Computational Advantage: Single Life Cycle Evaluation</h3>
+
+<div id="S1.SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">Unlike Present Worth analysis—which requires evaluating alternatives over their Lowest Common Multiple (LCM) of lives to satisfy the equal-service requirement—the AW value needs to be calculated for <span class="ltx_text ltx_font_bold">only one life cycle</span> (<math id="S1.SS0.SSS0.Px2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> years) of each alternative.
+The resulting AW value for one life cycle is identical to the AW value calculated over <math id="S1.SS0.SSS0.Px2.p1.m2" class="ltx_Math" alttext="2,3," display="inline"><mrow><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow><mo>,</mo></mrow></math> or any number of repeated life cycles (including LCM).</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Single Life Cycle Evaluation in AW Analysis</h6>
+<div id="S1.SS0.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">With AW analysis, evaluate alternatives over <span class="ltx_text ltx_font_bold">one life cycle</span> of each alternative. It is not necessary to extend the cash flow timeline to the LCM of lives.</p>
+</div>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_proofbox">
+<h6 class="ltx_title ltx_title_theorem">Proof: Life-Cycle Equivalence (<math id="S1.SS0.SSS0.Px2.m1" class="ltx_Math" alttext="AW_{\text{1-cycle}}=AW_{\text{LCM}}" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>1-cycle</mtext></msub></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow></mrow></math>)</h6>
+<div id="S1.SS0.SSS0.Px2.p3" class="ltx_para">
+<p class="ltx_p">To understand why evaluating one life cycle is sufficient, consider an alternative with a useful life of <math id="S1.SS0.SSS0.Px2.p3.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> years and an equivalent present worth of <math id="S1.SS0.SSS0.Px2.p3.m2" class="ltx_Math" alttext="PW_{1}" display="inline"><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub></mrow></math> for its first life cycle.
+If the alternative is repeated for <math id="S1.SS0.SSS0.Px2.p3.m3" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> life cycles (giving a total planning horizon of <math id="S1.SS0.SSS0.Px2.p3.m4" class="ltx_Math" alttext="N=k\times n" display="inline"><mrow><mi>N</mi><mo>=</mo><mrow><mi>k</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>n</mi></mrow></mrow></math> years), the total present worth over the <math id="S1.SS0.SSS0.Px2.p3.m5" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> cycles (<math id="S1.SS0.SSS0.Px2.p3.m6" class="ltx_Math" alttext="PW_{\text{LCM}}" display="inline"><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow></math>) is:</p>
+<table id="Chx3.S5.EGx45" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex1.m1" class="ltx_Math" alttext="\displaystyle PW_{\text{LCM}}" display="inline"><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex1.m2" class="ltx_Math" alttext="\displaystyle=PW_{1}+PW_{1}(P/F,i,n)+PW_{1}(P/F,i,2n)+\dots+PW_{1}(P/F,i,(k-1)n)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex2.m1" class="ltx_Math" alttext="\displaystyle=PW_{1}\left[\sum_{j=0}^{k-1}(1+i)^{-jn}\right]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo>[</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></munderover></mstyle><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using the geometric series summation formula <math id="S1.SS0.SSS0.Px2.p3.m7" class="ltx_Math" alttext="\sum_{j=0}^{k-1}x^{j}=\frac{1-x^{k}}{1-x}" display="inline"><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msubsup><msup><mi>x</mi><mi>j</mi></msup></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mi>k</mi></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow></math> where <math id="S1.SS0.SSS0.Px2.p3.m8" class="ltx_Math" alttext="x=(1+i)^{-n}" display="inline"><mrow><mi>x</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow></math>:</p>
+<table id="Chx3.S5.EGx46" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex3.m1" class="ltx_Math" alttext="\displaystyle PW_{\text{LCM}}" display="inline"><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex3.m2" class="ltx_Math" alttext="\displaystyle=PW_{1}\left[\frac{1-(1+i)^{-kn}}{1-(1+i)^{-n}}\right]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow></mfrac></mstyle><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Converting <math id="S1.SS0.SSS0.Px2.p3.m9" class="ltx_Math" alttext="PW_{\text{LCM}}" display="inline"><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow></math> to an annual worth over the entire <math id="S1.SS0.SSS0.Px2.p3.m10" class="ltx_Math" alttext="N=kn" display="inline"><mrow><mi>N</mi><mo>=</mo><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></math> period gives:</p>
+<table id="Chx3.S5.EGx47" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex4.m1" class="ltx_Math" alttext="\displaystyle AW_{\text{LCM}}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex4.m2" class="ltx_Math" alttext="\displaystyle=PW_{\text{LCM}}\times(A/P,i,kn)=PW_{\text{LCM}}\left[\frac{i(1+i%
+)^{kn}}{(1+i)^{kn}-1}\right]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mrow><mi>i</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></msup></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mstyle><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex5.m1" class="ltx_Math" alttext="\displaystyle=PW_{1}\left[\frac{1-(1+i)^{-kn}}{1-(1+i)^{-n}}\right]\left[\frac%
+{i}{1-(1+i)^{-kn}}\right]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow></mfrac></mstyle><mo>]</mo></mrow><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mi>i</mi><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mrow><mi>k</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></msup></mrow></mfrac></mstyle><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex6.m1" class="ltx_Math" alttext="\displaystyle=PW_{1}\left[\frac{i}{1-(1+i)^{-n}}\right]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mi>i</mi><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow></mfrac></mstyle><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex7.m1" class="ltx_Math" alttext="\displaystyle=PW_{1}\times(A/P,i,n)=AW_{\text{1-cycle}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>1-cycle</mtext></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus, <math id="S1.SS0.SSS0.Px2.p3.m11" class="ltx_Math" alttext="AW_{\text{LCM}}=AW_{\text{1-cycle}}" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>LCM</mtext></msub></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>1-cycle</mtext></msub></mrow></mrow></math> identically. This proves that evaluating AW over a single life cycle satisfies the equal-service requirement automatically.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5.2 </span>Fundamental Assumptions of AW Analysis</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">The validity of comparing alternatives based on a single life cycle rests on three fundamental assumptions:</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Repeatability Assumptions</h6>
+<div id="S2.p2" class="ltx_para">
+<ol id="S2.I1" class="ltx_enumerate">
+<li id="S2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Equal-Service Requirement:</span> The service provided by the alternatives will be needed for a period equal to the LCM of their lives or longer (indefinitely).</p>
+</div>
+</li>
+<li id="S2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Identical Replacement:</span> The selected alternative will be repeated over each future life cycle in exactly the same manner.</p>
+</div>
+</li>
+<li id="S2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Constant Cash Flow Estimates:</span> The estimated cash flows (initial investment, salvage value, annual revenues, and operating costs) will remain identical in each future life cycle.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">If future cash flow estimates are expected to change due to inflation, technological obsolescence, or changing market demand, a fixed study period analysis must be used instead of a single life-cycle AW evaluation.</p>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5.3 </span>Calculation of Capital Recovery (CR) and AW Values</h2>
+
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Annual Worth</h6>
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">The annual worth (AW) value for an alternative comprises two components: capital recovery for the initial investment (<math id="S3.p1.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>) at a stated interest rate (usually the MARR) and the equivalent annual amount of Operating Cost AOC.</p>
+<table id="Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex8.m1" class="ltx_Math" alttext="AW=CR+AOC" display="block"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow><mo>=</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>R</mi></mrow><mo>+</mo><mrow><mi>A</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mi>C</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Industry Terminology: CapEx and OpEx</h6>
+<div id="S3.p2" class="ltx_para">
+<p class="ltx_p">In professional engineering and financial modeling, the initial investment is frequently referred to as a <span class="ltx_text ltx_font_bold">Capital Expenditure (CapEx)</span>, and the annual operating costs are termed <span class="ltx_text ltx_font_bold">Operational Expenditures (OpEx)</span>.</p>
+</div>
+</div>
+<div id="S3.p3" class="ltx_para">
+<p class="ltx_p">Typically, CR represents an equivalent annual capital cost, while AOC represents Annual Operating Costs (though it can include annual revenues or savings).
+The total annual amount AOC is determined from uniform recurring costs (and possibly receipts) and nonrecurring amounts.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Capital Recovery</h6>
+<div id="S3.p4" class="ltx_para">
+<p class="ltx_p">Capital Recovery (CR) is the <span class="ltx_text ltx_font_bold">equivalent</span> annual amount an alternative must earn each year to just recover the initial capital expenditure (CapEx) plus a stated rate of return.
+Any expected salvage value is considered in the computation of CR<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                <span class="ltx_tag ltx_tag_note">1</span>
+                
+                
+                
+              In practice, CR is very sensitive to salvage value estimates. A 20% error in salvage value can shift CR by several percent. Engineers routinely run AW under two or three salvage scenarios before presenting to management (this is a form of sensitivity analysis).</span></span></span>.</p>
+<table id="Ex9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex9.m1" class="ltx_Math" alttext="CR=-P(A/P,i,n)+S(A/F,i,n)" display="block"><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>R</mi></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5.4 </span>Decision Guidelines for AW Analysis</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">The decision guidelines for Annual Worth analysis parallel those of Present Worth analysis:</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<ul id="S4.I1" class="ltx_itemize">
+<li id="S4.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Mutually Exclusive Alternatives:</span></p>
+<ul id="S4.I1.i1.I1" class="ltx_itemize">
+<li id="S4.I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S4.I1.i1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Revenue Alternatives:</span> Select the alternative with the <span class="ltx_text ltx_font_bold">maximum positive</span> <math id="S4.I1.i1.I1.i1.p1.m1" class="ltx_Math" alttext="AW(i=\text{MARR})" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>=</mo><mtext>MARR</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow></math>. If no alternative yields <math id="S4.I1.i1.I1.i1.p1.m2" class="ltx_Math" alttext="AW\geq 0" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow><mo>≥</mo><mn>0</mn></mrow></math>, select the Do-Nothing (DN) alternative.</p>
+</div>
+</li>
+<li id="S4.I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S4.I1.i1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Cost Alternatives:</span> Select the alternative with the <span class="ltx_text ltx_font_bold">minimum annual cost</span> (numerically least negative or smallest positive cost <math id="S4.I1.i1.I1.i2.p1.m1" class="ltx_Math" alttext="AW_{\text{cost}}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>cost</mtext></msub></mrow></math>). The Do-Nothing option is typically not applicable as the service is mandatory.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="S4.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Independent Projects:</span></p>
+<ul id="S4.I1.i2.I1" class="ltx_itemize">
+<li id="S4.I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">–</span></span> 
+<div id="S4.I1.i2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Select all independent projects that satisfy <math id="S4.I1.i2.I1.i1.p1.m1" class="ltx_Math" alttext="AW(i=\text{MARR})\geq 0" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>=</mo><mtext>MARR</mtext></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow></math>, provided there are no capital budget constraints.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Baby Diaper Production Facility Analysis using Annual Worth.</span></p>
+</div>
+<div id="S4.p4" class="ltx_para">
+<p class="ltx_p">Reconsider the baby diaper production facility decision introduced in Chapter <a href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>.
+The firm evaluates three mutually exclusive production line alternatives (Table <a href="#T1" title="Table 5.1 ‣ 5.4 Decision Guidelines for AW Analysis ‣ Chapter 5 Annual Worth Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.1</span></a>) and three independent process improvement projects.
+The Minimum Attractive Rate of Return (MARR) is <math id="S4.p4.m1" class="ltx_Math" alttext="10\%" display="inline"><mrow><mn>10</mn><mo>%</mo></mrow></math> per year.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Alternative</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Initial</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Annual</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Salvage</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_t"><span class="ltx_text ltx_font_bold">Useful Life</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td"></td>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column"><span class="ltx_text ltx_font_bold">Cost ($)</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column"><span class="ltx_text ltx_font_bold">Revenue ($)</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column"><span class="ltx_text ltx_font_bold">Value ($)</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column">
+<math id="T1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math><span class="ltx_text ltx_font_bold"> (years)</span>
+</th>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t">A (New line)</td>
+<td class="ltx_td ltx_align_right ltx_border_t">-6,000,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">1,825,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">500,000</td>
+<td class="ltx_td ltx_align_right ltx_border_t">6</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">B (Used line)</td>
+<td class="ltx_td ltx_align_right">-2,500,000</td>
+<td class="ltx_td ltx_align_right">730,000</td>
+<td class="ltx_td ltx_align_right">200,000</td>
+<td class="ltx_td ltx_align_right">3</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b">C (Co-developed)</td>
+<td class="ltx_td ltx_align_right ltx_border_b">-5,000,000</td>
+<td class="ltx_td ltx_align_right ltx_border_b">1,095,000</td>
+<td class="ltx_td ltx_align_right ltx_border_b">400,000</td>
+<td class="ltx_td ltx_align_right ltx_border_b">4</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 5.1: </span>Summary of mutually exclusive alternatives for the diaper facility.</figcaption>
+</figure>
+</div>
+<section id="S4.SS0.SSS0.Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Part 1: Evaluating Mutually Exclusive Alternatives over One Life Cycle</h3>
+
+<div id="S4.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Using Annual Worth analysis, we calculate the Capital Recovery (<math id="S4.SS0.SSS0.Px1.p1.m1" class="ltx_Math" alttext="CR" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>R</mi></mrow></math>) and net <math id="S4.SS0.SSS0.Px1.p1.m2" class="ltx_Math" alttext="AW" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow></math> for <span class="ltx_text ltx_font_bold">one life cycle</span> of each alternative (<math id="S4.SS0.SSS0.Px1.p1.m3" class="ltx_Math" alttext="n_{A}=6" display="inline"><mrow><msub><mi>n</mi><mi>A</mi></msub><mo>=</mo><mn>6</mn></mrow></math>, <math id="S4.SS0.SSS0.Px1.p1.m4" class="ltx_Math" alttext="n_{B}=3" display="inline"><mrow><msub><mi>n</mi><mi>B</mi></msub><mo>=</mo><mn>3</mn></mrow></math>, <math id="S4.SS0.SSS0.Px1.p1.m5" class="ltx_Math" alttext="n_{C}=4" display="inline"><mrow><msub><mi>n</mi><mi>C</mi></msub><mo>=</mo><mn>4</mn></mrow></math>).</p>
+</div>
+<div id="S4.SS0.SSS0.Px1.p2" class="ltx_para">
+<p class="ltx_p">The relevant interest factors at <math id="S4.SS0.SSS0.Px1.p2.m1" class="ltx_Math" alttext="i=10\%" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>10</mn><mo>%</mo></mrow></mrow></math> are:</p>
+<ul id="S4.I2" class="ltx_itemize">
+<li id="S4.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">For <math id="S4.I2.i1.p1.m1" class="ltx_Math" alttext="n=6" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow></math>: <math id="S4.I2.i1.p1.m2" class="ltx_Math" alttext="(A/P,10\%,6)=0.22961" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.22961</mn></mrow></math>, <math id="S4.I2.i1.p1.m3" class="ltx_Math" alttext="(A/F,10\%,6)=0.12961" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.12961</mn></mrow></math></p>
+</div>
+</li>
+<li id="S4.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">For <math id="S4.I2.i2.p1.m1" class="ltx_Math" alttext="n=3" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></math>: <math id="S4.I2.i2.p1.m2" class="ltx_Math" alttext="(A/P,10\%,3)=0.40211" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.40211</mn></mrow></math>, <math id="S4.I2.i2.p1.m3" class="ltx_Math" alttext="(A/F,10\%,3)=0.30211" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.30211</mn></mrow></math></p>
+</div>
+</li>
+<li id="S4.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">For <math id="S4.I2.i3.p1.m1" class="ltx_Math" alttext="n=4" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math>: <math id="S4.I2.i3.p1.m2" class="ltx_Math" alttext="(A/P,10\%,4)=0.31547" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.31547</mn></mrow></math>, <math id="S4.I2.i3.p1.m3" class="ltx_Math" alttext="(A/F,10\%,4)=0.21547" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.21547</mn></mrow></math></p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S4.SS0.SSS0.Px1.p3" class="ltx_para">
+<svg id="S4.SS0.SSS0.Px1.pic1" class="ltx_picture ltx_centering" height="285.9" overflow="visible" version="1.1" width="510.84"><g fill="#000000" stroke="#000000" stroke-width="0.8pt" transform="translate(0,285.9) matrix(1 0 0 -1 0 0) translate(107.27,0) translate(0,226.72)"><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -102.66 42.44)"><foreignObject height="9.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="38.44"><span class="ltx_text ltx_font_bold">Alt. A</span></foreignObject></g><path d="M 0 0 L 380.26 0" style="fill:none"></path><g transform="matrix(1.0 0.0 0.0 1.0 380.26 0)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 389.02 -4.8)"><foreignObject height="9.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.64"><math id="S4.SS0.SSS0.Px1.pic1.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math></foreignObject></g><path d="M 0 3.94 L 0 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -3.11 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m2" class="ltx_Math" alttext="0" display="inline"><mn mathsize="90%">0</mn></math></foreignObject></g><path d="M 59.06 3.94 L 59.06 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 55.94 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m3" class="ltx_Math" alttext="1" display="inline"><mn mathsize="90%">1</mn></math></foreignObject></g><path d="M 118.11 3.94 L 118.11 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 115 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m4" class="ltx_Math" alttext="2" display="inline"><mn mathsize="90%">2</mn></math></foreignObject></g><path d="M 177.17 3.94 L 177.17 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 174.05 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m5" class="ltx_Math" alttext="3" display="inline"><mn mathsize="90%">3</mn></math></foreignObject></g><path d="M 236.22 3.94 L 236.22 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 233.11 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m6" class="ltx_Math" alttext="4" display="inline"><mn mathsize="90%">4</mn></math></foreignObject></g><path d="M 295.28 3.94 L 295.28 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 292.16 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m7" class="ltx_Math" alttext="5" display="inline"><mn mathsize="90%">5</mn></math></foreignObject></g><path d="M 354.33 3.94 L 354.33 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 351.22 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m8" class="ltx_Math" alttext="6" display="inline"><mn mathsize="90%">6</mn></math></foreignObject></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 0 0 L 0 -75.14" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 0 -75.14)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444" transform="matrix(1.0 0.0 0.0 1.0 -36.3 -83.54)"><foreignObject height="11.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="31.13">-$6M</foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 59.06 0 L 59.06 35.77" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 59.06 35.77)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 36.05 45.23)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="46.01"><span class="ltx_text" style="font-size:90%;">$1.825M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 118.11 0 L 118.11 35.77" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 118.11 35.77)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 95.11 45.23)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="46.01"><span class="ltx_text" style="font-size:90%;">$1.825M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 177.17 0 L 177.17 35.77" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 177.17 35.77)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 154.16 45.23)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="46.01"><span class="ltx_text" style="font-size:90%;">$1.825M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 236.22 0 L 236.22 35.77" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 236.22 35.77)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 213.22 45.23)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="46.01"><span class="ltx_text" style="font-size:90%;">$1.825M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 295.28 0 L 295.28 35.77" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 295.28 35.77)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 272.27 45.23)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="46.01"><span class="ltx_text" style="font-size:90%;">$1.825M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 354.33 0 L 354.33 35.77" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 354.33 35.77)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 331.33 45.23)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="46.01"><span class="ltx_text" style="font-size:90%;">$1.825M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 360.24 0 L 360.24 16.09" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 360.24 16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 365.4 15.36)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="33.55"><span class="ltx_text" style="font-size:90%;">$0.5M</span></foreignObject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -102.08 -115.04)"><foreignObject height="9.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="37.86"><span class="ltx_text ltx_font_bold">Alt. B</span></foreignObject></g><path d="M 0 -157.48 L 203.1 -157.48" style="fill:none"></path><g transform="matrix(1.0 0.0 0.0 1.0 203.1 -157.48)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 211.86 -162.28)"><foreignObject height="9.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.64"><math id="S4.SS0.SSS0.Px1.pic1.m9" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math></foreignObject></g><path d="M 0 -153.54 L 0 -161.42" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -3.11 -174.61)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m10" class="ltx_Math" alttext="0" display="inline"><mn mathsize="90%">0</mn></math></foreignObject></g><path d="M 59.06 -153.54 L 59.06 -161.42" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 55.94 -174.61)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m11" class="ltx_Math" alttext="1" display="inline"><mn mathsize="90%">1</mn></math></foreignObject></g><path d="M 118.11 -153.54 L 118.11 -161.42" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 115 -174.61)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m12" class="ltx_Math" alttext="2" display="inline"><mn mathsize="90%">2</mn></math></foreignObject></g><path d="M 177.17 -153.54 L 177.17 -161.42" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 174.05 -174.61)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S4.SS0.SSS0.Px1.pic1.m13" class="ltx_Math" alttext="3" display="inline"><mn mathsize="90%">3</mn></math></foreignObject></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 0 -157.48 L 0 -212.94" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 0 -212.94)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444" transform="matrix(1.0 0.0 0.0 1.0 -47.06 -221.34)"><foreignObject height="11.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="41.9">-$2.5M</foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 59.06 -157.48 L 59.06 -133.52" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 59.06 -133.52)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 39.16 -124.06)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.78"><span class="ltx_text" style="font-size:90%;">$0.73M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 118.11 -157.48 L 118.11 -133.52" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 118.11 -133.52)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 98.22 -124.06)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.78"><span class="ltx_text" style="font-size:90%;">$0.73M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 177.17 -157.48 L 177.17 -133.52" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 177.17 -133.52)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 157.27 -124.06)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.78"><span class="ltx_text" style="font-size:90%;">$0.73M</span></foreignObject></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E"><path d="M 183.07 -157.48 L 183.07 -145.33" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 183.07 -145.33)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#22C55E" fill="#22C55E" stroke="#22C55E" transform="matrix(1.0 0.0 0.0 1.0 188.24 -146.06)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="33.55"><span class="ltx_text" style="font-size:90%;">$0.2M</span></foreignObject></g></g></svg>
+</div>
+<div id="S4.SS0.SSS0.Px1.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Alternative A (<math id="S4.SS0.SSS0.Px1.p4.m1" class="ltx_Math" alttext="n=6" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow></math> years):</span></p>
+<table id="Chx3.S5.EGx48" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex10.m1" class="ltx_Math" alttext="\displaystyle CR_{A}" display="inline"><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mi>A</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex10.m2" class="ltx_Math" alttext="\displaystyle=-6,000,000(A/P,10\%,6)+500,000(A/F,10\%,6)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>6</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>500</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex11.m1" class="ltx_Math" alttext="\displaystyle=-6,000,000(0.22961)+500,000(0.12961)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>6</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.22961</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>500</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.12961</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex12.m1" class="ltx_Math" alttext="\displaystyle\approx-\$1,312,841" display="inline"><mrow><mi></mi><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>1</mn></mrow></mrow><mo>,</mo><mn>312</mn><mo>,</mo><mn>841</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex13.m1" class="ltx_Math" alttext="\displaystyle AW_{A}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex13.m2" class="ltx_Math" alttext="\displaystyle=CR_{A}+1,825,000\approx-1,312,841+1,825,000=\$512,159" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mi>A</mi></msub></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>825</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>≈</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mn>312</mn><mo>,</mo><mrow><mn>841</mn><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>825</mn></mrow></mrow><mo>,</mo><mrow><mn>000</mn><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>512</mn></mrow><mo>,</mo><mn>159</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Interpretation of CR and AW</h6>
+<div id="S4.SS0.SSS0.Px1.p5" class="ltx_para">
+<p class="ltx_p">The interpretation of these results is very important.</p>
+<ul id="S4.I3" class="ltx_itemize">
+<li id="S4.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Capital Recovery</span> (<math id="S4.I3.i1.p1.m1" class="ltx_Math" alttext="CR_{A}\approx-\$1,312,841" display="inline"><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mi>A</mi></msub></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>1</mn></mrow></mrow><mo>,</mo><mn>312</mn><mo>,</mo><mn>841</mn></mrow></mrow></math>): The line must generate at least this much equivalent net revenue every year just to recover the CapEx and the 10% required return.</p>
+</div>
+</li>
+<li id="S4.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Annual Worth</span> (<math id="S4.I3.i2.p1.m1" class="ltx_Math" alttext="AW_{A}\approx\$512,159" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub></mrow><mo rspace="0.1389em">≈</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>512</mn></mrow><mo>,</mo><mn>159</mn></mrow></mrow></math>): After recovering the CapEx and required return, the project generates an <span class="ltx_text ltx_font_bold">equivalent extra profit</span> of $512,159 every single year.
+Any <math id="S4.I3.i2.p1.m2" class="ltx_Math" alttext="AW&gt;0" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math> indicates economic viability because it exceeds the minimum required return.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="S4.SS0.SSS0.Px1.p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Alternative B (<math id="S4.SS0.SSS0.Px1.p6.m1" class="ltx_Math" alttext="n=3" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></math> years):</span></p>
+<table id="Chx3.S5.EGx49" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex14.m1" class="ltx_Math" alttext="\displaystyle CR_{B}" display="inline"><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mi>B</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex14.m2" class="ltx_Math" alttext="\displaystyle=-2,500,000(A/P,10\%,3)+200,000(A/F,10\%,3)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mn>500</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>200</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex15.m1" class="ltx_Math" alttext="\displaystyle=-2,500,000(0.40211)+200,000(0.30211)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mn>500</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.40211</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>200</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.30211</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex16.m1" class="ltx_Math" alttext="\displaystyle\approx-\$944,864" display="inline"><mrow><mi></mi><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>944</mn></mrow></mrow><mo>,</mo><mn>864</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex17.m1" class="ltx_Math" alttext="\displaystyle AW_{B}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex17.m2" class="ltx_Math" alttext="\displaystyle=CR_{B}+730,000\approx-944,864+730,000=-\$214,864" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mi>B</mi></msub></mrow><mo>+</mo><mn>730</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>≈</mo><mrow><mrow><mo>−</mo><mn>944</mn></mrow><mo>,</mo><mrow><mn>864</mn><mo>+</mo><mn>730</mn></mrow></mrow></mrow><mo>,</mo><mrow><mn>000</mn><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>214</mn></mrow></mrow><mo>,</mo><mn>864</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S4.SS0.SSS0.Px1.p7" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Alternative C (<math id="S4.SS0.SSS0.Px1.p7.m1" class="ltx_Math" alttext="n=4" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></math> years):</span></p>
+<table id="Chx3.S5.EGx50" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex18.m1" class="ltx_Math" alttext="\displaystyle CR_{C}" display="inline"><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mi>C</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex18.m2" class="ltx_Math" alttext="\displaystyle=-5,000,000(A/P,10\%,4)+400,000(A/F,10\%,4)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>5</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>400</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex19.m1" class="ltx_Math" alttext="\displaystyle=-5,000,000(0.31547)+400,000(0.21547)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>5</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.31547</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>400</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.21547</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex20.m1" class="ltx_Math" alttext="\displaystyle\approx-\$1,491,166" display="inline"><mrow><mi></mi><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>1</mn></mrow></mrow><mo>,</mo><mn>491</mn><mo>,</mo><mn>166</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex21.m1" class="ltx_Math" alttext="\displaystyle AW_{C}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>C</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex21.m2" class="ltx_Math" alttext="\displaystyle=CR_{C}+1,095,000\approx-1,491,166+1,095,000=-\$396,166" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mi>C</mi></msub></mrow><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>095</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>≈</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mn>491</mn><mo>,</mo><mrow><mn>166</mn><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mn>095</mn></mrow></mrow><mo>,</mo><mrow><mn>000</mn><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>396</mn></mrow></mrow><mo>,</mo><mn>166</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S4.SS0.SSS0.Px1.p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Decision:</span> Alternative A yields the highest positive Annual Worth (<math id="S4.SS0.SSS0.Px1.p8.m1" class="ltx_Math" alttext="AW_{A}\approx\$512,159" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub></mrow><mo rspace="0.1389em">≈</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>512</mn></mrow><mo>,</mo><mn>159</mn></mrow></mrow></math>).</p>
+</div>
+</section>
+<section id="S4.SS0.SSS0.Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Part 2: Comparison with Chapter 5 Present Worth Analysis (LCM = 12 years)</h3>
+
+<div id="S4.SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">In Section <a href="Ch4.html#S2.SS2.SSSx1" title="Lowest Common Multiple Approach ‣ 4.2.2 Present Worth Analysis of Different-Life Alternatives ‣ 4.2 Present Worth Analysis ‣ Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.2</span></a> of Chapter <a href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>, evaluating these alternatives over the <math id="S4.SS0.SSS0.Px2.p1.m1" class="ltx_Math" alttext="\text{LCM}=12" display="inline"><mrow><mtext>LCM</mtext><mo>=</mo><mn>12</mn></mrow></math> years required constructing multi-cycle cash flow timelines and discounting reinvestments at years 3, 4, 6, 8, and 9. The resulting present worths over 12 years were:</p>
+<table id="Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex22.m1" class="ltx_Math" alttext="PW_{A}=\$3,489,696.37,\quad PW_{B}=-\$1,464,017.41,\quad PW_{C}=-\$2,699,350.97" display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub></mrow><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>3</mn></mrow><mo>,</mo><mn>489</mn><mo>,</mo><mn>696.37</mn></mrow></mrow><mo rspace="1.167em">,</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>1</mn></mrow></mrow><mo>,</mo><mn>464</mn><mo>,</mo><mn>017.41</mn></mrow></mrow><mo rspace="1.167em">,</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi>C</mi></msub></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>2</mn></mrow></mrow><mo>,</mo><mn>699</mn><mo>,</mo><mn>350.97</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Converting these 12-year present worth values directly to Annual Worth using <math id="S4.SS0.SSS0.Px2.p1.m2" class="ltx_Math" alttext="(A/P,10\%,12)=0.14676" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>12</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.14676</mn></mrow></math>:</p>
+<table id="Chx3.S5.EGx51" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex23.m1" class="ltx_Math" alttext="\displaystyle AW_{A}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>A</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex23.m2" class="ltx_Math" alttext="\displaystyle=3,489,696.37\times(A/P,10\%,12)=3,489,696.37\times 0.14676%
+\approx\$512,159" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>3</mn><mo>,</mo><mn>489</mn></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mn>696.37</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>,</mo><mn>489</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>696.37</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>0.14676</mn></mrow><mo rspace="0.1389em">≈</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>512</mn></mrow><mo>,</mo><mn>159</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex24.m1" class="ltx_Math" alttext="\displaystyle AW_{B}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>B</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex24.m2" class="ltx_Math" alttext="\displaystyle=-1,464,017.41\times(A/P,10\%,12)=-1,464,017.41\times 0.14676%
+\approx-\$214,864" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mn>464</mn></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mn>017.41</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mn>464</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>017.41</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>0.14676</mn></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>214</mn></mrow></mrow><mo>,</mo><mn>864</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex25.m1" class="ltx_Math" alttext="\displaystyle AW_{C}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mi>C</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex25.m2" class="ltx_Math" alttext="\displaystyle=-2,699,350.97\times(A/P,10\%,12)=-2,699,350.97\times 0.14676%
+\approx-\$396,166" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mn>699</mn></mrow></mrow><mo>,</mo><mrow><mrow><mrow><mn>350.97</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mn>699</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>350.97</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>0.14676</mn></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>396</mn></mrow></mrow><mo>,</mo><mn>166</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Notice that the AW values derived from the 12-year LCM Present Worth match the single life-cycle AW values <span class="ltx_text ltx_font_bold">exactly</span>.
+This confirms the computational advantage of AW analysis: evaluating one life cycle of 6, 3, and 4 years yields the exact same decision and equivalent annual worth as expanding cash flows over a 12-year LCM horizon.</p>
+</div>
+</section>
+<section id="S4.SS0.SSS0.Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Part 3: Evaluating Independent Process Improvement Projects</h3>
+
+<div id="S4.SS0.SSS0.Px3.p1" class="ltx_para">
+<p class="ltx_p">The three independent projects evaluated in Chapter <a href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a> have a useful life of <math id="S4.SS0.SSS0.Px3.p1.m1" class="ltx_Math" alttext="n=5" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow></math> years. The factor <math id="S4.SS0.SSS0.Px3.p1.m2" class="ltx_Math" alttext="(A/P,10\%,5)=0.26380" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0.26380</mn></mrow></math>.</p>
+<ul id="S4.I4" class="ltx_itemize">
+<li id="S4.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I4.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Project 1:</span> Cost = <math id="S4.I4.i1.p1.m1" class="ltx_Math" alttext="\$100,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>100</mn></mrow><mo>,</mo><mn>000</mn></mrow></math>, Net Annual Savings = <math id="S4.I4.i1.p1.m2" class="ltx_Math" alttext="\$13,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>13</mn></mrow><mo>,</mo><mn>000</mn></mrow></math> 
+<br class="ltx_break"><math id="S4.I4.i1.p1.m3" class="ltx_Math" alttext="CR_{1}=-100,000(0.26380)=-\$26,380" display="inline"><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mn>1</mn></msub></mrow><mo>=</mo><mrow><mo>−</mo><mn>100</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.26380</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>26</mn></mrow></mrow><mo>,</mo><mn>380</mn></mrow></mrow></mrow></math> 
+<br class="ltx_break"><math id="S4.I4.i1.p1.m4" class="ltx_Math" alttext="AW_{1}\approx-26,380+13,000=-\$13,380\implies\textbf{Reject }(AW&lt;0)" display="inline"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mn>1</mn></msub></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mn>26</mn></mrow><mo>,</mo><mrow><mn>380</mn><mo>+</mo><mn>13</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>=</mo><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>13</mn></mrow></mrow></mrow><mo>,</mo><mrow><mn>380</mn><mo stretchy="false">⟹</mo><mrow><mtext class="ltx_mathvariant_bold">Reject </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></math></p>
+</div>
+</li>
+<li id="S4.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I4.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Project 2:</span> Cost = <math id="S4.I4.i2.p1.m1" class="ltx_Math" alttext="\$16,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>16</mn></mrow><mo>,</mo><mn>000</mn></mrow></math>, Net Annual Savings = <math id="S4.I4.i2.p1.m2" class="ltx_Math" alttext="\$5,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>5</mn></mrow><mo>,</mo><mn>000</mn></mrow></math> 
+<br class="ltx_break"><math id="S4.I4.i2.p1.m3" class="ltx_Math" alttext="CR_{2}=-16,000(0.26380)\approx-\$4,221" display="inline"><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mn>2</mn></msub></mrow><mo>=</mo><mrow><mo>−</mo><mn>16</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.26380</mn><mo stretchy="false">)</mo></mrow></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>4</mn></mrow></mrow><mo>,</mo><mn>221</mn></mrow></mrow></mrow></math> 
+<br class="ltx_break"><math id="S4.I4.i2.p1.m4" class="ltx_Math" alttext="AW_{2}\approx-4,221+5,000=\$779\implies\textbf{Accept }(AW\geq 0)" display="inline"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mn>2</mn></msub></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mn>4</mn></mrow><mo>,</mo><mrow><mn>221</mn><mo>+</mo><mn>5</mn></mrow></mrow></mrow><mo>,</mo><mrow><mn>000</mn><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>779</mn></mrow><mo stretchy="false">⟹</mo><mrow><mtext class="ltx_mathvariant_bold">Accept </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow><mo>≥</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></p>
+</div>
+</li>
+<li id="S4.I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S4.I4.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Project 3:</span> Cost = <math id="S4.I4.i3.p1.m1" class="ltx_Math" alttext="\$300,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>300</mn></mrow><mo>,</mo><mn>000</mn></mrow></math>, Net Annual Savings = <math id="S4.I4.i3.p1.m2" class="ltx_Math" alttext="\$40,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>40</mn></mrow><mo>,</mo><mn>000</mn></mrow></math> 
+<br class="ltx_break"><math id="S4.I4.i3.p1.m3" class="ltx_Math" alttext="CR_{3}=-300,000(0.26380)\approx-\$79,139" display="inline"><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><msub><mi>R</mi><mn>3</mn></msub></mrow><mo>=</mo><mrow><mo>−</mo><mn>300</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.26380</mn><mo stretchy="false">)</mo></mrow></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>79</mn></mrow></mrow><mo>,</mo><mn>139</mn></mrow></mrow></mrow></math> 
+<br class="ltx_break"><math id="S4.I4.i3.p1.m4" class="ltx_Math" alttext="AW_{3}\approx-79,139+40,000=-\$39,139\implies\textbf{Reject }(AW&lt;0)" display="inline"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mn>3</mn></msub></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mn>79</mn></mrow><mo>,</mo><mrow><mn>139</mn><mo>+</mo><mn>40</mn></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>=</mo><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>39</mn></mrow></mrow></mrow><mo>,</mo><mrow><mn>139</mn><mo stretchy="false">⟹</mo><mrow><mtext class="ltx_mathvariant_bold">Reject </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Decision:</span> Select <span class="ltx_text ltx_font_bold">Project 2</span> only, as it is the sole independent project with a positive Annual Worth (<math id="S4.SS0.SSS0.Px3.p1.m3" class="ltx_Math" alttext="AW_{2}\approx\$779" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mn>2</mn></msub></mrow><mo rspace="0.1389em">≈</mo><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>779</mn></mrow></mrow></math>).
+</p>
+</div>
+</section>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5.5 </span>Annual Worth Analysis of Permanent Investments</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p class="ltx_p">When evaluating projects that have an indefinite or infinite useful life (<math id="S5.p1.m1" class="ltx_Math" alttext="n=\infty" display="inline"><mrow><mi>n</mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow></math>), the evaluation is referred to as <span class="ltx_text ltx_font_bold">Annual Worth analysis of permanent investments</span>.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Perpetuity</h6>
+<div id="S5.p2" class="ltx_para">
+<p class="ltx_p">A <span class="ltx_text ltx_font_bold">perpetuity</span> is an infinite series of equal, periodic cash flows. In engineering economy, analyzing permanent investments (such as infrastructure projects or endowments) often requires treating their operational costs, revenues, or equivalent annualized costs as a perpetuity.</p>
+</div>
+</div>
+<div id="S5.p3" class="ltx_para">
+<p class="ltx_p">This approach is conceptually identical to the Capitalized Cost (<math id="S5.p3.m1" class="ltx_Math" alttext="CC" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>C</mi></mrow></math>) analysis discussed in Section <a href="Ch4.html#S4" title="4.4 Capitalized Cost Analysis ‣ Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.4</span></a> of Chapter <a href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>.
+Recall that Capitalized Cost is the present worth of a project with an infinite life (<math id="S5.p3.m2" class="ltx_Math" alttext="CC=PW_{\infty}" display="inline"><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>C</mi></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msub><mi>W</mi><mi mathvariant="normal">∞</mi></msub></mrow></mrow></math>).
+The Annual Worth (<math id="S5.p3.m3" class="ltx_Math" alttext="AW" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow></math>) and Capitalized Cost (<math id="S5.p3.m4" class="ltx_Math" alttext="CC" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>C</mi></mrow></math>) are directly related by:</p>
+<table id="Chx3.S5.EGx52" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E2.m1" class="ltx_Math" alttext="\displaystyle AW" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>W</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E2.m2" class="ltx_Math" alttext="\displaystyle=CC\times i" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>C</mi></mrow><mo lspace="0.222em" rspace="0.222em">×</mo><mi>i</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5.2)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S5.p3.m5" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> is the interest rate (MARR).</p>
+</div>
+<div id="S5.p4" class="ltx_para">
+<p class="ltx_p">To calculate the total net Annual Worth of a permanent investment directly without first finding the Capitalized Cost, each type of cash flow is converted into an equivalent uniform annual amount:</p>
+</div>
+<div id="S5.p5" class="ltx_para">
+<ul id="S5.I1" class="ltx_itemize">
+<li id="S5.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Initial Cost (<math id="S5.I1.i1.p1.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> at <math id="S5.I1.i1.p1.m2" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>):</span>
+The equivalent annual cost of recovering an initial investment <math id="S5.I1.i1.p1.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> in perpetuity is:</p>
+<table id="Chx3.S5.EGx53" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E3.m1" class="ltx_Math" alttext="\displaystyle A_{P}" display="inline"><msub><mi>A</mi><mi>P</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E3.m2" class="ltx_Math" alttext="\displaystyle=P(A/P,i,\infty)=P\cdot i" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>i</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5.3)</span></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S5.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Recurring Cash Flow (<math id="S5.I1.i2.p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> every <math id="S5.I1.i2.p1.m2" class="ltx_Math" alttext="n_{R}" display="inline"><msub><mi>n</mi><mi>R</mi></msub></math> years):</span>
+For a periodic recurring cash flow <math id="S5.I1.i2.p1.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> that repeats every <math id="S5.I1.i2.p1.m4" class="ltx_Math" alttext="n_{R}" display="inline"><msub><mi>n</mi><mi>R</mi></msub></math> years (with the first occurrence at Year <math id="S5.I1.i2.p1.m5" class="ltx_Math" alttext="n_{R}" display="inline"><msub><mi>n</mi><mi>R</mi></msub></math>), its equivalent uniform annual worth <math id="S5.I1.i2.p1.m6" class="ltx_Math" alttext="A_{R}" display="inline"><msub><mi>A</mi><mi>R</mi></msub></math> over each <math id="S5.I1.i2.p1.m7" class="ltx_Math" alttext="n_{R}" display="inline"><msub><mi>n</mi><mi>R</mi></msub></math>-year life cycle is:</p>
+<table id="Chx3.S5.EGx54" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E4.m1" class="ltx_Math" alttext="\displaystyle A_{R}" display="inline"><msub><mi>A</mi><mi>R</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E4.m2" class="ltx_Math" alttext="\displaystyle=R(A/F,i,n_{R})=R\left[\frac{i}{(1+i)^{n_{R}}-1}\right]" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><msub><mi>n</mi><mi>R</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mi>i</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><msub><mi>n</mi><mi>R</mi></msub></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mstyle><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5.4)</span></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S5.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Non-Recurrent Cash Flow (<math id="S5.I1.i3.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> at Year <math id="S5.I1.i3.p1.m2" class="ltx_Math" alttext="n_{C}" display="inline"><msub><mi>n</mi><mi>C</mi></msub></math>):</span>
+For a one-time non-recurrent cash flow <math id="S5.I1.i3.p1.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> occurring at Year <math id="S5.I1.i3.p1.m4" class="ltx_Math" alttext="n_{C}" display="inline"><msub><mi>n</mi><mi>C</mi></msub></math>, it is first discounted to the present and then multiplied by <math id="S5.I1.i3.p1.m5" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> to convert it into a perpetual annual amount:</p>
+<table id="Chx3.S5.EGx55" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E5.m1" class="ltx_Math" alttext="\displaystyle A_{C}" display="inline"><msub><mi>A</mi><mi>C</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E5.m2" class="ltx_Math" alttext="\displaystyle=C(P/F,i,n_{C})(A/P,i,\infty)=\frac{C\cdot i}{(1+i)^{n_{C}}}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><msub><mi>n</mi><mi>C</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>C</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>i</mi></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><msub><mi>n</mi><mi>C</mi></msub></msup></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5.5)</span></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S5.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Uniform Annual Cash Flow (<math id="S5.I1.i4.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>):</span>
+Any recurring uniform annual cash flow (such as annual maintenance or operating costs) is already an annual amount and requires no transformation.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="S5.p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Annual Worth of a Permanent Irrigation Dam.</span></p>
+</div>
+<div id="S5.p7" class="ltx_para">
+<p class="ltx_p">A government agency is planning a permanent hydroelectric and irrigation dam (<math id="S5.p7.m1" class="ltx_Math" alttext="n=\infty" display="inline"><mrow><mi>n</mi><mo>=</mo><mi mathvariant="normal">∞</mi></mrow></math>) with a MARR of <math id="S5.p7.m2" class="ltx_Math" alttext="6\%" display="inline"><mrow><mn>6</mn><mo>%</mo></mrow></math> per year. The estimated costs are:</p>
+<ul id="S5.I2" class="ltx_itemize">
+<li id="S5.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">Initial construction cost at <math id="S5.I2.i1.p1.m1" class="ltx_Math" alttext="t=0" display="inline"><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow></math>: <math id="S5.I2.i1.p1.m2" class="ltx_Math" alttext="\$10,000,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>10</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mn>000</mn></mrow></math></p>
+</div>
+</li>
+<li id="S5.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">Routine annual operation and maintenance (<math id="S5.I2.i2.p1.m1" class="ltx_Math" alttext="AOC" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mi>C</mi></mrow></math>): <math id="S5.I2.i2.p1.m2" class="ltx_Math" alttext="\$200,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>200</mn></mrow><mo>,</mo><mn>000</mn></mrow></math> per year</p>
+</div>
+</li>
+<li id="S5.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">Non-recurrent structural inspection cost at Year <math id="S5.I2.i3.p1.m1" class="ltx_Math" alttext="5" display="inline"><mn>5</mn></math>: <math id="S5.I2.i3.p1.m2" class="ltx_Math" alttext="\$150,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>150</mn></mrow><mo>,</mo><mn>000</mn></mrow></math></p>
+</div>
+</li>
+<li id="S5.I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i4.p1" class="ltx_para">
+<p class="ltx_p">Recurring major gate overhaul every <math id="S5.I2.i4.p1.m1" class="ltx_Math" alttext="12" display="inline"><mn>12</mn></math> years: <math id="S5.I2.i4.p1.m2" class="ltx_Math" alttext="\$500,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>500</mn></mrow><mo>,</mo><mn>000</mn></mrow></math> (first overhaul at Year <math id="S5.I2.i4.p1.m3" class="ltx_Math" alttext="12" display="inline"><mn>12</mn></math>)</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Determine the total equivalent annual cost (<math id="S5.p7.m3" class="ltx_Math" alttext="AW_{\text{cost}}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>cost</mtext></msub></mrow></math>) of the dam in perpetuity.</p>
+</div>
+<div id="S5.p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Solution:</span></p>
+</div>
+<div class="ltx_logical-block">
+          
+<div id="S5.p9" class="ltx_para">
+<svg id="S5.pic1" class="ltx_picture ltx_centering" height="118.83" overflow="visible" version="1.1" width="504.6"><g fill="#000000" stroke="#000000" stroke-width="0.8pt" transform="translate(0,118.83) matrix(1 0 0 -1 0 0) translate(47.83,0) translate(0,108.61)"><path d="M 0 0 L 421.6 0" style="fill:none"></path><g transform="matrix(1.0 0.0 0.0 1.0 421.6 0)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 430.36 -4.8)"><foreignObject height="9.61" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.64"><math id="S5.pic1.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math></foreignObject></g><path d="M 0 3.94 L 0 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -3.11 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S5.pic1.m2" class="ltx_Math" alttext="0" display="inline"><mn mathsize="90%">0</mn></math></foreignObject></g><path d="M 31.5 3.94 L 31.5 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 28.38 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S5.pic1.m3" class="ltx_Math" alttext="1" display="inline"><mn mathsize="90%">1</mn></math></foreignObject></g><path d="M 62.99 3.94 L 62.99 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 59.88 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S5.pic1.m4" class="ltx_Math" alttext="2" display="inline"><mn mathsize="90%">2</mn></math></foreignObject></g><path d="M 94.49 3.94 L 94.49 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 91.37 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S5.pic1.m5" class="ltx_Math" alttext="3" display="inline"><mn mathsize="90%">3</mn></math></foreignObject></g><path d="M 125.98 3.94 L 125.98 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 122.87 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S5.pic1.m6" class="ltx_Math" alttext="4" display="inline"><mn mathsize="90%">4</mn></math></foreignObject></g><path d="M 157.48 3.94 L 157.48 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 154.37 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="S5.pic1.m7" class="ltx_Math" alttext="5" display="inline"><mn mathsize="90%">5</mn></math></foreignObject></g><path d="M 377.95 3.94 L 377.95 -3.94" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 371.73 -17.13)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="12.45"><math id="S5.pic1.m8" class="ltx_Math" alttext="12" display="inline"><mn mathsize="90%">12</mn></math></foreignObject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 263.05 -17.82)"><foreignObject height="11.21" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="9.34"><math id="S5.pic1.m9" class="ltx_Math" alttext="\dots" display="inline"><mi mathsize="90%" mathvariant="normal">…</mi></math></foreignObject></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 430.36 -3.11)"><foreignObject height="11.21" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="21.79"><math id="S5.pic1.m10" class="ltx_Math" alttext="\dots\infty" display="inline"><mrow><mi mathsize="90%" mathvariant="normal">…</mi><mo>⁢</mo><mi mathsize="90%" mathvariant="normal">∞</mi></mrow></math></foreignObject></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 0 0 L 0 -94.83" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 0 -94.83)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444" transform="matrix(1.0 0.0 0.0 1.0 -43.22 -103.23)"><foreignObject height="11.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="38.05">-$10M</foreignObject></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 31.5 0 L 31.5 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 31.5 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 62.99 0 L 62.99 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 62.99 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 94.49 0 L 94.49 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 94.49 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 125.98 0 L 125.98 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 125.98 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 157.48 0 L 157.48 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 157.48 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 188.98 0 L 188.98 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 188.98 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 346.46 0 L 346.46 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 346.46 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 377.95 0 L 377.95 -16.09" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 377.95 -16.09)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g fill="#EF4444" stroke="#EF4444" transform="matrix(1.0 0.0 0.0 1.0 83.58 -34.19)"><foreignObject color="#EF4444" height="12.45" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="53.31"><span class="ltx_text" style="font-size:90%;">-$200k/yr</span></foreignObject></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 160.63 0 L 160.63 -35.77" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 160.63 -35.77)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444" transform="matrix(1.0 0.0 0.0 1.0 165.8 -43.69)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="35.63"><span class="ltx_text" style="font-size:90%;">-$150k</span></foreignObject></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444"><path d="M 381.1 0 L 381.1 -55.46" style="fill:none"></path><g transform="matrix(0.0 -1.0 1.0 0.0 381.1 -55.46)"><path d="M 3.6 0 L -2.16 2.88 L 0 0 L -2.16 -2.88" style="stroke:none"></path></g></g><g color="#EF4444" fill="#EF4444" stroke="#EF4444" transform="matrix(1.0 0.0 0.0 1.0 386.27 -63.38)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="35.63"><span class="ltx_text" style="font-size:90%;">-$500k</span></foreignObject></g></g></svg>
+</div>
+        
+</div>
+<div id="S5.p10" class="ltx_para">
+<p class="ltx_p">We convert each cost component into an equivalent annual amount using Equations <a href="#E3" title="In 1st item ‣ 5.5 Annual Worth Analysis of Permanent Investments ‣ Chapter 5 Annual Worth Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.3</span></a>–<a href="#E5" title="In 3rd item ‣ 5.5 Annual Worth Analysis of Permanent Investments ‣ Chapter 5 Annual Worth Analysis" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5.5</span></a> at <math id="S5.p10.m1" class="ltx_Math" alttext="i=6\%" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>6</mn><mo>%</mo></mrow></mrow></math>:</p>
+</div>
+<div id="S5.p11" class="ltx_para">
+<ol id="S5.I3" class="ltx_enumerate">
+<li id="S5.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S5.I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Initial Construction Cost (<math id="S5.I3.i1.p1.m1" class="ltx_Math" alttext="P=\$10,000,000" display="inline"><mrow><mi>P</mi><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>10</mn></mrow><mo>,</mo><mn>000</mn><mo>,</mo><mn>000</mn></mrow></mrow></math>):</span></p>
+<table id="Ex26" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex26.m1" class="ltx_Math" alttext="A_{P}=-10,000,000\times 0.06=-\$600,000\text{ per year}" display="block"><mrow><mrow><msub><mi>A</mi><mi>P</mi></msub><mo>=</mo><mrow><mrow><mo>−</mo><mn>10</mn></mrow><mo>,</mo><mn>000</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>0.06</mn></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>600</mn></mrow></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mtext> per year</mtext></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S5.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S5.I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Routine Annual Maintenance (<math id="S5.I3.i2.p1.m1" class="ltx_Math" alttext="AOC=\$200,000" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mi>C</mi></mrow><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>200</mn></mrow><mo>,</mo><mn>000</mn></mrow></mrow></math>):</span></p>
+<table id="Ex27" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex27.m1" class="ltx_Math" alttext="A_{\text{maint}}=-\$200,000\text{ per year}" display="block"><mrow><msub><mi>A</mi><mtext>maint</mtext></msub><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>200</mn></mrow></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mtext> per year</mtext></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S5.I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S5.I3.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Non-Recurrent Inspection (<math id="S5.I3.i3.p1.m1" class="ltx_Math" alttext="C=\$150,000" display="inline"><mrow><mi>C</mi><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>150</mn></mrow><mo>,</mo><mn>000</mn></mrow></mrow></math> at <math id="S5.I3.i3.p1.m2" class="ltx_Math" alttext="n_{C}=5" display="inline"><mrow><msub><mi>n</mi><mi>C</mi></msub><mo>=</mo><mn>5</mn></mrow></math>):</span></p>
+<table id="Ex28" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex28.m1" class="ltx_Math" alttext="A_{C}=\frac{-150,000\times 0.06}{(1+0.06)^{5}}=\frac{-9,000}{1.33823}\approx-%
+\$6,725\text{ per year}" display="block"><mrow><mrow><msub><mi>A</mi><mi>C</mi></msub><mo>=</mo><mfrac><mrow><mrow><mo>−</mo><mn>150</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>0.06</mn></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.06</mn></mrow><mo stretchy="false">)</mo></mrow><mn>5</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mrow><mo>−</mo><mn>9</mn></mrow><mo>,</mo><mn>000</mn></mrow><mn>1.33823</mn></mfrac><mo>≈</mo><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>6</mn></mrow></mrow></mrow><mo>,</mo><mrow><mn>725</mn><mo>⁢</mo><mtext> per year</mtext></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S5.I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S5.I3.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Recurring Major Overhaul (<math id="S5.I3.i4.p1.m1" class="ltx_Math" alttext="R=\$500,000" display="inline"><mrow><mi>R</mi><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>500</mn></mrow><mo>,</mo><mn>000</mn></mrow></mrow></math> every <math id="S5.I3.i4.p1.m2" class="ltx_Math" alttext="n_{R}=12" display="inline"><mrow><msub><mi>n</mi><mi>R</mi></msub><mo>=</mo><mn>12</mn></mrow></math> years):</span></p>
+<table id="Chx3.S5.EGx56" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex29.m1" class="ltx_Math" alttext="\displaystyle A_{R}" display="inline"><msub><mi>A</mi><mi>R</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex29.m2" class="ltx_Math" alttext="\displaystyle=-500,000(A/F,6\%,12)=-500,000\left[\frac{0.06}{(1+0.06)^{12}-1}\right]" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mn>500</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>6</mn><mo>%</mo></mrow><mo>,</mo><mn>12</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mn>500</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mn>0.06</mn><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.06</mn></mrow><mo stretchy="false">)</mo></mrow><mn>12</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mstyle><mo>]</mo></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex30.m1" class="ltx_Math" alttext="\displaystyle=-500,000(0.05928)\approx-\$29,640\text{ per year}" display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mo>−</mo><mn>500</mn></mrow></mrow><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.05928</mn><mo stretchy="false">)</mo></mrow></mrow><mo>≈</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>29</mn></mrow></mrow><mo>,</mo><mrow><mn>640</mn><mo>⁢</mo><mtext> per year</mtext></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div id="S5.p12" class="ltx_para">
+<p class="ltx_p">Summing all annual equivalent costs gives the total perpetual annual cost:</p>
+<table id="Chx3.S5.EGx57" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex31"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex31.m1" class="ltx_Math" alttext="\displaystyle AW_{\text{cost}}" display="inline"><mrow><mi>A</mi><mo>⁢</mo><msub><mi>W</mi><mtext>cost</mtext></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex31.m2" class="ltx_Math" alttext="\displaystyle=A_{P}+A_{\text{maint}}+A_{C}+A_{R}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msub><mi>A</mi><mi>P</mi></msub><mo>+</mo><msub><mi>A</mi><mtext>maint</mtext></msub><mo>+</mo><msub><mi>A</mi><mi>C</mi></msub><mo>+</mo><msub><mi>A</mi><mi>R</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex32"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex32.m1" class="ltx_Math" alttext="\displaystyle\approx-600,000-200,000-6,725-29,640" display="inline"><mrow><mi></mi><mo>≈</mo><mrow><mrow><mo>−</mo><mn>600</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>−</mo><mn>200</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>−</mo><mn>6</mn></mrow><mo>,</mo><mrow><mn>725</mn><mo>−</mo><mn>29</mn></mrow><mo>,</mo><mn>640</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex33"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex33.m1" class="ltx_Math" alttext="\displaystyle=-\$836,365\text{ per year}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mo lspace="0.167em" rspace="0.167em">$</mo><mn>836</mn></mrow></mrow><mo>,</mo><mrow><mn>365</mn><mo>⁢</mo><mtext> per year</mtext></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Thus, the permanent dam requires an equivalent annual expenditure of approximately <math id="S5.p12.m1" class="ltx_Math" alttext="\$836,365" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>836</mn></mrow><mo>,</mo><mn>365</mn></mrow></math> per year in perpetuity.</p>
+</div>
+<div id="S5.p13" class="ltx_para">
+<p class="ltx_p">In simpler words, if the government agency budget allows spending <math id="S5.p13.m1" class="ltx_Math" alttext="\$836,363.84" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>836</mn></mrow><mo>,</mo><mn>363.84</mn></mrow></math> every year, they will be able to build the dam, maintain it, inspect it, and overhaul it forever without ever running out of money.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Clarity of Annual Worth</h6>
+<div id="S5.p14" class="ltx_para">
+<p class="ltx_p">The use of annual worth of the project highlights the ease of understanding of the cost associated of a project.</p>
+</div>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_align_center">
+<a href="Ch4.html" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Present Worth and Related Economic Criteria</span></a><a href="Ch6.html" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>Rate of Return Analysis: Single Alternative</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Aug 27 16:14:42 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>

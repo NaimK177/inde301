@@ -1,0 +1,1247 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Chapter 3 Nominal and Effective Interest Rates</title>
+<!--Generated on Thu Aug 27 16:14:42 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="start" href="./" title="">
+<link rel="prev" href="Ch2.html" title="Chapter 2 How Time and Interest affect money">
+<link rel="next" href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria">
+<link rel="chapter" href="Chx1.html" title="Acknowledgements">
+<link rel="chapter" href="Chx2.html" title="Abstract">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Foundation of Engineering Economy">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 How Time and Interest affect money">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Present Worth and Related Economic Criteria">
+<link rel="chapter" href="Ch5.html" title="Chapter 5 Annual Worth Analysis">
+<link rel="chapter" href="Ch6.html" title="Chapter 6 Rate of Return Analysis: Single Alternative">
+<link rel="chapter" href="Ch7.html" title="Chapter 7 Rate of Return Analysis: Multiple Alternatives">
+<link rel="chapter" href="Chx3.html" title="Formula Sheet">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div class="ltx_align_center">
+<a href="Ch2.html" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>How Time and Interest affect money</span></a><a href="Ch4.html" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Present Worth and Related Economic Criteria</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_chapter">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 3 </span>Nominal and Effective Interest Rates</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">In the previous chapter, we established equivalence factors assuming that the interest is compounded once a year.
+However, in practical scenarios, interest is often compounded more frequently (e.g., daily, weekly, monthly, quarterly, or continuously).
+Because of this more frequent compounding, the actual interest accumulated over a year will be greater than what a simple stated rate implies.
+Therefore, we must formally distinguish between the stated (<span class="ltx_text ltx_font_italic">nominal</span>) interest rate and the true (<span class="ltx_text ltx_font_italic">effective</span>) interest rate.</p>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Consider a principal of $100 to be invested for one year at an <span class="ltx_text ltx_font_bold">interest rate</span> of 1% per month.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Calculate the amount of interest and the annual interest rate.</p>
+</div>
+</div>
+<section id="S0.SS0.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Answer</h4>
+
+<div id="S0.SS0.SSS0.Px1.p1" class="ltx_para">
+<ul id="S0.I1" class="ltx_itemize">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="F=P(1+i)^{n}=100(1.01)^{12}=\$112.68" display="inline"><mrow><mi>F</mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow><mo>=</mo><mrow><mn>100</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mn>1.01</mn><mo stretchy="false">)</mo></mrow><mn>12</mn></msup></mrow><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>112.68</mn></mrow></mrow></math>. The interest earned is <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="\$12.68" display="inline"><mrow><mo rspace="0.167em">$</mo><mn>12.68</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">The actual annual interest rate is <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="12.68/100=12.68\%" display="inline"><mrow><mrow><mn>12.68</mn><mo>/</mo><mn>100</mn></mrow><mo>=</mo><mrow><mn>12.68</mn><mo>%</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">We say that the <span class="ltx_text ltx_font_bold">effective</span> annual interest rate is <math id="S0.SS0.SSS0.Px1.p1.m1" class="ltx_Math" alttext="12.68\%" display="inline"><mrow><mn>12.68</mn><mo>%</mo></mrow></math>, and the <span class="ltx_text ltx_font_bold">nominal</span> interest rate is <math id="S0.SS0.SSS0.Px1.p1.m2" class="ltx_Math" alttext="12\%" display="inline"><mrow><mn>12</mn><mo>%</mo></mrow></math>.
+</p>
+</div>
+</section>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.1 </span>Nominal Interest Rate</h2>
+
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Nominal Interest Rate <math id="S1.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> (APR)</h6>
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">A nominal interest rate <math id="S1.p1.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> (often referred to in consumer finance as the Annual Percentage Rate or APR) is a rate that does not consider compounding.</p>
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E1.m1" class="ltx_Math" alttext="r=\textit{interest rate per period}\times\textit{number of periods}" display="block"><mrow><mi>r</mi><mo>=</mo><mrow><mtext class="ltx_mathvariant_italic">interest rate per period</mtext><mo lspace="0.222em" rspace="0.222em">×</mo><mtext class="ltx_mathvariant_italic">number of periods</mtext></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1)</span></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">A nominal rate may be calculated for any time period longer than the time period stated by using Equation <a href="#E1" title="In 3.1 Nominal Interest Rate ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>.
+For example, the interest rate of 1.5% per month is the same as each of the following nominal rates shown in Table <a href="#T1" title="Table 3.1 ‣ 3.1 Nominal Interest Rate ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a>.</p>
+</div>
+<figure id="T1" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Time Period</span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Nominal Rate by Equation <a href="#E1" title="In 3.1 Nominal Interest Rate ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1</span></a></span></th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">What This Is</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t">24 months</td>
+<td class="ltx_td ltx_align_left ltx_border_t"><math id="T1.m1" class="ltx_Math" alttext="1.5\times 24=36\%" display="inline"><mrow><mrow><mn>1.5</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>24</mn></mrow><mo>=</mo><mrow><mn>36</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_border_t">Nominal rate per 2 years</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">12 months</td>
+<td class="ltx_td ltx_align_left"><math id="T1.m2" class="ltx_Math" alttext="1.5\times 12=18\%" display="inline"><mrow><mrow><mn>1.5</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>12</mn></mrow><mo>=</mo><mrow><mn>18</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left">Nominal rate per 1 year</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left">6 months</td>
+<td class="ltx_td ltx_align_left"><math id="T1.m3" class="ltx_Math" alttext="1.5\times 6=9\%" display="inline"><mrow><mrow><mn>1.5</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>6</mn></mrow><mo>=</mo><mrow><mn>9</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left">Nominal rate per 6 months</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b">3 months</td>
+<td class="ltx_td ltx_align_left ltx_border_b"><math id="T1.m4" class="ltx_Math" alttext="1.5\times 3=4.5\%" display="inline"><mrow><mrow><mn>1.5</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>3</mn></mrow><mo>=</mo><mrow><mn>4.5</mn><mo>%</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_border_b">Nominal rate per 3 months</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3.1: </span>Calculated nominal interest rates for various time periods</figcaption>
+</figure>
+<figure id="F1" class="ltx_figure"><svg id="F1.pic1" class="ltx_picture ltx_centering" height="98.13" overflow="visible" version="1.1" width="550.62"><g fill="#000000" stroke="#000000" transform="translate(0,98.13) matrix(1 0 0 -1 0 0) translate(7.73,0) translate(0,62.64)"><g stroke-width="1.0pt"><path d="M 0 0 L 484.9 0" style="fill:none"></path><g transform="matrix(1.0 0.0 0.0 1.0 484.9 0)"><path d="M 7.22 0 C 5.08 0.4 1.61 1.61 -0.8 3.01 L -0.8 -3.01 C 1.61 -1.61 5.08 -0.4 7.22 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 497.43 -4.32)"><foreignObject height="8.65" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="40.89"><span class="ltx_text" style="font-size:90%;">Months</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 0 5.91 L 0 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -3.11 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">0</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 39.37 5.91 L 39.37 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 36.26 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">1</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 78.74 5.91 L 78.74 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 75.63 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">2</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 118.11 5.91 L 118.11 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 115 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">3</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 157.48 5.91 L 157.48 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 154.37 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">4</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 196.85 5.91 L 196.85 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 193.74 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">5</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 236.22 5.91 L 236.22 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 233.11 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">6</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 275.59 5.91 L 275.59 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 272.48 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">7</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 314.96 5.91 L 314.96 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 311.85 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">8</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 354.33 5.91 L 354.33 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 351.22 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">9</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 393.7 5.91 L 393.7 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 387.47 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="12.45"><span class="ltx_text" style="font-size:90%;">10</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 433.07 5.91 L 433.07 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 426.84 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="12.45"><span class="ltx_text" style="font-size:90%;">11</span></foreignObject></g></g><g stroke-width="1.0pt"><path d="M 472.44 5.91 L 472.44 -5.91" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 466.21 -19.23)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="12.45"><span class="ltx_text" style="font-size:90%;">12</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 0 11.81 C 10.86 22.67 28.51 22.67 34.79 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 34.79 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 9.69 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 39.37 11.81 C 50.23 22.67 67.88 22.67 74.16 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 74.16 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 49.06 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 78.74 11.81 C 89.6 22.67 107.25 22.67 113.53 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 113.53 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 88.43 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 118.11 11.81 C 128.97 22.67 146.62 22.67 152.9 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 152.9 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 127.8 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 157.48 11.81 C 168.34 22.67 185.99 22.67 192.27 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 192.27 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 167.17 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 196.85 11.81 C 207.71 22.67 225.36 22.67 231.64 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 231.64 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 206.54 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 236.22 11.81 C 247.08 22.67 264.73 22.67 271.01 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 271.01 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 245.91 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 275.59 11.81 C 286.45 22.67 304.1 22.67 310.38 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 310.38 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 285.28 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 314.96 11.81 C 325.82 22.67 343.47 22.67 349.75 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 349.75 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 324.65 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 354.33 11.81 C 365.19 22.67 382.84 22.67 389.12 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 389.12 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 364.02 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 393.7 11.81 C 404.56 22.67 422.21 22.67 428.49 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 428.49 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 403.39 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M 433.07 11.81 C 443.93 22.67 461.58 22.67 467.86 16.39" style="fill:none"></path><g transform="matrix(0.7071 -0.7071 0.7071 0.7071 467.86 16.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#00B3FF" stroke="#00B3FF" transform="matrix(1.0 0.0 0.0 1.0 442.76 25.7)"><foreignObject height="5.77" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="19.99"><span class="ltx_text" style="font-size:50%;color:#00B3FF;">+1.5%</span></foreignObject></g></g><g color="#FF0000" fill="#FF0000" stroke="#FF0000" stroke-width="0.8pt"><path d="M 6.48 -39.37 L 465.97 -39.37" style="fill:none"></path><g transform="matrix(-1.0 0.0 0.0 -1.0 6.48 -39.37)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g transform="matrix(1.0 0.0 0.0 1.0 465.97 -39.37)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#FF0000" stroke="#FF0000" transform="matrix(1.0 0.0 0.0 1.0 101.46 -54.91)"><foreignObject height="13.49" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="269.53"><span class="ltx_text" style="font-size:90%;">Nominal Rate (APR): <math id="F1.pic1.m1" class="ltx_Math" alttext="1.5\%\times 12=18\%" display="inline"><mrow><mrow><mrow><mn>1.5</mn><mo rspace="0.055em">%</mo></mrow><mo rspace="0.222em">×</mo><mn>12</mn></mrow><mo>=</mo><mrow><mn>18</mn><mo>%</mo></mrow></mrow></math> per year</span></foreignObject></g></g><g stroke-width="0.4pt"><g color="#808080" fill="#808080" stroke="#808080" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 0 -7.87 L 0 -47.24" style="fill:none"></path></g><g color="#808080" fill="#808080" stroke="#808080" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt"><path d="M 472.44 -7.87 L 472.44 -47.24" style="fill:none"></path></g></g></g></svg>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.1: </span>Visualizing the difference between actual compounding events (1.5% monthly hits) and the stated nominal annual rate over a 12-month period.</figcaption>
+</figure>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Annual Percentage Rate (APR)</h6>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">Nominal interest rate is commonly referred to as Annual Percentage Rate “APR”.
+While nominal rates can theoretically be calculated for any duration, in practice and in most problems in this course, “nominal rate” assumes an annual period (APR).</p>
+</div>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.2 </span>Effective Interest Rate</h2>
+
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Effective Interest Rate</h6>
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">An effective interest rate <math id="S2.p1.m1" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> is a rate that does consider compounding.</p>
+</div>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">The effective interest rate is the <span class="ltx_text ltx_font_bold">actual</span> or observed rate that applies for a period of time.
+In financial contracts, interest rates are frequently stated in the following format:</p>
+<p class="ltx_p ltx_align_center">r (per year), compounded every <math id="S2.p2.m1" class="ltx_Math" alttext="CP" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>P</mi></mrow></math></p>
+<p class="ltx_p">where <math id="S2.p2.m2" class="ltx_Math" alttext="CP" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>P</mi></mrow></math> is the compounding period (e.g., yearly, monthly, weekly)
+From this statement, we must calculate the actual effective interest rate that applies to each compounding period.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Annual Percentage Yield (APY)</h6>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">The effective interest rate <math id="S2.p3.m1" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> is called the Annual Percentage Yield “APY”.</p>
+</div>
+</div>
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.2.1 </span>Computing the Effective Interest Rate</h3>
+
+<div id="S2.SS1.p1" class="ltx_para">
+<p class="ltx_p">Given that the effective interest rate is the actual rate in the compounding period, then</p>
+<table id="Ex1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex1.m1" class="ltx_Math" alttext="i=\frac{r}{m}" display="block"><mrow><mi>i</mi><mo>=</mo><mfrac><mi>r</mi><mi>m</mi></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S2.SS1.p1.m1" class="ltx_Math" alttext="m=1/CP" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mi>C</mi></mrow><mo>⁢</mo><mi>P</mi></mrow></mrow></math> is the compounding frequency per year<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                <span class="ltx_tag ltx_tag_note">1</span>
+                
+                
+                
+              Given that CP is a fraction of a year.</span></span></span>.
+For instance, a nominal interest rate of <math id="S2.SS1.p1.m2" class="ltx_Math" alttext="12\%" display="inline"><mrow><mn>12</mn><mo>%</mo></mrow></math> (<math id="S2.SS1.p1.m3" class="ltx_Math" alttext="r=12\%" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mn>12</mn><mo>%</mo></mrow></mrow></math>) compounded monthly (CP=1/12 and <math id="S2.SS1.p1.m4" class="ltx_Math" alttext="m=12" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>12</mn></mrow></math>) translates into an effective rate of <math id="S2.SS1.p1.m5" class="ltx_Math" alttext="1\%" display="inline"><mrow><mn>1</mn><mo>%</mo></mrow></math> per month.</p>
+</div>
+<div id="S2.SS1.p2" class="ltx_para">
+<p class="ltx_p">Let <math id="S2.SS1.p2.m1" class="ltx_Math" alttext="i_{\mathrm{a}}" display="inline"><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub></math> be the effective annual rate. By setting the future worth <math id="S2.SS1.p2.m2" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> calculated with the effective annual rate equal to the future worth calculated with the compounded nominal rate, we can isolate <math id="S2.SS1.p2.m3" class="ltx_Math" alttext="i_{\mathrm{a}}" display="inline"><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub></math>:</p>
+<table id="Ex2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex2.m1" class="ltx_Math" alttext="F=P(1+i_{\mathrm{a}})=P\left(1+\frac{r}{m}\right)^{m}" display="block"><mrow><mi>F</mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>m</mi></mfrac></mrow><mo>)</mo></mrow><mi>m</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">As a result, we can compute <math id="S2.SS1.p2.m4" class="ltx_Math" alttext="i_{\mathrm{a}}" display="inline"><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub></math> as follows:</p>
+<table id="Chx3.S5.EGx23" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex3.m1" class="ltx_Math" alttext="\displaystyle P(1+i_{\mathrm{a}})" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex3.m2" class="ltx_Math" alttext="\displaystyle=P\left(1+\frac{r}{m}\right)^{m}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mi>m</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>m</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex4.m1" class="ltx_Math" alttext="\displaystyle 1+i_{\mathrm{a}}" display="inline"><mrow><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex4.m2" class="ltx_Math" alttext="\displaystyle=\left(1+\frac{r}{m}\right)^{m}" display="inline"><mrow><mi></mi><mo>=</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mi>m</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>m</mi></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex5.m1" class="ltx_Math" alttext="\displaystyle i_{\mathrm{a}}" display="inline"><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex5.m2" class="ltx_Math" alttext="\displaystyle=\left(1+\frac{r}{m}\right)^{m}-1" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mi>m</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>m</mi></msup><mo>−</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Effective Annual Interest Rate Formula</h6>
+<div id="S2.SS1.p3" class="ltx_para">
+<p class="ltx_p">The effective annual interest rate is:</p>
+<table id="Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex6.m1" class="ltx_Math" alttext="i_{\mathrm{a}}=\left(1+\frac{r}{m}\right)^{m}-1" display="block"><mrow><msub><mi>i</mi><mi mathvariant="normal">a</mi></msub><mo>=</mo><mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>r</mi><mi>m</mi></mfrac></mrow><mo>)</mo></mrow><mi>m</mi></msup><mo>−</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.3 </span>Factors under m-time-a-year Compounding</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">In the previous chapter, we discussed engineering economy factors.
+These factors used the interest rate <math id="S3.p1.m1" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> per compounding period, that is <math id="S3.p1.m2" class="ltx_Math" alttext="r/m" display="inline"><mrow><mi>r</mi><mo>/</mo><mi>m</mi></mrow></math>.
+When expressed with <math id="S3.p1.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> and <math id="S3.p1.m4" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math>, the Future Worth becomes:</p>
+<table id="Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex7.m1" class="ltx_Math" alttext="F=P(1+r/m)^{k}" display="block"><mrow><mi>F</mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>r</mi><mo>/</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S3.p1.m5" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is the total number of periods.
+Hence, the Future Worth Factor <math id="S3.p1.m6" class="ltx_Math" alttext="F/P" display="inline"><mrow><mi>F</mi><mo>/</mo><mi>P</mi></mrow></math> can be written as:</p>
+<table id="Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex8.m1" class="ltx_Math" alttext="(F/P,r,m,k)=(1+r/m)^{k}" display="block"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>F</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>m</mi><mo>,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>r</mi><mo>/</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and <math id="S3.p1.m7" class="ltx_Math" alttext="(F/P,r,m,k)\iff(F/P,i,k)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>F</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>m</mi><mo>,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⇔</mo><mrow><mo stretchy="false">(</mo><mrow><mi>F</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="S3.p2" class="ltx_para">
+<p class="ltx_p">Similarly, the Present Worth factor <math id="S3.p2.m1" class="ltx_Math" alttext="P/F" display="inline"><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow></math> can be written using the nominal rate and compounding frequency as follows:</p>
+<table id="Ex9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex9.m1" class="ltx_Math" alttext="(P/F,r,m,k)=(1+r/m)^{-k}" display="block"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>m</mi><mo>,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>r</mi><mo>/</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>k</mi></mrow></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and <math id="S3.p2.m2" class="ltx_Math" alttext="(P/F,r,m,k)\iff(P/F,i,k)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>m</mi><mo>,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⇔</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>i</mi><mo>,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.4 </span>Continuous Compounding</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">If we allow compounding to occur more and more frequently, the compounding period (CP) becomes shorter and shorter and <math id="S4.p1.m1" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math>, the number of compounding periods per payment period, increases.
+Let <math id="S4.p1.m2" class="ltx_Math" alttext="CP\to 0" display="inline"><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>P</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>. Then <math id="S4.p1.m3" class="ltx_Math" alttext="m=1/CP\to\infty" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><mi>C</mi></mrow><mo>⁢</mo><mi>P</mi></mrow><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>.
+This situation is known as <span class="ltx_text ltx_font_bold">continuous compounding<span id="footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_medium">2</span></span>
+                
+                
+                
+              <span class="ltx_text ltx_font_medium">Continuous compounding appears in options pricing and certain financial models, but for physical engineering projects, monthly or quarterly compounding is the practical limit.</span></span></span></span></span>.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Continuous Compounding</h6>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p">Continuous compounding is present when the duration of CP, the compounding period, becomes infinitely small and <math id="S4.p2.m1" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math>, the number of times interest is compounded per period, becomes infinite.</p>
+</div>
+</div>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p">As compounding becomes continuous, we rely on the natural logarithm base <math id="S4.p3.m1" class="ltx_Math" alttext="e" display="inline"><mi>e</mi></math> to model continuous growth. Given the definition of Euler’s number <math id="S4.p3.m2" class="ltx_Math" alttext="e" display="inline"><mi>e</mi></math>:</p>
+<table id="Ex10" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex10.m1" class="ltx_Math" alttext="\lim_{h\to\infty}\left(1+\frac{1}{h}\right)^{h}=e" display="block"><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo lspace="0em">(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>h</mi></mfrac></mrow><mo>)</mo></mrow><mi>h</mi></msup></mrow><mo>=</mo><mi>e</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">we can write the effective annual interest rate as:</p>
+<table id="Chx3.S5.EGx24" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex11.m1" class="ltx_Math" alttext="\displaystyle\lim_{m\to\infty}i" display="inline"><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>m</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mi>i</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex11.m2" class="ltx_Math" alttext="\displaystyle=\lim_{m\to\infty}\left(1+\frac{r}{m}\right)^{m}-1" display="inline"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>m</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mi>m</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mi>m</mi></msup></mrow><mo>−</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex12.m1" class="ltx_Math" alttext="\displaystyle=\lim_{h\to\infty}\left(1+\frac{1}{h}\right)^{hr}-1" display="inline"><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>h</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mrow><mi>h</mi><mo>⁢</mo><mi>r</mi></mrow></msup></mrow><mo>−</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex13.m1" class="ltx_Math" alttext="\displaystyle=e^{r}-1" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>e</mi><mi>r</mi></msup><mo>−</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">by taking <math id="S4.p3.m3" class="ltx_Math" alttext="r/m=1/h" display="inline"><mrow><mrow><mi>r</mi><mo>/</mo><mi>m</mi></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mi>h</mi></mrow></mrow></math> and consequently <math id="S4.p3.m4" class="ltx_Math" alttext="m=hr" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mi>h</mi><mo>⁢</mo><mi>r</mi></mrow></mrow></math>.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Effective Rate Under Continuous Compounding</h6>
+<div id="S4.p4" class="ltx_para">
+<p class="ltx_p">Given a nominal annual rate <math id="S4.p4.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>%, the effective annual interest rate is:</p>
+<table id="Ex14" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex14.m1" class="ltx_Math" alttext="i=e^{r}-1" display="block"><mrow><mi>i</mi><mo>=</mo><mrow><msup><mi>e</mi><mi>r</mi></msup><mo>−</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Growth Factor Under Continuous Compounding</h6>
+<div id="S4.p5" class="ltx_para">
+<p class="ltx_p">Under continuous compounding, the rate of growth of an investment over a time <math id="S4.p5.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> expressed in years, i.e., the F/P factor, is</p>
+<table id="Ex15" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex15.m1" class="ltx_Math" alttext="\lim_{m\to\infty}(1+r/m)^{mt}=e^{rt}" display="block"><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>m</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>r</mi><mo>/</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>m</mi><mo>⁢</mo><mi>t</mi></mrow></msup></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<section id="S4.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.4.1 </span>Factors</h3>
+
+<div id="S4.SS1.p1" class="ltx_para">
+<p class="ltx_p">Since <math id="S4.SS1.p1.m1" class="ltx_Math" alttext="i=e^{r}-1" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><msup><mi>e</mi><mi>r</mi></msup><mo>−</mo><mn>1</mn></mrow></mrow></math>, we can substitute <math id="S4.SS1.p1.m2" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> in the factors developed in Chapter 2 to find their corresponding continuous compounding factors.</p>
+</div>
+<div id="S4.SS1.p2" class="ltx_para">
+<p class="ltx_p">For instance, the continuous counterpart of <math id="S4.SS1.p2.m1" class="ltx_Math" alttext="P/F=(1+i)^{-n}" display="inline"><mrow><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow></math> under continuous compounding is:</p>
+<table id="Ex16" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex16.m1" class="ltx_Math" alttext="P/F=e^{-rt}" display="block"><mrow><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Time Variable Notation</h6>
+<div id="S4.SS1.p3" class="ltx_para">
+<p class="ltx_p">To keep discrete and continuous time different, we use <math id="S4.SS1.p3.m1" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> for continuous time, and <math id="S4.SS1.p3.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> for discrete time.</p>
+</div>
+</div>
+<div id="S4.SS1.p4" class="ltx_para">
+<p class="ltx_p">A list of factors and the corresponding equations is shown in Table <a href="#T2" title="Table 3.2 ‣ 3.4.1 Factors ‣ 3.4 Continuous Compounding ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2</span></a>.</p>
+</div>
+<figure id="T2" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_th_row ltx_border_r ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:227.6pt;"><span class="ltx_text ltx_font_bold">Name</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Notation</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Equation</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_row ltx_border_r ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:227.6pt;">Compound Amount</span>
+</span>
+</th>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="T2.m1" class="ltx_Math" alttext="(F/P,r,t)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>F</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="T2.m2" class="ltx_Math" alttext="e^{rt}" display="inline"><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_row ltx_border_r">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:227.6pt;">Present Worth</span>
+</span>
+</th>
+<td class="ltx_td ltx_align_center"><math id="T2.m3" class="ltx_Math" alttext="(P/F,r,t)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center"><math id="T2.m4" class="ltx_Math" alttext="e^{-rt}" display="inline"><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_row ltx_border_r">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:227.6pt;">Uniform Series Present Worth</span>
+</span>
+</th>
+<td class="ltx_td ltx_align_center"><math id="T2.m5" class="ltx_Math" alttext="(P/A,r,t)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center"><math id="T2.m6" class="ltx_Math" alttext="\frac{e^{rt}-1}{e^{rt}(e^{r}-1)}" display="inline"><mfrac><mrow><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow><mrow><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>r</mi></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_row ltx_border_r">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:227.6pt;">Uniform Series Compound Amount</span>
+</span>
+</th>
+<td class="ltx_td ltx_align_center"><math id="T2.m7" class="ltx_Math" alttext="(F/A,r,t)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>F</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center"><math id="T2.m8" class="ltx_Math" alttext="\frac{e^{rt}-1}{e^{r}-1}" display="inline"><mfrac><mrow><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow><mrow><msup><mi>e</mi><mi>r</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_row ltx_border_r">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:227.6pt;">Capital Recovery</span>
+</span>
+</th>
+<td class="ltx_td ltx_align_center"><math id="T2.m9" class="ltx_Math" alttext="(A/P,r,t)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>P</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center"><math id="T2.m10" class="ltx_Math" alttext="\frac{e^{rt}(e^{r}-1)}{e^{rt}-1}" display="inline"><mfrac><mrow><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>r</mi></msup><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow></mfrac></math></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_row ltx_border_bb ltx_border_r">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:227.6pt;">Sinking Fund</span>
+</span>
+</th>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="T2.m11" class="ltx_Math" alttext="(A/F,r,t)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mi>r</mi><mo>,</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="T2.m12" class="ltx_Math" alttext="\frac{e^{r}-1}{e^{rt}-1}" display="inline"><mfrac><mrow><msup><mi>e</mi><mi>r</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup><mo>−</mo><mn>1</mn></mrow></mfrac></math></td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3.2: </span>Summary of Engineering Economy Factors for Continuous Compounding.
+<br class="ltx_break"><math id="T2.m14" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> , nominal annual interest rate, compounded continuously; t, number of periods (years); A, annual equivalent amount (<span class="ltx_text ltx_font_bold">occurs at the end of each year</span>); F, future equivalent; P, present equivalent.</figcaption>
+</figure>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="S4.SS1.p5" class="ltx_para">
+<p class="ltx_p">You invest $1 at a nominal rate of 8%.
+What would be the impact of different compounding periods ranging from yearly to continuously?</p>
+</div>
+</div>
+<section id="S4.SS1.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Solution</h4>
+
+<figure id="T3" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_th_row ltx_border_tt"><span class="ltx_text ltx_font_bold">Year</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">1</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">2</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">4</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">12</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">52</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">365</span></th>
+<th class="ltx_td ltx_align_right ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Continuous</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_t">1</th>
+<td class="ltx_td ltx_align_right ltx_border_t">$1.0800</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$1.0816</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$1.0824</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$1.0830</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$1.0832</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$1.0833</td>
+<td class="ltx_td ltx_align_right ltx_border_t">$1.0833</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">2</th>
+<td class="ltx_td ltx_align_right">$1.1664</td>
+<td class="ltx_td ltx_align_right">$1.1699</td>
+<td class="ltx_td ltx_align_right">$1.1717</td>
+<td class="ltx_td ltx_align_right">$1.1729</td>
+<td class="ltx_td ltx_align_right">$1.1734</td>
+<td class="ltx_td ltx_align_right">$1.1735</td>
+<td class="ltx_td ltx_align_right">$1.1735</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">3</th>
+<td class="ltx_td ltx_align_right">$1.2597</td>
+<td class="ltx_td ltx_align_right">$1.2653</td>
+<td class="ltx_td ltx_align_right">$1.2682</td>
+<td class="ltx_td ltx_align_right">$1.2702</td>
+<td class="ltx_td ltx_align_right">$1.2710</td>
+<td class="ltx_td ltx_align_right">$1.2712</td>
+<td class="ltx_td ltx_align_right">$1.2712</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">4</th>
+<td class="ltx_td ltx_align_right">$1.3605</td>
+<td class="ltx_td ltx_align_right">$1.3686</td>
+<td class="ltx_td ltx_align_right">$1.3728</td>
+<td class="ltx_td ltx_align_right">$1.3757</td>
+<td class="ltx_td ltx_align_right">$1.3768</td>
+<td class="ltx_td ltx_align_right">$1.3771</td>
+<td class="ltx_td ltx_align_right">$1.3771</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">5</th>
+<td class="ltx_td ltx_align_right">$1.4693</td>
+<td class="ltx_td ltx_align_right">$1.4802</td>
+<td class="ltx_td ltx_align_right">$1.4859</td>
+<td class="ltx_td ltx_align_right">$1.4898</td>
+<td class="ltx_td ltx_align_right">$1.4914</td>
+<td class="ltx_td ltx_align_right">$1.4918</td>
+<td class="ltx_td ltx_align_right">$1.4918</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">6</th>
+<td class="ltx_td ltx_align_right">$1.5869</td>
+<td class="ltx_td ltx_align_right">$1.6010</td>
+<td class="ltx_td ltx_align_right">$1.6084</td>
+<td class="ltx_td ltx_align_right">$1.6135</td>
+<td class="ltx_td ltx_align_right">$1.6155</td>
+<td class="ltx_td ltx_align_right">$1.6160</td>
+<td class="ltx_td ltx_align_right">$1.6161</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">7</th>
+<td class="ltx_td ltx_align_right">$1.7138</td>
+<td class="ltx_td ltx_align_right">$1.7317</td>
+<td class="ltx_td ltx_align_right">$1.7410</td>
+<td class="ltx_td ltx_align_right">$1.7474</td>
+<td class="ltx_td ltx_align_right">$1.7499</td>
+<td class="ltx_td ltx_align_right">$1.7506</td>
+<td class="ltx_td ltx_align_right">$1.7507</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">8</th>
+<td class="ltx_td ltx_align_right">$1.8509</td>
+<td class="ltx_td ltx_align_right">$1.8730</td>
+<td class="ltx_td ltx_align_right">$1.8845</td>
+<td class="ltx_td ltx_align_right">$1.8925</td>
+<td class="ltx_td ltx_align_right">$1.8955</td>
+<td class="ltx_td ltx_align_right">$1.8963</td>
+<td class="ltx_td ltx_align_right">$1.8965</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row">9</th>
+<td class="ltx_td ltx_align_right">$1.9990</td>
+<td class="ltx_td ltx_align_right">$2.0258</td>
+<td class="ltx_td ltx_align_right">$2.0399</td>
+<td class="ltx_td ltx_align_right">$2.0495</td>
+<td class="ltx_td ltx_align_right">$2.0533</td>
+<td class="ltx_td ltx_align_right">$2.0543</td>
+<td class="ltx_td ltx_align_right">$2.0544</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_right ltx_th ltx_th_row ltx_border_bb">10</th>
+<td class="ltx_td ltx_align_right ltx_border_bb">$2.1589</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$2.1911</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$2.2080</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$2.2196</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$2.2242</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$2.2253</td>
+<td class="ltx_td ltx_align_right ltx_border_bb">$2.2255</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3.3: </span>Future value compounding over different frequencies</figcaption>
+</figure>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Excel NOMINAL and EFFECT Functions</h6>
+<div id="S4.SS1.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Excel is also fitted with functions to compute the nominal and effective interest rates.
+The functions are <span class="ltx_text ltx_font_italic">NOMINAL</span> and <span class="ltx_text ltx_font_italic">EFFECT</span>.
+It will be left to you to explore these functions, or even use them to double-check your work.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.5 </span>Bonds</h2>
+
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Bond</h6>
+<div id="S5.p1" class="ltx_para">
+<p class="ltx_p">A bond is a loan or an IOU (I Owe You).
+A bond is a long-term note issued by a corporation or a government entity (the borrower) to finance major projects.</p>
+</div>
+</div>
+<div id="S5.p2" class="ltx_para">
+<p class="ltx_p">It represents the major source that governments and companies use to obtain <span class="ltx_text ltx_font_bold">debt financing</span>.
+“The distinguishing characteristic of a bond is that the borrower (the issuer) enters into a legal agreement to compensate the lender (the lender, the bondholder) through periodic interest payments in the form of coupons; and to repay the original sum (the principal) in full on a stipulated date, which is known as the bond’s “maturity date.”” [thau_bond_2011].</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Bond Market Price Variation</h6>
+<div id="S5.p3" class="ltx_para">
+<p class="ltx_p">A bond can be traded freely in the marketplace. Its price varies continuously.</p>
+</div>
+</div>
+<div id="S5.p4" class="ltx_para">
+<p class="ltx_p">Table <a href="#T4" title="Table 3.4 ‣ 3.5 Bonds ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4</span></a> summarizes the classification and key characteristics of different types of bonds.</p>
+</div>
+<figure id="T4" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Classification</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Issued by</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:156.5pt;"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Characteristics</span></span>
+</span>
+</th>
+<th class="ltx_td ltx_align_justify ltx_align_top ltx_th ltx_th_column ltx_border_tt">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:91.0pt;"><span class="ltx_text ltx_font_bold" style="font-size:90%;">Examples</span></span>
+</span>
+</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Treasury securities</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Federal government</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:156.5pt;"><span class="ltx_text" style="font-size:90%;">Backed by faith and credit of the federal government</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:91.0pt;"><span class="ltx_text" style="font-size:90%;">Bills (</span><math id="T4.m1" class="ltx_Math" alttext="\leq 1" display="inline"><mrow><mi></mi><mo mathsize="90%">≤</mo><mn mathsize="90%">1</mn></mrow></math><span class="ltx_text" style="font-size:90%;"> year)</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Notes (2–10 years)</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Bonds (10–30 years)</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Municipal</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Local governments</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:156.5pt;"><span class="ltx_text" style="font-size:90%;">Federal tax-exempt</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Issued against taxes received</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:91.0pt;"><span class="ltx_text" style="font-size:90%;">General obligation</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Revenue</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Zero coupon</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Put</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Mortgage</span><span id="footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+                        <span class="ltx_tag ltx_tag_note">3</span>
+                        
+                        
+                        
+                      For a pop-culture reference, the 2015 movie <span class="ltx_text ltx_font_italic">The Big Short</span> offers an entertaining and educational look into the 2007–2008 financial crisis, which was heavily driven by the collapse of the housing market and high-risk subprime mortgage-backed bonds.</span></span></span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Corporation</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:156.5pt;"><span class="ltx_text" style="font-size:90%;">Backed by specified assets or mortgage</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Low rate/low risk on first mortgage</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Foreclosure, if not repaid</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:91.0pt;"><span class="ltx_text" style="font-size:90%;">First mortgage</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Second mortgage</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Equipment trust</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Debenture</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:79.7pt;"><span class="ltx_text" style="font-size:90%;">Corporation</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:156.5pt;"><span class="ltx_text" style="font-size:90%;">Not backed by collateral, but by reputation of corporation</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Bond rate may “float”</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Higher interest rates and higher risks</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb ltx_border_t">
+<span class="ltx_inline-block ltx_align_top">
+<span class="ltx_p" style="width:91.0pt;"><span class="ltx_text" style="font-size:90%;">Convertible</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Subordinated</span>
+<br class="ltx_break"><span class="ltx_text" style="font-size:90%;">Junk or high yield</span></span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering" style="font-size:90%;"><span class="ltx_tag ltx_tag_table">Table 3.4: </span>Classification and Characteristics of Bonds</figcaption>
+</figure>
+<figure id="F2" class="ltx_figure"><img src="ch4/us_treasury_bond.jpg" id="F2.g1" class="ltx_graphics ltx_centering" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.2: </span>A United States treasury bond. Note that the bond clearly states the Face Value, issuance date, due date, and interest dates.</figcaption>
+</figure>
+<section id="S5.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.5.1 </span>Characteristics of a Bond</h3>
+
+<div id="S5.SS1.p1" class="ltx_para">
+<ul id="S5.I1" class="ltx_itemize">
+<li id="S5.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Face value</span> (or <span class="ltx_text ltx_font_bold">Par value</span>): the amount the borrower pays back on the stated maturity date.</p>
+</div>
+</li>
+<li id="S5.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Coupon amount<span id="footnote4" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">4</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">4</sup>
+                        <span class="ltx_tag ltx_tag_note"><span class="ltx_text ltx_font_medium">4</span></span>
+                        
+                        
+                        
+                      <span class="ltx_text ltx_font_medium">Before digital trading, bonds were physical paper certificates with small tear-off “coupons” attached. On the interest due date, the investor would detach a coupon and hand it to a bank to collect their cash payment.</span></span></span></span></span> (or Bond interest): the amount paid periodically between the time money is borrowed and the time the face value is repaid.</p>
+</div>
+</li>
+<li id="S5.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Bond coupon rate</span>: Annual interest rate.</p>
+</div>
+</li>
+<li id="S5.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Maturity Date</span>: The issuer must repay the Face Value on the maturity date.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="S5.SS1.p2" class="ltx_para">
+<p class="ltx_p">Consider the bond in <a href="#F2" title="Figure 3.2 ‣ 3.5 Bonds ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref ltx_refmacro_autoref"><span class="ltx_text ltx_ref_tag">Figure 3.2</span></a> has a coupon rate of 10%.
+The illustrated bond has a face value of $1,000.
+The Bond interest or coupon amount is $100 a year, paid in payments of $50 on February 15 and August 15.
+On the maturity date (August 15, 2008), the bond issuer, that is the US government, <span class="ltx_text ltx_font_bold">must</span> pay the bond holder (buyer) its face value of $1,000.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Callable Bond</h6>
+<div id="S5.SS1.p3" class="ltx_para">
+<p class="ltx_p">In this particular example, the bond is a callable bond.
+This gives the issuer, (in this case, the U.S. government) the right, but not the obligation, to force an early end to the bond contract.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="S5.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.5.2 </span>Cashflow</h3>
+
+<div id="S5.SS2.p1" class="ltx_para">
+<p class="ltx_p">The cashflow for a bond investment is conventional, as shown in Figure <a href="#F3" title="Figure 3.3 ‣ 3.5.2 Cashflow ‣ 3.5 Bonds ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>.
+Because the cash flows of a bond are locked in by a legal contract, the only way for the open market to adjust to changing economic conditions is to change the upfront <span class="ltx_text ltx_font_bold">Purchase Price</span> (<math id="S5.SS2.p1.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>).
+To determine what a fair purchase price should be today, an investor must evaluate those fixed future cash flows against the interest rates currently available in the broader economy.
+This introduces a critical new characteristic: <span class="ltx_text ltx_font_bold">the yield</span>.</p>
+</div>
+<figure id="F3" class="ltx_figure"><svg id="F3.pic1" class="ltx_picture ltx_centering" height="239.57" overflow="visible" version="1.1" width="426.16"><g fill="#000000" stroke="#000000" transform="translate(0,239.57) matrix(1 0 0 -1 0 0) translate(7.73,0) translate(0,101.78)"><g stroke-width="1.0pt"><path d="M 0 0 L 194.88 0" style="fill:none"></path></g><g stroke-width="1.0pt"><path d="M 238.19 0 L 368.11 0" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 373.42 -4.32)"><foreignObject height="8.65" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="40.06"><span class="ltx_text" style="font-size:90%;">Periods</span></foreignObject></g></g><g stroke-width="1.2pt"><path d="M 210.04 -10.83 L 218.7 10.83" style="fill:none"></path></g><g stroke-width="1.2pt"><path d="M 214.37 -10.83 L 223.03 10.83" style="fill:none"></path></g><g stroke-width="1.0pt"><path d="M 0 4.33 L 0 -4.33" style="fill:none"></path></g><g stroke-width="0.4pt"><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -3.11 -19.41)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="F3.pic1.m1" class="ltx_Math" alttext="0" display="inline"><mn mathsize="90%">0</mn></math></foreignObject></g><g stroke-width="1.0pt"><path d="M 43.31 4.33 L 43.31 -4.33" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 40.19 -19.41)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="F3.pic1.m2" class="ltx_Math" alttext="1" display="inline"><mn mathsize="90%">1</mn></math></foreignObject></g><g stroke-width="1.0pt"><path d="M 86.61 4.33 L 86.61 -4.33" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 83.5 -19.41)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="F3.pic1.m3" class="ltx_Math" alttext="2" display="inline"><mn mathsize="90%">2</mn></math></foreignObject></g><g stroke-width="1.0pt"><path d="M 129.92 4.33 L 129.92 -4.33" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 126.81 -19.41)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><math id="F3.pic1.m4" class="ltx_Math" alttext="3" display="inline"><mn mathsize="90%">3</mn></math></foreignObject></g><g stroke-width="1.0pt"><path d="M 281.5 4.33 L 281.5 -4.33" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 269.5 -19.41)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="24"><math id="F3.pic1.m5" class="ltx_Math" alttext="n-1" display="inline"><mrow><mi mathsize="90%">n</mi><mo mathsize="90%">−</mo><mn mathsize="90%">1</mn></mrow></math></foreignObject></g><g stroke-width="1.0pt"><path d="M 324.8 4.33 L 324.8 -4.33" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 321.07 -16.75)"><foreignObject height="5.36" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="7.47"><math id="F3.pic1.m6" class="ltx_Math" alttext="n" display="inline"><mi mathsize="90%">n</mi></math></foreignObject></g><g stroke-width="1.5pt"><g fill="#EF4444" stroke="#EF4444"><path d="M 0 -25.98 L 0 -80.47" style="fill:none"></path><g color="#EF4444" transform="matrix(0.0 -1.0 1.0 0.0 0 -80.47)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g><g color="#EF4444" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 5.65 -94.06)"><foreignObject height="12.45" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="104.99"><span class="ltx_text" style="font-size:90%;">Purchase Price (<math id="F3.pic1.m7" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>)</span></foreignObject></g></g><g stroke-width="1.5pt"><g fill="#22C55E" stroke="#22C55E"><path d="M 43.31 0 L 43.31 32.83" style="fill:none"></path><g color="#22C55E" transform="matrix(0.0 1.0 -1.0 0.0 43.31 32.83)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g><g color="#22C55E" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 33.97 49.65)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="18.68"><span class="ltx_text" style="font-size:90%;">$50</span></foreignObject></g></g><g stroke-width="1.5pt"><g fill="#22C55E" stroke="#22C55E"><path d="M 86.61 0 L 86.61 32.83" style="fill:none"></path><g color="#22C55E" transform="matrix(0.0 1.0 -1.0 0.0 86.61 32.83)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g><g color="#22C55E" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 77.27 49.65)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="18.68"><span class="ltx_text" style="font-size:90%;">$50</span></foreignObject></g></g><g stroke-width="1.5pt"><g fill="#22C55E" stroke="#22C55E"><path d="M 129.92 0 L 129.92 32.83" style="fill:none"></path><g color="#22C55E" transform="matrix(0.0 1.0 -1.0 0.0 129.92 32.83)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g><g color="#22C55E" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 120.58 49.65)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="18.68"><span class="ltx_text" style="font-size:90%;">$50</span></foreignObject></g></g><g stroke-width="1.5pt"><g fill="#22C55E" stroke="#22C55E"><path d="M 281.5 0 L 281.5 32.83" style="fill:none"></path><g color="#22C55E" transform="matrix(0.0 1.0 -1.0 0.0 281.5 32.83)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g><g color="#22C55E" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 272.16 49.65)"><foreignObject height="10.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="18.68"><span class="ltx_text" style="font-size:90%;">$50</span></foreignObject></g></g><g stroke-width="1.5pt"><g fill="#22C55E" stroke="#22C55E"><path d="M 324.8 0 L 324.8 97.79" style="fill:none"></path><g color="#22C55E" transform="matrix(0.0 1.0 -1.0 0.0 324.8 97.79)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g><g color="#22C55E" fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 289.17 116.34)"><foreignObject height="11.76" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="71.26"><span class="ltx_text" style="font-size:90%;">$1,000 + $50</span></foreignObject></g></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 29.53 123.49)"><foreignObject height="49.81" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="157.48">
+<span class="ltx_inline-block ltx_minipage ltx_align_top" style="width:113.8pt;">
+<span class="ltx_p"></span>
+<span class="ltx_p ltx_align_left"><math id="F3.pic1.m8" class="ltx_Math" alttext="F=\$1,000" display="inline"><mrow><mi mathsize="90%">F</mi><mo mathsize="90%" rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" mathsize="90%" rspace="0.167em">$</mo><mn mathsize="90%">1</mn></mrow><mo mathsize="90%">,</mo><mn mathsize="90%">000</mn></mrow></mrow></math><span class="ltx_text" style="font-size:90%;">;  
+<math id="F3.pic1.m9" class="ltx_Math" alttext="m=2" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>2</mn></mrow></math>
+<br class="ltx_break"><math id="F3.pic1.m10" class="ltx_Math" alttext="C=\$100" display="inline"><mrow><mi>C</mi><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>100</mn></mrow></mrow></math> per year 
+<br class="ltx_break"><math id="F3.pic1.m11" class="ltx_Math" alttext="n=\text{total semi-annual periods}" display="inline"><mrow><mi>n</mi><mo>=</mo><mtext>total semi-annual periods</mtext></mrow></math></span></span>
+</span></foreignObject></g></g></g></svg>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.3: </span>Cash flow diagram for the 10% U.S. Treasury bond from the <span class="ltx_text ltx_font_bold">investor’s perspective</span>. Notice that the final payment at period <math id="F3.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> includes both the face value and the final semi-annual coupon.</figcaption>
+</figure>
+</section>
+<section id="S5.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.5.3 </span>Yield to Maturity</h3>
+
+<div id="S5.SS3.p1" class="ltx_para">
+<p class="ltx_p">Imagine buying a <math id="S5.SS3.p1.m1" class="ltx_Math" alttext="\$1,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>1</mn></mrow><mo>,</mo><mn>000</mn></mrow></math> bond that pays <math id="S5.SS3.p1.m2" class="ltx_Math" alttext="\$50" display="inline"><mrow><mo rspace="0.167em">$</mo><mn>50</mn></mrow></math> a year (a 5% coupon).
+A year later, the economy shifts and new <math id="S5.SS3.p1.m3" class="ltx_Math" alttext="\$1,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>1</mn></mrow><mo>,</mo><mn>000</mn></mrow></math> bonds are issued paying <math id="S5.SS3.p1.m4" class="ltx_Math" alttext="\$100" display="inline"><mrow><mo rspace="0.167em">$</mo><mn>100</mn></mrow></math> a year (a <math id="S5.SS3.p1.m5" class="ltx_Math" alttext="10\%" display="inline"><mrow><mn>10</mn><mo>%</mo></mrow></math> return).
+If you try to sell your original bond for <math id="S5.SS3.p1.m6" class="ltx_Math" alttext="\$1,000" display="inline"><mrow><mrow><mo rspace="0.167em">$</mo><mn>1</mn></mrow><mo>,</mo><mn>000</mn></mrow></math>, no one will buy it:</p>
+<p class="ltx_p ltx_align_center">why buy yours for <math id="S5.SS3.p1.m7" class="ltx_Math" alttext="50" display="inline"><mn>50</mn></math> a year when they can get <math id="S5.SS3.p1.m8" class="ltx_Math" alttext="100" display="inline"><mn>100</mn></math> a year?</p>
+<p class="ltx_p">The present value of your bond is lower because the market has shifted.
+To sell your bond, you <span class="ltx_text ltx_font_bold">must offer it at a “discount”</span> (e.g., selling it for <math id="S5.SS3.p1.m9" class="ltx_Math" alttext="800" display="inline"><mn>800</mn></math>).
+The buyer pays less upfront, which increases their <span class="ltx_text ltx_font_bold">yield</span> (their actual rate of return) to match the new <math id="S5.SS3.p1.m10" class="ltx_Math" alttext="10\%" display="inline"><mrow><mn>10</mn><mo>%</mo></mrow></math> market standard.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_definitionbox">
+<h6 class="ltx_title ltx_title_theorem">Definition: Yield to Maturity (YTM)</h6>
+<div id="S5.SS3.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Yield to Maturity</span> (YTM) is an estimate of the total rate of return anticipated to be earned by an investor who buys a bond at a given market price, holds it to maturity, and receives all interest payments and the capital redemption on schedule.</p>
+<p class="ltx_p ltx_align_right">[thau_bond_2011]</p>
+</div>
+</div>
+<div id="S5.SS3.p3" class="ltx_para">
+<p class="ltx_p">Unlike coupon rate, the yield is a changing variable determined by the changes of the market:</p>
+<ul id="S5.I2" class="ltx_itemize">
+<li id="S5.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">Coupon Rate: Fixed at issuance, determined by the borrower (issuer), represents the legal promise of cash flow. It NEVER changes.</p>
+</div>
+</li>
+<li id="S5.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">Yield to Maturity (YTM): Variable, determined by the open market (investors), represents the current opportunity cost or required return. It changes every day based on the economy.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S5.SS3.p4" class="ltx_para">
+<p class="ltx_p">Consider a bond with a price of <math id="S5.SS3.p4.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> and a face value <math id="S5.SS3.p4.m2" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>, making <math id="S5.SS3.p4.m3" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> coupon payments per year of <math id="S5.SS3.p4.m4" class="ltx_Math" alttext="C/m" display="inline"><mrow><mi>C</mi><mo>/</mo><mi>m</mi></mrow></math> (with a total of <math id="S5.SS3.p4.m5" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> payments).
+See the respective cashflow in Figure <a href="#F3" title="Figure 3.3 ‣ 3.5.2 Cashflow ‣ 3.5 Bonds ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>.</p>
+</div>
+<div id="S5.SS3.p5" class="ltx_para">
+<p class="ltx_p">The Yield to Maturity (YTM), denoted as <math id="S5.SS3.p5.m1" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>, is the interest rate that equates the present worth of the bond’s future cash flows to its current market price <math id="S5.SS3.p5.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>.
+Using standard engineering economy equivalence factors, the price of the bond <math id="S5.SS3.p5.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> is the sum of the present worth of the face value and the present worth of the uniform coupon series:</p>
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E2.m1" class="ltx_Math" alttext="P=F(P/F,\lambda/m,n)+\frac{C}{m}(P/A,\lambda/m,n)" display="block"><mrow><mi>P</mi><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mi>C</mi><mi>m</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Where:</p>
+<ul id="S5.I3" class="ltx_itemize">
+<li id="S5.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I3.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="S5.I3.i1.p1.m1" class="ltx_Math" alttext="F(P/F,\lambda/m,n)" display="inline"><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></math> brings the single Face Value payment back to year 0.</p>
+</div>
+</li>
+<li id="S5.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S5.I3.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="S5.I3.i2.p1.m1" class="ltx_Math" alttext="\frac{C}{m}(P/A,\lambda/m,n)" display="inline"><mrow><mfrac><mi>C</mi><mi>m</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow><mo>,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></math> brings the uniform series of coupon payments back to year 0.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">By expanding these factors into their standard formulas (from Chapter 2), we get the full equation for the price of a bond:</p>
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E3.m1" class="ltx_Math" alttext="P=F\left(1+\frac{\lambda}{m}\right)^{-n}+\frac{C}{\lambda}\left(1-\frac{1}{(1+%
+\lambda/m)^{n}}\right)" display="block"><mrow><mi>P</mi><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mfrac><mi>λ</mi><mi>m</mi></mfrac></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mo>+</mo><mrow><mfrac><mi>C</mi><mi>λ</mi></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mfrac></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.3)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This formulation clearly shows that as the required yield <math id="S5.SS3.p5.m4" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> increases, the denominator of the present worth factors increases. Therefore, the price of the bond <math id="S5.SS3.p5.m5" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> decreases as its yield increases. That is, a high-yield bond will have a “low” price from the investor’s point of view, but why?</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Algebraic Derivation of the YTM Formula</h6>
+<div id="S5.SS3.p6" class="ltx_para">
+<p class="ltx_p">For those interested in the mathematics, the uniform coupon series is a geometric sum:</p>
+<table id="Ex17" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex17.m1" class="ltx_Math" alttext="\sum_{k=1}^{n}\frac{C/m}{\left(1+\lambda/m\right)^{k}}" display="block"><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><mrow><mi>C</mi><mo>/</mo><mi>m</mi></mrow><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow></mrow><mo>)</mo></mrow><mi>k</mi></msup></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Using the mathematical identity for geometric series, <math id="S5.SS3.p6.m1" class="ltx_Math" alttext="\sum_{k=1}^{n}\frac{1}{(1+x)^{k}}=\frac{1-(1+x)^{-n}}{x}" display="inline"><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup></mfrac></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mi>x</mi></mfrac></mrow></math>, and substituting <math id="S5.SS3.p6.m2" class="ltx_Math" alttext="x=\lambda/m" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow></mrow></math>, the summation algebraically reduces exactly to the <math id="S5.SS3.p6.m3" class="ltx_Math" alttext="(P/A)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></math> portion of Equation <a href="#E3" title="In 3.5.3 Yield to Maturity ‣ 3.5 Bonds ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>.</p>
+</div>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Yield vs. Coupon Rate Relationship</h6>
+<div id="S5.SS3.p7" class="ltx_para">
+<p class="ltx_p">Remember that the yield represents the broader market behaviour.
+When the yield is higher than the coupon rate, the present value of the bond becomes smaller than its face value because the market is providing higher rates of return.</p>
+</div>
+</div>
+<div id="S5.SS3.p8" class="ltx_para">
+<p class="ltx_p">This behaviour is illustrated in Figure <a href="#F4" title="Figure 3.4 ‣ 3.5.3 Yield to Maturity ‣ 3.5 Bonds ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4</span></a> where the present value of the bond is exactly equal its par value when the yield and coupon rate are equal (<math id="S5.SS3.p8.m1" class="ltx_Math" alttext="10\%" display="inline"><mrow><mn>10</mn><mo>%</mo></mrow></math>).</p>
+</div>
+<figure id="F4" class="ltx_figure"><img src="ch4/pricetoyield.png" id="F4.g1" class="ltx_graphics ltx_centering" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.4: </span>Figure highlighting how the price of a bond with face value of $1,000 decreases as a function of the yield</figcaption>
+</figure>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="S5.SS3.p9" class="ltx_para">
+<p class="ltx_p">What is the price of a 10% (coupon, paid semi-annually), 30-year US Treasury bond with a yield of 4%?
+Assume a face value of 100. (Bond prices are typically quoted as percentage of face value.)</p>
+</div>
+</div>
+<section id="S5.SS3.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Solution</h4>
+
+<div id="S5.SS3.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">In this example, <math id="S5.SS3.SSS0.Px1.p1.m1" class="ltx_Math" alttext="F=100" display="inline"><mrow><mi>F</mi><mo>=</mo><mn>100</mn></mrow></math>, <math id="S5.SS3.SSS0.Px1.p1.m2" class="ltx_Math" alttext="C=0.1\times 100=10" display="inline"><mrow><mi>C</mi><mo>=</mo><mrow><mn>0.1</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>100</mn></mrow><mo>=</mo><mn>10</mn></mrow></math>, <math id="S5.SS3.SSS0.Px1.p1.m3" class="ltx_Math" alttext="\lambda=4\%" display="inline"><mrow><mi>λ</mi><mo>=</mo><mrow><mn>4</mn><mo>%</mo></mrow></mrow></math>, <math id="S5.SS3.SSS0.Px1.p1.m4" class="ltx_Math" alttext="m=2" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>2</mn></mrow></math>, and <math id="S5.SS3.SSS0.Px1.p1.m5" class="ltx_Math" alttext="n=30\times 2=60" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>30</mn><mo lspace="0.222em" rspace="0.222em">×</mo><mn>2</mn></mrow><mo>=</mo><mn>60</mn></mrow></math>.</p>
+</div>
+<div id="S5.SS3.SSS0.Px1.p2" class="ltx_para">
+<table id="Chx3.S5.EGx25" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex18.m1" class="ltx_Math" alttext="\displaystyle P" display="inline"><mi>P</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex18.m2" class="ltx_Math" alttext="\displaystyle=F\left(1+\frac{\lambda}{m}\right)^{-n}+\frac{C}{\lambda}\left(1-%
+\frac{1}{(1+\lambda/m)^{n}}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>λ</mi><mi>m</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mi>n</mi></mrow></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mi>C</mi><mi>λ</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mi>λ</mi><mo>/</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex19.m1" class="ltx_Math" alttext="\displaystyle=100\left(1+\frac{0.04}{2}\right)^{-60}+\frac{10}{0.04}\left(1-%
+\frac{1}{(1+0.04/2)^{60}}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>100</mn><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>0.04</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mn>60</mn></mrow></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>10</mn><mn>0.04</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>0.04</mn><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>60</mn></msup></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex20"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex20.m1" class="ltx_Math" alttext="\displaystyle=100(0.3047)+\frac{10}{0.04}(0.69521)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>100</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.3047</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>10</mn><mn>0.04</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0.69521</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex21.m1" class="ltx_Math" alttext="\displaystyle=204.2725" display="inline"><mrow><mi></mi><mo>=</mo><mn>204.2725</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_notebox">
+<h6 class="ltx_title ltx_title_theorem">Note: Solving via Excel</h6>
+<div id="S5.SS3.SSS0.Px1.p3" class="ltx_para">
+<p class="ltx_p">This could also be solved using Excel. It will be left to readers to try it out.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="S6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.6 </span>Time Varying Interest Rate</h2>
+
+<div id="S6.p1" class="ltx_para">
+<p class="ltx_p">In practice, interest rates may vary from one period to the other.
+In particular, it is often <span class="ltx_text ltx_font_bold">expected</span> that the interest rate will <span class="ltx_text ltx_font_bold">increase</span> with time.
+This fact is reflected in the annual yield on long (maturity) bonds being higher than that on short bonds, as shown in Table <a href="#T5" title="Table 3.5 ‣ 3.6 Time Varying Interest Rate ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>.</p>
+</div>
+<figure id="T5" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_tt"><span class="ltx_text ltx_font_bold">Maturity Duration</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Yield</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><span class="ltx_text ltx_font_bold">Coupon Rate</span></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t">3 Month</th>
+<td class="ltx_td ltx_align_center ltx_border_t">3.5%</td>
+<td class="ltx_td ltx_align_center ltx_border_t">-</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">6 Months</th>
+<td class="ltx_td ltx_align_center">4%</td>
+<td class="ltx_td ltx_align_center">-</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">12 Months</th>
+<td class="ltx_td ltx_align_center">4.50%</td>
+<td class="ltx_td ltx_align_center">-</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row">36 Months</th>
+<td class="ltx_td ltx_align_center">-</td>
+<td class="ltx_td ltx_align_center">5.5%</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_bb">60 Months</th>
+<td class="ltx_td ltx_align_center ltx_border_bb">-</td>
+<td class="ltx_td ltx_align_center ltx_border_bb">6%</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3.5: </span>Sample yields rate for different maturity durations of Lebanese Treasury Bills (source:www.bdl.gov.lb). Note that Treasury Bills of duration less than or equal to a year do not pay coupons.</figcaption>
+</figure>
+<div id="S6.p2" class="ltx_para">
+<p class="ltx_p">If the interest rates in periods, <math id="S6.p2.m1" class="ltx_Math" alttext="1,\dots,n" display="inline"><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></math> are <math id="S6.p2.m2" class="ltx_Math" alttext="i_{1},\dots,i_{n}" display="inline"><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>i</mi><mi>n</mi></msub></mrow></math>, then, the Future worth <math id="S6.p2.m3" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> of a Present amount <math id="S6.p2.m4" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> after <math id="S6.p2.m5" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> periods is:</p>
+<table id="Ex22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex22.m1" class="ltx_Math" alttext="F=P(1+i_{1})(1+i_{2})\dots(1+i_{n})=P\prod_{k=1}^{n}(1+i_{k})" display="block"><mrow><mi>F</mi><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>i</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>i</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>i</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S6.p3" class="ltx_para">
+<p class="ltx_p">The rates <math id="S6.p3.m1" class="ltx_Math" alttext="i_{1},\dots,i_{n}" display="inline"><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>i</mi><mi>n</mi></msub></mrow></math> are known as <span class="ltx_text ltx_font_bold">short rates</span>.
+The short rate <math id="S6.p3.m2" class="ltx_Math" alttext="i_{n}" display="inline"><msub><mi>i</mi><mi>n</mi></msub></math> represents the expected 1-year rate after <math id="S6.p3.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> years, and their value is estimated based on the yields of bonds (similar to the ones on Table <a href="#T5" title="Table 3.5 ‣ 3.6 Time Varying Interest Rate ‣ Chapter 3 Nominal and Effective Interest Rates" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>).</p>
+</div>
+<div class="ltx_theorem ltx_example">
+<h6 class="ltx_title ltx_title_theorem">Example: </h6>
+<div id="S6.p4" class="ltx_para">
+<p class="ltx_p">Justine leases a generator for private events.
+The net profit from the generator for each of the last 4 years has been decreasing, as shown below.
+Also shown are the annual rates of return on invested capital, which has been increasing.</p>
+</div>
+<figure id="T6" class="ltx_table">
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_th_row ltx_border_tt"><span class="ltx_text ltx_font_bold">Year</span></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt">1</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt">2</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt">3</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt">4</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_t">Net Profit</th>
+<td class="ltx_td ltx_align_center ltx_border_t">70,000</td>
+<td class="ltx_td ltx_align_center ltx_border_t">70,000</td>
+<td class="ltx_td ltx_align_center ltx_border_t">35,000</td>
+<td class="ltx_td ltx_align_center ltx_border_t">25,000</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_bb">Annual Rate</th>
+<td class="ltx_td ltx_align_center ltx_border_bb">7%</td>
+<td class="ltx_td ltx_align_center ltx_border_bb">7%</td>
+<td class="ltx_td ltx_align_center ltx_border_bb">9%</td>
+<td class="ltx_td ltx_align_center ltx_border_bb">10%</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 3.6: </span>Net profit and annual rates of return for Justine’s generator lease.</figcaption>
+</figure>
+<div id="S6.p5" class="ltx_para">
+<p class="ltx_p">1-Draw the cashflow. 2-Determine the present worth P and 3-equivalent uniform series A of the net profit series.
+Take the annual variation of rates of return into account.</p>
+</div>
+</div>
+<section id="S6.SS0.SSS0.Px1" class="ltx_paragraph">
+<h4 class="ltx_title ltx_title_paragraph">Solution</h4>
+
+<figure id="F5" class="ltx_figure"><svg id="F5.pic1" class="ltx_picture ltx_centering" height="351.5" overflow="visible" version="1.1" width="428.15"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" transform="translate(0,351.5) matrix(1 0 0 -1 0 0) translate(25.18,0) translate(0,188.23)"><path d="M 0 0 L 401.57 0" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -20.56 -4.01)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">0</span></foreignObject></g><path d="M 94.49 4.72 L 94.49 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 91.37 -17.64)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">1</span></foreignObject></g><path d="M 188.98 4.72 L 188.98 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 185.86 -17.64)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">2</span></foreignObject></g><path d="M 283.46 4.72 L 283.46 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 280.35 -17.64)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">3</span></foreignObject></g><path d="M 377.95 4.72 L 377.95 -4.72" style="fill:none"></path><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 374.84 -17.64)"><foreignObject height="8.03" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="6.23"><span class="ltx_text" style="font-size:90%;">4</span></foreignObject></g><g stroke-width="0.8pt"><path d="M 94.49 0 L 94.49 135.26" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 94.49 135.26)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 99.65 149.32)"><foreignObject height="11.76" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="40.82"><span class="ltx_text" style="font-size:90%;">$70,000</span></foreignObject></g></g><g stroke-width="0.8pt"><path d="M 188.98 0 L 188.98 135.26" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 188.98 135.26)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g></g><g stroke-width="0.8pt"><path d="M 283.46 0 L 283.46 64.39" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 283.46 64.39)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 263.05 78.45)"><foreignObject height="11.76" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="40.82"><span class="ltx_text" style="font-size:90%;">$35,000</span></foreignObject></g></g><g stroke-width="0.8pt"><path d="M 377.95 0 L 377.95 45.49" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 377.95 45.49)"><path d="M 6.48 0 C 4.56 0.36 1.44 1.44 -0.72 2.7 L -0.72 -2.7 C 1.44 -1.44 4.56 -0.36 6.48 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 357.54 59.56)"><foreignObject height="11.76" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="40.82"><span class="ltx_text" style="font-size:90%;">$25,000</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt" stroke-width="0.8pt"><path d="M -4.72 0 L -4.72 -9.45" style="fill:none"></path></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-dasharray="3.0pt,3.0pt" stroke-dashoffset="0.0pt" stroke-width="0.8pt"><path d="M 4.72 0 L 4.72 -9.45" style="fill:none"></path></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="0.8pt"><path d="M -4.72 -9.45 L -4.72 -151.18 L -9.45 -151.18 L 0 -170.08 L 9.45 -151.18 L 4.72 -151.18 L 4.72 -9.45" style="fill:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 -16.49 -183.62)"><foreignObject height="8.65" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="32.98"><math id="F5.pic1.m1" class="ltx_Math" alttext="P=?" display="inline"><mrow><mi mathsize="90%">P</mi><mo mathsize="90%">=</mo><mi mathsize="90%" mathvariant="normal">?</mi></mrow></math></foreignObject></g><path d="M 94.49 -28.35 L 94.49 -51.16 C 94.49 -54.21 92.01 -56.69 88.95 -56.69 L 12.07 -56.69" style="fill:none"></path><g transform="matrix(-1.0 0.0 0.0 -1.0 12.07 -56.69)"><path d="M 4.98 0 C 3.51 0.28 1.11 1.11 -0.55 2.08 L -0.55 -2.08 C 1.11 -1.11 3.51 -0.28 4.98 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 52.02 -52.88)"><foreignObject height="11.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.42"><math id="F5.pic1.m2" class="ltx_Math" alttext="i=7\%" display="inline"><mrow><mi mathsize="90%">i</mi><mo mathsize="90%">=</mo><mrow><mn mathsize="90%">7</mn><mo mathsize="90%">%</mo></mrow></mrow></math></foreignObject></g><path d="M 188.98 -28.35 L 188.98 -74.78 C 188.98 -77.84 186.5 -80.31 183.44 -80.31 L 12.07 -80.31" style="fill:none"></path><g transform="matrix(-1.0 0.0 0.0 -1.0 12.07 -80.31)"><path d="M 4.98 0 C 3.51 0.28 1.11 1.11 -0.55 2.08 L -0.55 -2.08 C 1.11 -1.11 3.51 -0.28 4.98 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 146.51 -76.5)"><foreignObject height="11.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.42"><math id="F5.pic1.m3" class="ltx_Math" alttext="i=7\%" display="inline"><mrow><mi mathsize="90%">i</mi><mo mathsize="90%">=</mo><mrow><mn mathsize="90%">7</mn><mo mathsize="90%">%</mo></mrow></mrow></math></foreignObject></g><path d="M 283.46 -28.35 L 283.46 -98.4 C 283.46 -101.46 280.99 -103.94 277.93 -103.94 L 12.07 -103.94" style="fill:none"></path><g transform="matrix(-1.0 0.0 0.0 -1.0 12.07 -103.94)"><path d="M 4.98 0 C 3.51 0.28 1.11 1.11 -0.55 2.08 L -0.55 -2.08 C 1.11 -1.11 3.51 -0.28 4.98 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 241 -100.12)"><foreignObject height="11.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="39.42"><math id="F5.pic1.m4" class="ltx_Math" alttext="i=9\%" display="inline"><mrow><mi mathsize="90%">i</mi><mo mathsize="90%">=</mo><mrow><mn mathsize="90%">9</mn><mo mathsize="90%">%</mo></mrow></mrow></math></foreignObject></g><path d="M 377.95 -28.35 L 377.95 -122.02 C 377.95 -125.08 375.47 -127.56 372.42 -127.56 L 12.07 -127.56" style="fill:none"></path><g transform="matrix(-1.0 0.0 0.0 -1.0 12.07 -127.56)"><path d="M 4.98 0 C 3.51 0.28 1.11 1.11 -0.55 2.08 L -0.55 -2.08 C 1.11 -1.11 3.51 -0.28 4.98 0" style="stroke:none"></path></g><g fill="#000000" stroke="#000000" transform="matrix(1.0 0.0 0.0 1.0 329.26 -123.75)"><foreignObject height="11.15" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="45.65"><math id="F5.pic1.m5" class="ltx_Math" alttext="i=10\%" display="inline"><mrow><mi mathsize="90%">i</mi><mo mathsize="90%">=</mo><mrow><mn mathsize="90%">10</mn><mo mathsize="90%">%</mo></mrow></mrow></math></foreignObject></g></g></svg>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.5: </span>Cash flow diagram illustrating varying interest rates over time.</figcaption>
+</figure>
+<div id="S6.SS0.SSS0.Px1.p1" class="ltx_para">
+<table id="Chx3.S5.EGx26" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex23.m1" class="ltx_Math" alttext="\displaystyle P" display="inline"><mi>P</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex23.m2" class="ltx_Math" alttext="\displaystyle=\frac{70,000}{1+0.07}+\frac{70,000}{(1+0.07)^{2}}+\frac{35,000}{%
+(1+0.07)^{2}(1+0.09)}+\frac{25,000}{(1+0.07)^{2}(1+0.09)(1+0.1)}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>70</mn><mo>,</mo><mn>000</mn></mrow><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>70</mn><mo>,</mo><mn>000</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>35</mn><mo>,</mo><mn>000</mn></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.09</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>25</mn><mo>,</mo><mn>000</mn></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.09</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex24.m1" class="ltx_Math" alttext="\displaystyle=\frac{70,000}{1.07}+\frac{70,000}{1.1449}+\frac{35,000}{1.247941%
+}+\frac{25,000}{1.3727}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>70</mn><mo>,</mo><mn>000</mn></mrow><mn>1.07</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>70</mn><mo>,</mo><mn>000</mn></mrow><mn>1.1449</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>35</mn><mo>,</mo><mn>000</mn></mrow><mn>1.247941</mn></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>25</mn><mo>,</mo><mn>000</mn></mrow><mn>1.3727</mn></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex25.m1" class="ltx_Math" alttext="\displaystyle=65,420.56+61,140.7+28,047.12+18,212.28" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>65</mn><mo>,</mo><mrow><mn>420.56</mn><mo>+</mo><mn>61</mn></mrow><mo>,</mo><mrow><mn>140.7</mn><mo>+</mo><mn>28</mn></mrow><mo>,</mo><mrow><mn>047.12</mn><mo>+</mo><mn>18</mn></mrow><mo>,</mo><mn>212.28</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex26.m1" class="ltx_Math" alttext="\displaystyle=172,820.6" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>172</mn><mo>,</mo><mn>820.6</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S6.SS0.SSS0.Px1.p2" class="ltx_para">
+<p class="ltx_p">Alternatively, the value of P could be written in terms of the factors as:</p>
+<table id="Chx3.S5.EGx27" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex27.m1" class="ltx_Math" alttext="\displaystyle P" display="inline"><mi>P</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex27.m2" class="ltx_Math" alttext="\displaystyle=70,000(P/A,7\%,2)+35,000(P/F,7\%,2)(P/F,9\%,1)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>70</mn><mo>,</mo><mrow><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>A</mi></mrow><mo>,</mo><mrow><mn>7</mn><mo>%</mo></mrow><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>35</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>7</mn><mo>%</mo></mrow><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>9</mn><mo>%</mo></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex28"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex28.m1" class="ltx_Math" alttext="\displaystyle+25,000(P/F,7\%,2)(P/F,9\%,1)(P/F,10\%,1)" display="inline"><mrow><mrow><mo>+</mo><mn>25</mn></mrow><mo>,</mo><mrow><mn>000</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>7</mn><mo>%</mo></mrow><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>9</mn><mo>%</mo></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>/</mo><mi>F</mi></mrow><mo>,</mo><mrow><mn>10</mn><mo>%</mo></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="S6.SS0.SSS0.Px1.p3" class="ltx_para">
+<p class="ltx_p">To find the equivalent <span class="ltx_text ltx_font_bold">uniform</span> annual series, we rewrite the Present Value.
+An equivalent uniform series <math id="S6.SS0.SSS0.Px1.p3.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is a constant annual cash flow that yields the exact same Present Value <math id="S6.SS0.SSS0.Px1.p3.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> as the original varying cash flows, when discounted using the <span class="ltx_text ltx_font_bold">identical time-varying interest rates</span>:</p>
+<table id="Chx3.S5.EGx28" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ex29"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex29.m1" class="ltx_Math" alttext="\displaystyle P" display="inline"><mi>P</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex29.m2" class="ltx_Math" alttext="\displaystyle=\frac{A}{1+0.07}+\frac{A}{(1+0.07)^{2}}+\frac{A}{(1+0.07)^{2}(1+%
+0.09)}+\frac{A}{(1+0.07)^{2}(1+0.09)(1+0.1)}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mi>A</mi><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>A</mi><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>A</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.09</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>A</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.07</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.09</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mn>0.1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex30"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex30.m1" class="ltx_Math" alttext="\displaystyle=A\left(0.9346+0.8734+0.80132+0.7285\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>0.9346</mn><mo>+</mo><mn>0.8734</mn><mo>+</mo><mn>0.80132</mn><mo>+</mo><mn>0.7285</mn></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This will result in <math id="S6.SS0.SSS0.Px1.p3.m3" class="ltx_Math" alttext="A=\$51,777" display="inline"><mrow><mi>A</mi><mo rspace="0.1389em">=</mo><mrow><mrow><mo lspace="0.1389em" rspace="0.167em">$</mo><mn>51</mn></mrow><mo>,</mo><mn>777</mn></mrow></mrow></math> per year over the coming 4 years.</p>
+</div>
+<div class="ltx_theorem ltx_tcolorbox ltx_importantbox">
+<h6 class="ltx_title ltx_title_theorem">Important: Non-Uniform Interest Rates and A/P Factor</h6>
+<div id="S6.SS0.SSS0.Px1.p4" class="ltx_para">
+<p class="ltx_p">Applying the A/P factor formula we have seen in Chapter 2 requires a uniform interest rate across the periods. Hence, using it here is not possible.</p>
+</div>
+<div id="S6.SS0.SSS0.Px1.p5" class="ltx_para">
+<p class="ltx_p">For instance, if the average of the four annual rates, that is, 8.25% is used, the result is <math id="S6.SS0.SSS0.Px1.p5.m1" class="ltx_Math" alttext="A=52,467" display="inline"><mrow><mi>A</mi><mo>=</mo><mrow><mn>52</mn><mo>,</mo><mn>467</mn></mrow></mrow></math>. This is a $690 per year overestimate of the true equivalent annual net profit.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="S7" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.7 </span>Summary</h2>
+
+<div id="S7.p1" class="ltx_para">
+<p class="ltx_p">This chapter expanded the foundational equivalence concepts by introducing the critical distinction between nominal interest rates (the stated, uncompounded rate) and effective interest rates (the true, compounded rate).
+Furthermore, we explored how time-varying interest rates require a period-by-period analysis, highlighting the limitations of standard formulas when market conditions fluctuate.</p>
+</div>
+<figure id="F6" class="ltx_figure"><svg id="F6.pic1" class="ltx_picture ltx_centering" height="259.18" overflow="visible" version="1.1" width="647.97"><g transform="translate(0,259.18) matrix(1 0 0 -1 0 0) translate(323.99,0) translate(0,192.24)"><g fill="#FAFFFF" stroke="#00B3FF" stroke-width="1.5pt"><path d="M 311.88 47.46 L -311.88 47.46 C -317.99 47.46 -322.95 42.5 -322.95 36.39 L -322.95 -36.39 C -322.95 -42.5 -317.99 -47.46 -311.88 -47.46 L 311.88 -47.46 C 317.99 -47.46 322.95 -42.5 322.95 -36.39 L 322.95 36.39 C 322.95 42.5 317.99 47.46 311.88 47.46 Z M -322.95 -47.46"></path></g><g fill="#000000" stroke="#000000" stroke-width="1.5pt" transform="matrix(1.0 0.0 0.0 1.0 -295.28 10.1)"><foreignObject height="39.57" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="590.55">
+<span class="ltx_inline-block ltx_minipage ltx_align_top" style="width:426.8pt;">
+<span class="ltx_p"></span>
+<span class="ltx_p"><span class="ltx_rule" style="width:0.0pt;height:10.0pt;background:black;display:inline-block;"></span>
+<span class="ltx_text ltx_font_bold" style="font-size:144%;color:#B30000;">Yield <math id="F6.pic1.m1" class="ltx_Math" alttext="\Uparrow" display="inline"><mo mathcolor="#B30000" stretchy="false">⇑</mo></math></span><span class="ltx_text" style="font-size:144%;">  <math id="F6.pic1.m2" class="ltx_Math" alttext="\Rightarrow" display="inline"><mo stretchy="false">⇒</mo></math>  <span class="ltx_text ltx_font_bold" style="color:#B30000;">Price <math id="F6.pic1.m3" class="ltx_Math" alttext="\Downarrow" display="inline"><mo mathcolor="#B30000" stretchy="false">⇓</mo></math></span></span></span>
+<br class="ltx_break">
+<span class="ltx_p"><span class="ltx_text ltx_font_bold" style="font-size:144%;color:#009900;">Yield <math id="F6.pic1.m4" class="ltx_Math" alttext="\Downarrow" display="inline"><mo mathcolor="#009900" stretchy="false">⇓</mo></math></span><span class="ltx_text" style="font-size:144%;">  <math id="F6.pic1.m5" class="ltx_Math" alttext="\Rightarrow" display="inline"><mo stretchy="false">⇒</mo></math>  <span class="ltx_text ltx_font_bold" style="color:#009900;">Price <math id="F6.pic1.m6" class="ltx_Math" alttext="\Uparrow" display="inline"><mo mathcolor="#009900" stretchy="false">⇑</mo></math></span></span></span>
+</span></foreignObject></g><g fill="#000000" stroke="#000000" stroke-width="0.4pt"><g fill="#00B3FF"><path d="M 115.15 66.95 L -115.15 66.95 C -118.21 66.95 -120.69 64.47 -120.69 61.41 L -120.69 35.58 C -120.69 32.53 -118.21 30.05 -115.15 30.05 L 115.15 30.05 C 118.21 30.05 120.69 32.53 120.69 35.58 L 120.69 61.41 C 120.69 64.47 118.21 66.95 115.15 66.95 Z M -120.69 30.05" style="stroke:none"></path></g><g fill="#FFFFFF" stroke="#FFFFFF" transform="matrix(1.0 0.0 0.0 1.0 -99.93 44.35)"><foreignObject color="#FFFFFF" height="14.76" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="200.18"><span class="ltx_text ltx_font_sansserif ltx_font_bold" style="font-size:120%;">1. The Inverse Relationship</span></foreignObject></g><g fill="#FAFFFF" stroke="#00B3FF" stroke-width="1.5pt"><path d="M 311.88 -60.09 L -311.88 -60.09 C -317.99 -60.09 -322.95 -65.05 -322.95 -71.16 L -322.95 -179.09 C -322.95 -185.2 -317.99 -190.16 -311.88 -190.16 L 311.88 -190.16 C 317.99 -190.16 322.95 -185.2 322.95 -179.09 L 322.95 -71.16 C 322.95 -65.05 317.99 -60.09 311.88 -60.09 Z M -322.95 -190.16"></path></g><g fill="#000000" stroke="#000000" stroke-width="1.5pt" transform="matrix(1.0 0.0 0.0 1.0 -295.28 -97.45)"><foreignObject height="74.72" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="590.55">
+<span class="ltx_inline-block ltx_minipage ltx_align_top" style="width:426.8pt;">
+<span class="ltx_p"></span>
+<span class="ltx_p"><span class="ltx_rule" style="width:0.0pt;height:10.0pt;background:black;display:inline-block;"></span>
+<span class="ltx_text" style="font-size:120%;"> 
+<span class="ltx_tabular ltx_align_middle">
+<span class="ltx_tbody">
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_right" style="padding-top:3.6pt;padding-bottom:3.6pt;"><span class="ltx_text ltx_font_bold">Yield <math id="F6.pic1.m7" class="ltx_Math" alttext="=" display="inline"><mo>=</mo></math> Coupon Rate</span></span>
+<span class="ltx_td ltx_align_center" style="padding-top:3.6pt;padding-bottom:3.6pt;"><math id="F6.pic1.m8" class="ltx_Math" alttext="\Rightarrow" display="inline"><mo stretchy="false">⇒</mo></math></span>
+<span class="ltx_td ltx_align_left" style="padding-top:3.6pt;padding-bottom:3.6pt;">Sells at <span class="ltx_text ltx_font_bold">Face Value (Par)</span></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_right" style="padding-top:3.6pt;padding-bottom:3.6pt;"><span class="ltx_text ltx_font_bold">Yield <math id="F6.pic1.m9" class="ltx_Math" alttext="&gt;" display="inline"><mo>&gt;</mo></math> Coupon Rate</span></span>
+<span class="ltx_td ltx_align_center" style="padding-top:3.6pt;padding-bottom:3.6pt;"><math id="F6.pic1.m10" class="ltx_Math" alttext="\Rightarrow" display="inline"><mo stretchy="false">⇒</mo></math></span>
+<span class="ltx_td ltx_align_left" style="padding-top:3.6pt;padding-bottom:3.6pt;">Sells at a <span class="ltx_text ltx_font_bold" style="color:#B30000;">Discount</span> <span class="ltx_text ltx_font_italic">(Our Example)</span></span></span>
+<span class="ltx_tr">
+<span class="ltx_td ltx_align_right" style="padding-top:3.6pt;padding-bottom:3.6pt;"><span class="ltx_text ltx_font_bold">Yield <math id="F6.pic1.m11" class="ltx_Math" alttext="&lt;" display="inline"><mo>&lt;</mo></math> Coupon Rate</span></span>
+<span class="ltx_td ltx_align_center" style="padding-top:3.6pt;padding-bottom:3.6pt;"><math id="F6.pic1.m12" class="ltx_Math" alttext="\Rightarrow" display="inline"><mo stretchy="false">⇒</mo></math></span>
+<span class="ltx_td ltx_align_left" style="padding-top:3.6pt;padding-bottom:3.6pt;">Sells at a <span class="ltx_text ltx_font_bold" style="color:#009900;">Premium</span></span></span>
+</span>
+</span></span></span>
+</span></foreignObject></g><g fill="#00B3FF"><path d="M 96.84 -40.61 L -96.84 -40.61 C -99.9 -40.61 -102.38 -43.08 -102.38 -46.14 L -102.38 -71.97 C -102.38 -75.03 -99.9 -77.5 -96.84 -77.5 L 96.84 -77.5 C 99.9 -77.5 102.38 -75.03 102.38 -71.97 L 102.38 -46.14 C 102.38 -43.08 99.9 -40.61 96.84 -40.61 Z M -102.38 -77.5" style="stroke:none"></path></g><g fill="#FFFFFF" stroke="#FFFFFF" transform="matrix(1.0 0.0 0.0 1.0 -81.62 -63.21)"><foreignObject color="#FFFFFF" height="14.76" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="163.09"><span class="ltx_text ltx_font_sansserif ltx_font_bold" style="font-size:120%;">2. The Parity Concept</span></foreignObject></g><g fill="#FFF9F2" stroke="#CC6600" stroke-width="1.5pt"><path d="M 292.19 -60.09 L -292.19 -60.09 C -298.31 -60.09 -303.26 -65.05 -303.26 -71.16 L -303.26 -138.69 C -303.26 -144.8 -298.31 -149.76 -292.19 -149.76 L 292.19 -149.76 C 298.31 -149.76 303.26 -144.8 303.26 -138.69 L 303.26 -71.16 C 303.26 -65.05 298.31 -60.09 292.19 -60.09 Z M -303.26 -149.76"></path></g><g fill="#000000" stroke="#000000" stroke-width="1.5pt" transform="matrix(1.0 0.0 0.0 1.0 -275.59 -97.45)"><foreignObject height="34.32" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="551.18">
+<span class="ltx_inline-block ltx_minipage ltx_align_top" style="width:398.3pt;">
+<span class="ltx_p"></span>
+<span class="ltx_p"><span class="ltx_rule" style="width:0.0pt;height:10.0pt;background:black;display:inline-block;"></span>
+<span class="ltx_text ltx_font_italic" style="font-size:144%;">“Yield is the market’s current <span class="ltx_text ltx_font_bold">opportunity cost</span>,</span></span>
+<span class="ltx_p"><span class="ltx_text ltx_font_italic" style="font-size:144%;">NOT your bond’s fixed return.”<span class="ltx_text ltx_font_upright"></span></span></span>
+</span></foreignObject></g><g fill="#CC6600"><path d="M 97.46 -42.22 L -97.46 -42.22 C -100.52 -42.22 -102.99 -44.7 -102.99 -47.75 L -102.99 -70.36 C -102.99 -73.41 -100.52 -75.89 -97.46 -75.89 L 97.46 -75.89 C 100.52 -75.89 102.99 -73.41 102.99 -70.36 L 102.99 -47.75 C 102.99 -44.7 100.52 -42.22 97.46 -42.22 Z M -102.99 -75.89" style="stroke:none"></path></g><g fill="#FFFFFF" stroke="#FFFFFF" transform="matrix(1.0 0.0 0.0 1.0 -82.24 -64.82)"><foreignObject color="#FFFFFF" height="11.53" overflow="visible" transform="matrix(1 0 0 -1 0 16.6)" width="164.48"><span class="ltx_text ltx_font_sansserif ltx_font_bold" style="font-size:120%;">3. The Core Definition</span></foreignObject></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="1.5pt"><path d="M 0 -48.5 L 0 -49.42" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 0 -49.42)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g><g color="#00B3FF" fill="#00B3FF" stroke="#00B3FF" stroke-width="1.5pt"><path d="M 0 -191.2 L 0 -51.03" style="fill:none"></path><g transform="matrix(0.0 1.0 -1.0 0.0 0 -51.03)"><path d="M 9.09 0 C 6.4 0.51 2.02 2.02 -1.01 3.79 L -1.01 -3.79 C 2.02 -2.02 6.4 -0.51 9.09 0" style="stroke:none"></path></g></g></g></svg>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3.6: </span>The three principles of bond pricing and yields.</figcaption>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_align_center">
+<a href="Ch2.html" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>How Time and Interest affect money</span></a><a href="Ch4.html" title="" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Present Worth and Related Economic Criteria</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Aug 27 16:14:42 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
