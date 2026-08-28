@@ -2,3 +2,5 @@ presentations/
 presentations/*.pdf
 *.DS_Store*
 *.DS_store*
+*.pyc
+.venv
