@@ -6,8 +6,8 @@ st.set_page_config(page_title="Ch4: Nominal & Effective Rates", layout="wide")
 st.title("🔄 Nominal vs Effective Interest Rate Calculator")
 st.markdown("Calculate the actual observed interest rate over a year (Effective Rate/APY) given a stated Nominal Rate (APR) and a compounding frequency.")
 
-st.sidebar.header("Input Parameters")
-r_pct = st.sidebar.number_input("Nominal Annual Rate (APR) %", min_value=0.0, value=12.0, step=0.5)
+st.header("Input Parameters")
+r_pct = st.number_input("Nominal Annual Rate (APR) %", min_value=0.0, value=12.0, step=0.5)
 r = r_pct / 100.0
 
 compounding_options = {
@@ -20,7 +20,7 @@ compounding_options = {
     "Continuously (∞)": np.inf
 }
 
-compounding_freq = st.sidebar.selectbox("Compounding Frequency (m)", list(compounding_options.keys()), index=3)
+compounding_freq = st.selectbox("Compounding Frequency (m)", list(compounding_options.keys()), index=3)
 m = compounding_options[compounding_freq]
 
 st.markdown("---")

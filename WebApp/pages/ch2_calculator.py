@@ -5,7 +5,7 @@ import streamlit as st
 # Add the Codes directory to the path so we can import factors from ch2
 current_dir = os.path.dirname(os.path.abspath(__file__))
 webapp_dir = os.path.abspath(os.path.join(current_dir, '..'))
-codes_dir = os.path.abspath(os.path.join(webapp_dir, 'Codes'))
+codes_dir = os.path.abspath(os.path.join(webapp_dir, '..'))
 if codes_dir not in sys.path:
     sys.path.append(codes_dir)
 
@@ -16,10 +16,10 @@ st.set_page_config(page_title="Ch2: Calculator", layout="wide")
 st.title("📈 Interactive Calculator")
 st.markdown("Easily compute standard engineering economy factors and visualize amortization schedules.")
 
-# --- Sidebar Inputs ---
-st.sidebar.header("Input Parameters")
+# --- Calculator Inputs ---
+st.header("Input Parameters")
 
-factor_choice = st.sidebar.selectbox(
+factor_choice = st.selectbox(
     "Select Factor",
     [
         "Find F given P (F/P)",
@@ -38,11 +38,11 @@ is_gradient = "(P/G)" in factor_choice or "(A/G)" in factor_choice
 is_geometric = "(P_g)" in factor_choice
 
 if is_gradient:
-    base_amount = st.sidebar.number_input("Uniform Base Amount (A)", value=1000.0, step=100.0)
-    gradient_amount = st.sidebar.number_input("Gradient Amount (G)", value=200.0, step=50.0)
+    base_amount = st.number_input("Uniform Base Amount (A)", value=1000.0, step=100.0)
+    gradient_amount = st.number_input("Gradient Amount (G)", value=200.0, step=50.0)
 elif is_geometric:
-    base_amount = st.sidebar.number_input("Initial Amount (A_1)", value=1000.0, step=100.0)
-    growth_rate_pct = st.sidebar.number_input("Growth Rate g (%)", value=10.0, step=0.1)
+    base_amount = st.number_input("Initial Amount (A_1)", value=1000.0, step=100.0)
+    growth_rate_pct = st.number_input("Growth Rate g (%)", value=10.0, step=0.1)
 else:
     # Determine the label for the base amount based on the selection
     base_amount_label = "Base Amount"
@@ -53,14 +53,16 @@ else:
     elif "(P/A)" in factor_choice or "(F/A)" in factor_choice:
         base_amount_label = "Uniform Series Amount (A)"
     
-    base_amount = st.sidebar.number_input(f"{base_amount_label}", value=1000.0, step=100.0)
+    base_amount = st.number_input(f"{base_amount_label}", value=1000.0, step=100.0)
 
-interest_rate_pct = st.sidebar.number_input("Interest Rate (%)", value=5.0, step=0.1)
-periods = st.sidebar.number_input("Number of Periods (n)", value=10, min_value=1, step=1)
+interest_rate_pct = st.number_input("Interest Rate (%)", value=5.0, step=0.1)
+periods = st.number_input("Number of Periods (n)", value=10, min_value=1, step=1)
 
-calculate_btn = st.sidebar.button("Calculate")
+calculate_btn = st.button("Calculate")
 
-# --- Main Area ---
+st.markdown("---")
+
+# --- Results & Formulas ---
 st.header("Mathematical Formula")
 
 if "(F/P)" in factor_choice:

@@ -31,7 +31,7 @@ def fa_factor(i, n):
     return ((1.0 + i)**n - 1.0) / i
 
 # Presets selection
-preset = st.sidebar.selectbox(
+preset = st.selectbox(
     "📋 Select Configuration Preset:",
     [
         "Diaper Production Facility - Equal Life (5 Years)",
@@ -40,14 +40,14 @@ preset = st.sidebar.selectbox(
     ]
 )
 
-st.sidebar.markdown("---")
-marr_pct = st.sidebar.number_input("MARR (Minimum Attractive Rate of Return %):", min_value=0.0, max_value=100.0, value=10.0, step=0.5)
+st.markdown("---")
+marr_pct = st.number_input("MARR (Minimum Attractive Rate of Return %):", min_value=0.0, max_value=100.0, value=10.0, step=0.5)
 marr = marr_pct / 100.0
 
-project_type = st.sidebar.radio("Project Classification:", ["Mutually Exclusive", "Independent"])
-cash_flow_type = st.sidebar.radio("Cash Flow Type:", ["Revenue Alternatives", "Cost / Service Alternatives"])
+project_type = st.radio("Project Classification:", ["Mutually Exclusive", "Independent"])
+cash_flow_type = st.radio("Cash Flow Type:", ["Revenue Alternatives", "Cost / Service Alternatives"])
 
-equal_service_method = st.sidebar.selectbox(
+equal_service_method = st.selectbox(
     "Equal Service Evaluation Method:",
     [
         "Direct Comparison (Equal Lives)",
@@ -58,7 +58,7 @@ equal_service_method = st.sidebar.selectbox(
 
 study_period = 5
 if equal_service_method == "Study Period Approach":
-    study_period = st.sidebar.number_input("Study Horizon (Years):", min_value=1, max_value=50, value=5, step=1)
+    study_period = st.number_input("Study Horizon (Years):", min_value=1, max_value=50, value=5, step=1)
 
 # Default data loading based on preset
 if preset == "Diaper Production Facility - Equal Life (5 Years)":
@@ -109,7 +109,7 @@ if has_unequal_lives and equal_service_method == "Direct Comparison (Equal Lives
     ❌ **Equal-Service Requirement Error!**  
     The defined alternatives have unequal expected service lives: **{} years**.  
     Direct Present Worth comparison over unequal lives is invalid because it violates the **Equal-Service Requirement**.  
-    👉 **Action Required:** Change the *Equal Service Evaluation Method* in the sidebar to either **"Lowest Common Multiple (LCM) Approach"** or **"Study Period Approach"**.
+    👉 **Action Required:** Change the *Equal Service Evaluation Method* above to either **"Lowest Common Multiple (LCM) Approach"** or **"Study Period Approach"**.
     """.format(lives))
     st.stop()
 

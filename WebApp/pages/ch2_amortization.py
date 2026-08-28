@@ -5,7 +5,7 @@ import streamlit as st
 # Add the Codes directory to the path so we can import factors from ch2
 current_dir = os.path.dirname(os.path.abspath(__file__))
 webapp_dir = os.path.abspath(os.path.join(current_dir, '..'))
-codes_dir = os.path.abspath(os.path.join(webapp_dir, 'Codes'))
+codes_dir = os.path.abspath(os.path.join(webapp_dir, '..'))
 if codes_dir not in sys.path:
     sys.path.append(codes_dir)
 
@@ -16,16 +16,14 @@ st.set_page_config(page_title="Ch2: Amortization Schedule", layout="wide")
 st.title("📊 Amortization Schedule")
 st.markdown("Generate a detailed breakdown of your loan or investment over time.")
 
-# --- Sidebar Inputs ---
-st.sidebar.header("Input Parameters")
+# --- Input Parameters ---
+st.header("Input Parameters")
 
-principal = st.sidebar.number_input("Principal Amount (P)", value=10000.0, step=1000.0)
-interest_rate_pct = st.sidebar.number_input("Interest Rate (%)", value=5.0, step=0.1)
-periods = st.sidebar.number_input("Number of Periods (n)", value=10, min_value=1, step=1)
+principal = st.number_input("Principal Amount (P)", value=10000.0, step=1000.0)
+interest_rate_pct = st.number_input("Interest Rate (%)", value=5.0, step=0.1)
+periods = st.number_input("Number of Periods (n)", value=10, min_value=1, step=1)
 
-calculate_btn = st.sidebar.button("Generate Schedule")
-
-# --- Main Area ---
+calculate_btn = st.button("Generate Schedule")
 if calculate_btn:
     i = interest_rate_pct / 100.0
     n = int(periods)

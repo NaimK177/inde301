@@ -6,9 +6,9 @@ st.set_page_config(page_title="Ch1: Calculator", layout="wide")
 st.title("🧮 Chapter 1 Tools")
 st.markdown("Interactive tools to understand the Rule of 72 and the impact of compounding.")
 
-# --- Sidebar Inputs ---
-st.sidebar.header("Select Tool")
-tool_choice = st.sidebar.radio("Tool", ["Rule of 72 Estimator", "Simple vs. Compound Interest"])
+# --- Tool Selection ---
+st.header("Select Tool")
+tool_choice = st.radio("Tool", ["Rule of 72 Estimator", "Simple vs. Compound Interest"])
 
 if tool_choice == "Rule of 72 Estimator":
     st.header("⏱️ Rule of 72 Estimator")
@@ -31,11 +31,11 @@ elif tool_choice == "Simple vs. Compound Interest":
     st.header("📈 Simple vs. Compound Interest")
     st.markdown("Visualize the difference between simple interest (linear) and compound interest (exponential).")
     
-    st.sidebar.header("Input Parameters")
-    principal = st.sidebar.number_input("Principal Amount ($)", value=100000.0, step=5000.0)
-    simple_rate = st.sidebar.number_input("Simple Interest Rate (%)", value=8.5, step=0.1)
-    compound_rate = st.sidebar.number_input("Compound Interest Rate (%)", value=6.0, step=0.1)
-    periods = st.sidebar.slider("Number of Periods (Years)", min_value=1, max_value=50, value=20)
+    st.header("Input Parameters")
+    principal = st.number_input("Principal Amount ($)", value=100000.0, step=5000.0)
+    simple_rate = st.number_input("Simple Interest Rate (%)", value=8.5, step=0.1)
+    compound_rate = st.number_input("Compound Interest Rate (%)", value=6.0, step=0.1)
+    periods = st.slider("Number of Periods (Years)", min_value=1, max_value=50, value=20)
     
     # Calculate arrays
     years = list(range(periods + 1))

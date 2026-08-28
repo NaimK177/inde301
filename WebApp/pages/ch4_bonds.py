@@ -5,7 +5,7 @@ import streamlit as st
 # Add the Codes directory to the path so we can import from ch4 and ch2
 current_dir = os.path.dirname(os.path.abspath(__file__))
 webapp_dir = os.path.abspath(os.path.join(current_dir, '..'))
-codes_dir = os.path.abspath(os.path.join(webapp_dir, 'Codes'))
+codes_dir = os.path.abspath(os.path.join(webapp_dir, '..'))
 if codes_dir not in sys.path:
     sys.path.append(codes_dir)
 
@@ -17,34 +17,34 @@ st.set_page_config(page_title="Ch4: Bond Calculator", layout="wide")
 st.title("💵 Bond Calculator")
 st.markdown("Calculate the Present Value (Purchase Price) of a bond, visualize its cash flow, and see how the price relates to the Yield to Maturity.")
 
-# --- Sidebar Inputs ---
-st.sidebar.header("Bond Parameters")
+# --- Bond Parameters ---
+st.header("Bond Parameters")
 
-F = st.sidebar.number_input("Face Value ($)", min_value=100.0, value=1000.0, step=100.0)
+F = st.number_input("Face Value ($)", min_value=100.0, value=1000.0, step=100.0)
 
-coupon_input_type = st.sidebar.radio("Coupon Input Type", ["Coupon Value ($)", "Coupon Rate (%)"])
+coupon_input_type = st.radio("Coupon Input Type", ["Coupon Value ($)", "Coupon Rate (%)"])
 if coupon_input_type == "Coupon Value ($)":
-    C = st.sidebar.number_input("Total Annual Coupon ($)", min_value=0.0, value=100.0, step=10.0)
+    C = st.number_input("Total Annual Coupon ($)", min_value=0.0, value=100.0, step=10.0)
     coupon_rate = None
 else:
     C = None
-    coupon_rate_pct = st.sidebar.number_input("Annual Coupon Rate (%)", min_value=0.0, value=10.0, step=0.5)
+    coupon_rate_pct = st.number_input("Annual Coupon Rate (%)", min_value=0.0, value=10.0, step=0.5)
     coupon_rate = coupon_rate_pct / 100.0
 
-m = st.sidebar.selectbox(
+m = st.selectbox(
     "Compounding Periods per Year (m)", 
     options=[1, 2, 4, 12], 
     index=1, 
     format_func=lambda x: f"{x} ({'Annual' if x==1 else 'Semi-annual' if x==2 else 'Quarterly' if x==4 else 'Monthly'})"
 )
-years = st.sidebar.number_input("Years to Maturity", min_value=1, value=10, step=1)
+years = st.number_input("Years to Maturity", min_value=1, value=10, step=1)
 
-st.sidebar.markdown("---")
-st.sidebar.header("Market Conditions")
-yield_pct = st.sidebar.number_input("Yield to Maturity (%)", min_value=0.01, value=10.0, step=0.5)
+st.markdown("---")
+st.header("Market Conditions")
+yield_pct = st.number_input("Yield to Maturity (%)", min_value=0.01, value=10.0, step=0.5)
 yld = yield_pct / 100.0
 
-calculate_btn = st.sidebar.button("Calculate & Visualize")
+calculate_btn = st.button("Calculate & Visualize")
 
 # Resolve actual coupon value if rate was provided
 if C is None:
