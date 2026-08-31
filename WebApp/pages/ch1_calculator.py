@@ -1,5 +1,7 @@
 import streamlit as st
 import plotly.graph_objects as go
+import numpy as np
+from plotly.subplots import make_subplots
 
 st.set_page_config(page_title="Ch1: Calculator", layout="wide")
 
@@ -38,41 +40,102 @@ elif tool_choice == "Simple vs. Compound Interest":
     periods = st.slider("Number of Periods (Years)", min_value=1, max_value=50, value=20)
     
     # Calculate arrays
-    years = list(range(periods + 1))
-    simple_values = [principal * (1 + (simple_rate / 100.0) * n) for n in years]
-    compound_values = [principal * (1 + (compound_rate / 100.0))**n for n in years]
+    n = np.arange(0, periods + 1, 1)
+    simple_interest = simple_rate / 100.0
+    compound_interest = compound_rate / 100.0
     
-    # Plotly Figure
-    fig = go.Figure()
+    F_simple = principal * (1 + simple_interest * n)
+    F_compound = principal * (1 + compound_interest)**n
+
+    I_simple = principal * simple_interest * np.ones(periods + 1)
+    I_simple[0] = 0
     
-    fig.add_trace(go.Scatter(
-        x=years, y=simple_values,
-        mode='lines+markers',
-        name=f'Simple Interest ({simple_rate}%)',
-        line=dict(color='#3B82F6', width=3)
-    ))
+    # Calculate Compound Interest Breakdown
+    I_compound_principal = principal * compound_interest * np.ones(periods + 1)
+    I_compound_principal[0] = 0
+    I_compound_on_interest = np.zeros(periods + 1)
     
-    fig.add_trace(go.Scatter(
-        x=years, y=compound_values,
-        mode='lines+markers',
-        name=f'Compound Interest ({compound_rate}%)',
-        line=dict(color='#EF4444', width=3)
-    ))
-    
-    fig.update_layout(
-        title="Future Value Over Time",
-        xaxis_title="Years",
-        yaxis_title="Total Value ($)",
-        template="plotly_white",
-        hovermode="x unified",
-        legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01)
+    for k in range(1, periods + 1):
+        I_compound_on_interest[k] = (F_compound[k-1] - principal) * compound_interest
+
+    # Build the Interactive Plot
+    fig = make_subplots(
+        rows=2, cols=1,
+        shared_xaxes=True,
+        vertical_spacing=0.1,
+        subplot_titles=('Future Value', 'Interest Earned Per Period')
     )
     
-    st.plotly_chart(fig, width='stretch')
+    # --- ROW 1: Cumulative Lines ---
+    # Add Simple Interest Line
+    fig.add_trace(go.Scatter(
+        x=n, y=F_simple,
+        mode='lines+markers',
+        name=f'Total: Simple ({simple_rate}%)',
+        line=dict(color='blue', dash='dash'),
+        hovertemplate='Year %{x}<br>Amount: $%{y:,.2f}<extra></extra>'
+    ), row=1, col=1)
+
+    # Add Compound Interest Line
+    fig.add_trace(go.Scatter(
+        x=n, y=F_compound,
+        mode='lines+markers',
+        name=f'Total: Compound ({compound_rate}%)',
+        line=dict(color='red'),
+        hovertemplate='Year %{x}<br>Amount: $%{y:,.2f}<extra></extra>'
+    ), row=1, col=1)
+
+    # --- ROW 2: Period Interest Bars ---
+    # Add Simple Interest Bars
+    fig.add_trace(go.Bar(
+        x=n, y=I_simple,
+        name='Period: Simple',
+        marker_color='blue',
+        opacity=0.6,
+        offsetgroup=0,
+        hovertemplate='Year %{x} Interest: $%{y:,.2f}<extra></extra>'
+    ), row=2, col=1)
+
+    # Add Compound Interest Bars (On Principal)
+    fig.add_trace(go.Bar(
+        x=n, y=I_compound_principal,
+        name='Compound: On Principal',
+        marker_color='red',
+        opacity=0.6,
+        offsetgroup=1,
+        hovertemplate='Year %{x} On Principal: $%{y:,.2f}<extra></extra>'
+    ), row=2, col=1)
+
+    # Add Compound Interest Bars (On Accumulated Interest)
+    fig.add_trace(go.Bar(
+        x=n, y=I_compound_on_interest,
+        name='Compound: On Interest',
+        marker_color='darkred',
+        opacity=0.8,
+        offsetgroup=1,
+        base=I_compound_principal,
+        hovertemplate='Year %{x} On Interest: $%{y:,.2f}<extra></extra>'
+    ), row=2, col=1)
+
+    # Formatting the layout
+    fig.update_layout(
+        title='Simple vs. Compound Interest Analysis',
+        hovermode='x unified', # Shows all values simultaneously on hover
+        template='plotly_white',
+        barmode='group',       # Groups the bars side-by-side
+        height=700             # Increased height to accommodate both plots
+    )
+
+    # Update axis labels
+    fig.update_yaxes(title_text="Total Value ($)", row=1, col=1)
+    fig.update_yaxes(title_text="Interest Value ($)", row=2, col=1)
+    fig.update_xaxes(title_text="Number of Periods (years)", row=2, col=1)
+    
+    st.plotly_chart(fig, use_container_width=True)
     
     # Comparison Summary
-    final_simple = simple_values[-1]
-    final_compound = compound_values[-1]
+    final_simple = F_simple[-1]
+    final_compound = F_compound[-1]
     
     st.markdown("### 🔍 Conclusion at Year " + str(periods))
     st.write(f"- **Simple Interest:** ${final_simple:,.2f}")
