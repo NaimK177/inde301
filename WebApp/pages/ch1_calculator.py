@@ -114,7 +114,8 @@ elif tool_choice == "Simple vs. Compound Interest":
         opacity=0.8,
         offsetgroup=1,
         base=I_compound_principal,
-        hovertemplate='Year %{x} On Interest: $%{y:,.2f}<extra></extra>'
+        customdata=I_compound_on_interest,
+        hovertemplate='Year %{x} On Interest: $%{customdata:,.2f}<extra></extra>'
     ), row=2, col=1)
 
     # Formatting the layout
