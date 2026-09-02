@@ -1,15 +1,7 @@
-import sys
 import os
 import streamlit as st
 
-# Add the Codes directory to the path so we can import factors from ch2
-current_dir = os.path.dirname(os.path.abspath(__file__))
-webapp_dir = os.path.abspath(os.path.join(current_dir, '..'))
-codes_dir = os.path.abspath(os.path.join(webapp_dir, '..'))
-if codes_dir not in sys.path:
-    sys.path.append(codes_dir)
-
-from ch2 import factors
+from Codes.ch2 import factors
 
 st.set_page_config(page_title="Ch2: Amortization Schedule", layout="wide")
 

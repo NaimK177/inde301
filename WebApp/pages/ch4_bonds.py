@@ -1,16 +1,7 @@
-import sys
-import os
 import streamlit as st
 
-# Add the Codes directory to the path so we can import from ch4 and ch2
-current_dir = os.path.dirname(os.path.abspath(__file__))
-webapp_dir = os.path.abspath(os.path.join(current_dir, '..'))
-codes_dir = os.path.abspath(os.path.join(webapp_dir, '..'))
-if codes_dir not in sys.path:
-    sys.path.append(codes_dir)
-
-from ch4.pricetoyield import plot_bond_price_vs_yield
-from ch2.factors import plot_cash_flow
+from Codes.ch4.pricetoyield import plot_bond_price_vs_yield
+from Codes.ch2.factors import plot_cash_flow
 
 st.set_page_config(page_title="Ch4: Bond Calculator", layout="wide")
 
