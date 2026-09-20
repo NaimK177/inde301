@@ -19,11 +19,11 @@ pages = {
         st.Page("pages/ch4_time_varying.py", title="Time-Varying Rates", icon="📈"),
         st.Page("pages/ch4_bonds.py", title="Bonds Calculator", icon="💵"),
     ],
-    # "Chapter 5: Present Worth & Economic Criteria": [
-    #     st.Page("pages/ch5_theory.py", title="Main Ideas & Formulas", icon="💡"),
-    #     st.Page("pages/ch5_evaluator.py", title="Alternative Evaluator (PW, FW, LCM, Study Period)", icon="⚖️"),
-    #     st.Page("pages/ch5_capitalized_cost.py", title="Capitalized Cost & Payback Analysis", icon="♾️"),
-    # ],
+    "Chapter 5: Present Worth & Economic Criteria": [
+        st.Page("pages/ch5_theory.py", title="Main Ideas & Formulas", icon="💡"),
+        st.Page("pages/ch5_evaluator.py", title="Alternative Evaluator (PW, FW, LCM, Study Period)", icon="⚖️"),
+        st.Page("pages/ch5_capitalized_cost.py", title="Capitalized Cost & Payback Analysis", icon="♾️"),
+    ],
     # "Chapter 6: Annual Worth Analysis": [
     #     st.Page("pages/ch6_theory.py", title="Main Ideas & Formulas", icon="💡"),
     #     st.Page("pages/ch6_evaluator.py", title="Annual Worth Evaluator & Capital Recovery", icon="📊"),
