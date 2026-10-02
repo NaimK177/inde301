@@ -4,3 +4,5 @@ presentations/*.pdf
 *.DS_store*
 *.pyc
 .venv
+sync_to_public.sh
+app_test.py

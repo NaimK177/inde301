@@ -38,6 +38,14 @@ pages = {
         st.Page("pages/ch8_steps.py", title="Step-by-Step Guide", icon="📋"),
         st.Page("pages/ch8_incremental.py", title="Incremental ROR Solver", icon="⚖️"),
     ],
+    "Chapter 9: Benefit/Cost Analysis": [
+        st.Page("pages/ch9_theory.py", title="Main Ideas & Formulas", icon="💡"),
+        st.Page("pages/ch9_bc_evaluator.py", title="Benefit/Cost Evaluator", icon="⚖️"),
+    ],
+    "Chapter 10: Project Financing": [
+        st.Page("pages/ch10_theory.py", title="Main Ideas & Formulas", icon="💡"),
+        st.Page("pages/ch10_wacc_calculator.py", title="WACC Calculator", icon="💼"),
+    ]
 }
 
 # Initialize and run the router
