@@ -4,19 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDE 301: Engineering Economy - Course Notes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>INDE 301: Engineering Economy - Course Portal & Resources</title>
+    <meta name="description" content="INDE 301 Engineering Economy course portal for students at AUB MSFEA: interactive web notes, Streamlit calculators, lecture presentations, homework assignments and solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #4f46e5;
-            --primary-hover: #4338ca;
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --primary-glow: rgba(99, 102, 241, 0.35);
             --secondary: #10b981;
             --secondary-hover: #059669;
-            --bg-color: #0f172a;
+            --secondary-glow: rgba(16, 185, 129, 0.3);
+            --accent-amber: #f59e0b;
+            --accent-rose: #f43f5e;
+            --bg-color: #0b0f19;
             --text-main: #f8fafc;
-            --text-muted: #cbd5e1;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --card-border: rgba(255, 255, 255, 0.1);
+            --text-muted: #94a3b8;
+            --card-bg: rgba(17, 24, 39, 0.72);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --card-hover-border: rgba(99, 102, 241, 0.45);
+            --pill-bg: rgba(255, 255, 255, 0.05);
+            --pill-border: rgba(255, 255, 255, 0.1);
         }
 
         * {
@@ -26,165 +36,619 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(145deg, #070a12 0%, #0f172a 50%, #1e1b4b 100%);
             color: var(--text-main);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 2rem;
+            padding: 2.5rem 1.25rem 4rem;
             position: relative;
             overflow-x: hidden;
         }
 
-        /* Decorative background elements */
-        .blob {
+        /* Ambient background lighting */
+        .ambient-blob {
             position: absolute;
-            filter: blur(80px);
+            filter: blur(100px);
             z-index: 0;
-            opacity: 0.5;
+            opacity: 0.42;
+            pointer-events: none;
+            border-radius: 50%;
         }
 
         .blob-1 {
-            top: -10%;
-            left: -10%;
-            width: 40vw;
-            height: 40vw;
-            background: rgba(79, 70, 229, 0.4);
-            border-radius: 50%;
+            top: -5%;
+            left: -5%;
+            width: 45vw;
+            height: 45vw;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.5) 0%, rgba(99, 102, 241, 0) 70%);
         }
 
         .blob-2 {
-            bottom: -10%;
+            top: 40%;
             right: -10%;
-            width: 35vw;
-            height: 35vw;
-            background: rgba(16, 185, 129, 0.3);
-            border-radius: 50%;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.35) 0%, rgba(16, 185, 129, 0) 70%);
+        }
+
+        .blob-3 {
+            bottom: -10%;
+            left: 20%;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, rgba(139, 92, 246, 0) 70%);
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1240px;
             width: 100%;
             z-index: 1;
         }
 
+        /* Header section */
         header {
             text-align: center;
-            margin-bottom: 3rem;
-            animation: fadeInDown 0.8s ease-out;
+            margin-bottom: 2.75rem;
+            animation: fadeInDown 0.75s ease-out;
+        }
+
+        .logos-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75rem;
+            margin-bottom: 1.75rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-aub {
+            height: 90px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+            transition: transform 0.25s ease;
+        }
+
+        .logo-aub:hover {
+            transform: scale(1.03);
+        }
+
+        .logo-divider {
+            width: 1px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .logo-msfea {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+            background: rgba(255, 255, 255, 0.96);
+            padding: 0.45rem 1rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+            transition: transform 0.25s ease;
+        }
+
+        .logo-msfea:hover {
+            transform: scale(1.03);
+        }
+
+        .course-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            background: rgba(99, 102, 241, 0.12);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #a5b4fc;
+            margin-bottom: 1rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .course-badge .dot {
+            width: 7px;
+            height: 7px;
+            background: #34d399;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #34d399;
         }
 
         h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #818cf8, #34d399);
+            font-size: clamp(2.2rem, 5vw, 3.4rem);
+            font-weight: 800;
+            margin-bottom: 0.6rem;
+            background: linear-gradient(135deg, #ffffff 20%, #c7d2fe 50%, #6ee7b7 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2vw, 1.2rem);
             color: var(--text-muted);
-            font-weight: 300;
+            font-weight: 400;
+            max-width: 680px;
+            margin: 0 auto;
+            line-height: 1.5;
         }
 
-        .content-grid {
+        /* Search & Filter Bar */
+        .controls-wrapper {
+            margin: 0 auto 2.5rem;
+            max-width: 650px;
+            position: relative;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1.1rem;
+            color: #64748b;
+            pointer-events: none;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.85rem 1rem 0.85rem 2.85rem;
+            background: rgba(17, 24, 39, 0.85);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 0.75rem;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+            background: rgba(17, 24, 39, 0.95);
+        }
+
+        .search-input::placeholder {
+            color: #64748b;
+        }
+
+        /* Quick Launch Platforms Grid */
+        .platforms-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 2rem;
-            animation: fadeInUp 0.8s ease-out 0.2s both;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 0.75s ease-out both;
         }
 
         @media (min-width: 768px) {
-            .content-grid {
+            .platforms-grid {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
-        .card {
+        .platform-card {
             background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--card-border);
-            border-radius: 1rem;
-            padding: 2rem;
+            border-radius: 1.15rem;
+            padding: 1.85rem;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        .platform-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            opacity: 0.75;
         }
 
-        .card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+        .platform-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--card-hover-border);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(99, 102, 241, 0.15);
+        }
+
+        .platform-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .platform-icon-wrap {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.25);
+            color: #a5b4fc;
+            flex-shrink: 0;
         }
 
-        .card p {
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-            flex-grow: 1;
+        .platform-card:nth-child(2) .platform-icon-wrap {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            color: #6ee7b7;
         }
 
-        .btn {
+        .platform-title-group h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.25rem;
+        }
+
+        .platform-tag {
             display: inline-block;
-            text-align: center;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .platform-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-launch {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.4rem;
+            border-radius: 0.65rem;
+            font-size: 0.92rem;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.2s;
-            cursor: pointer;
-            border: none;
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--primary) 0%, #4338ca 100%);
+            box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+            transition: all 0.25s ease;
+            align-self: flex-start;
         }
 
-        .btn-primary {
-            background-color: var(--primary);
-            color: white;
+        .btn-launch:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(79, 70, 229, 0.5);
+            background: linear-gradient(135deg, #6366f1 0%, var(--primary) 100%);
         }
 
-        .btn-primary:hover {
-            background-color: var(--primary-hover);
-            transform: scale(1.05);
+        .platform-card:nth-child(2) .btn-launch {
+            background: linear-gradient(135deg, var(--secondary) 0%, #047857 100%);
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
         }
 
-        .pdf-list {
+        .platform-card:nth-child(2) .btn-launch:hover {
+            background: linear-gradient(135deg, #10b981 0%, var(--secondary) 100%);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+        }
+
+        /* Core Materials Section */
+        .section-heading-wrapper {
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .section-heading {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .section-heading svg {
+            color: #818cf8;
+        }
+
+        .materials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            animation: fadeInUp 0.85s ease-out 0.15s both;
+        }
+
+        @media (min-width: 900px) {
+            .materials-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Material Column Card */
+        .resource-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid var(--card-border);
+            border-radius: 1.15rem;
+            padding: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .resource-card:hover {
+            border-color: rgba(255, 255, 255, 0.16);
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.4);
+        }
+
+        .resource-card-header {
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.9rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .resource-card-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon-notes {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border: 1px solid rgba(99, 102, 241, 0.25);
+        }
+
+        .icon-presentations {
+            background: rgba(16, 185, 129, 0.15);
+            color: #6ee7b7;
+            border: 1px solid rgba(16, 185, 129, 0.25);
+        }
+
+        .icon-homework {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fcd34d;
+            border: 1px solid rgba(245, 158, 11, 0.25);
+        }
+
+        .resource-card-title h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .resource-card-title p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Items List */
+        .item-list {
             list-style: none;
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
+            flex-grow: 1;
         }
 
-        .pdf-link {
+        /* Single Document Item (Notes & Presentations) */
+        .doc-item {
+            transition: all 0.2s ease;
+        }
+
+        .doc-link {
             display: flex;
             align-items: center;
-            padding: 0.75rem 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 0.5rem;
+            justify-content: space-between;
+            padding: 0.85rem 1rem;
+            background: var(--pill-bg);
+            border: 1px solid var(--pill-border);
+            border-radius: 0.75rem;
             color: var(--text-main);
             text-decoration: none;
-            transition: background 0.2s, transform 0.2s;
+            transition: all 0.22s ease;
+            gap: 0.75rem;
         }
 
-        .pdf-link:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateX(5px);
+        .doc-link:hover {
+            background: rgba(255, 255, 255, 0.09);
+            border-color: rgba(255, 255, 255, 0.22);
+            transform: translateX(3px);
         }
 
-        .pdf-link svg {
-            margin-right: 0.75rem;
-            fill: #ef4444;
+        .doc-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            min-width: 0;
+        }
+
+        .doc-file-icon {
+            color: #ef4444;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .doc-text {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .doc-title {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .doc-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .download-pill {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #94a3b8;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+        }
+
+        .doc-link:hover .download-pill {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .doc-link.pres-link:hover .download-pill {
+            background: var(--secondary);
+            color: #ffffff;
+        }
+
+        /* Homework item */
+        .hw-entry {
+            background: var(--pill-bg);
+            border: 1px solid var(--pill-border);
+            border-radius: 0.75rem;
+            padding: 0.85rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+            transition: all 0.22s ease;
+        }
+
+        .hw-entry:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        .hw-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .hw-chapter-title {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+
+        .hw-topic {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .hw-btn-group {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+        .hw-btn {
+            flex: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+            padding: 0.45rem 0.65rem;
+            border-radius: 0.45rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .hw-btn-assignment {
+            background: rgba(99, 102, 241, 0.12);
+            color: #a5b4fc;
+            border: 1px solid rgba(99, 102, 241, 0.28);
+        }
+
+        .hw-btn-assignment:hover {
+            background: rgba(99, 102, 241, 0.28);
+            color: #ffffff;
+            border-color: rgba(99, 102, 241, 0.5);
+            transform: translateY(-1px);
+        }
+
+        .hw-btn-solutions {
+            background: rgba(16, 185, 129, 0.12);
+            color: #6ee7b7;
+            border: 1px solid rgba(16, 185, 129, 0.28);
+        }
+
+        .hw-btn-solutions:hover {
+            background: rgba(16, 185, 129, 0.28);
+            color: #ffffff;
+            border-color: rgba(16, 185, 129, 0.5);
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #ffffff;
         }
 
         /* Animations */
@@ -193,7 +657,6 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -205,149 +668,540 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Search Highlight or Filtering */
+        .is-hidden {
+            display: none !important;
+        }
     </style>
 </head>
 
 <body>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
 
     <div class="container">
+        <!-- Header -->
         <header>
-            <div
-                style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
-                <img src="AUB_Main_Vertical_White-01.png" alt="AUB Logo"
-                    style="height: 100px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));">
-                <div style="width: 2px; height: 70px; background: rgba(255, 255, 255, 0.2);"></div>
-                <img src="AUB_Logo_MSFEA_Horizontal_RGB.png" alt="MSFEA Logo"
-                    style="height: 80px; width: auto; object-fit: contain; background: rgba(255, 255, 255, 0.95); padding: 0.5rem 1rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+            <div class="logos-wrapper">
+                <img src="AUB_Main_Vertical_White-01.png" alt="AUB Logo" class="logo-aub">
+                <div class="logo-divider"></div>
+                <img src="AUB_Logo_MSFEA_Horizontal_RGB.png" alt="MSFEA Logo" class="logo-msfea">
             </div>
+
+            <div class="course-badge">
+                <span class="dot"></span>
+                <span>Fall 2026-2027 • MSFEA</span>
+            </div>
+
             <h1>Engineering Economy</h1>
-            <p class="subtitle">INDE 301 Course Notes • Fall 2026-2027 • Naim Al Khoury</p>
+            <p class="subtitle">INDE 301 Student Course Portal • Interactive Notes, Calculators, Lecture Presentations &amp; Homework Solutions</p>
         </header>
 
-        <div class="content-grid">
+        <!-- Live Search Bar -->
+        <div class="controls-wrapper">
+            <div class="search-input-wrapper">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="resource-search" class="search-input" placeholder="Search by chapter, topic, or keyword (e.g. Chapter 4, Present Worth, ROR)...">
+            </div>
+        </div>
+
+        <!-- Section 1: Interactive Learning Platforms -->
+        <div class="platforms-grid">
             <!-- Web Version Card -->
-            <div class="card">
-                <h2>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 0 1 9-9" />
+            <div class="platform-card">
+                <div>
+                    <div class="platform-header">
+                        <div class="platform-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <div class="platform-title-group">
+                            <span class="platform-tag">Digital Textbook</span>
+                            <h2>Interactive Web Notes</h2>
+                        </div>
+                    </div>
+                    <p>Access the responsive HTML edition of the course notes with dynamic navigation, searchable chapters, mathematical formula sheets, and reader-optimized layouts.</p>
+                </div>
+                <a href="docs/index.html" class="btn-launch">
+                    <span>Read Web Version</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
-                    Interactive Web Version
-                </h2>
-                <p>Access the fully responsive HTML version of the course notes. Features include a dynamic table of
-                    contents, searchable text, and optimized reading layout for any device.</p>
-                <a href="docs/index.html" class="btn btn-primary">Read Web Version</a>
+                </a>
             </div>
 
             <!-- Streamlit Web App Card -->
-            <div class="card">
-                <h2>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="18" y1="20" x2="18" y2="10"></line>
-                        <line x1="12" y1="20" x2="12" y2="4"></line>
-                        <line x1="6" y1="20" x2="6" y2="14"></line>
+            <div class="platform-card">
+                <div>
+                    <div class="platform-header">
+                        <div class="platform-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="platform-title-group">
+                            <span class="platform-tag">Streamlit App</span>
+                            <h2>Interactive Calculators</h2>
+                        </div>
+                    </div>
+                    <p>Hands-on engineering economy calculators: cash flow diagrams, amortization schedules, bond pricing, compound interest comparisons, and sensitivity analysis.</p>
+                </div>
+                <a href="https://aub-inde301-2026.streamlit.app" target="_blank" rel="noopener noreferrer" class="btn-launch">
+                    <span>Launch Web App</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
                     </svg>
-                    Interactive Calculators & Visualizations
-                </h2>
-                <p>Access an interactive platform to calculate and visualize time value of money concepts, amortization
-                    schedules, and bond pricing.</p>
-                <a href="https://aub-inde301-2026.streamlit.app" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-primary">Launch Web App</a>
+                </a>
             </div>
+        </div>
 
-            <!-- PDF Version Card -->
-            <div class="card">
-                <h2>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                    PDF Downloads
-                </h2>
-                <p>Download individual chapters in PDF format for offline viewing, printing, or annotation.</p>
+        <!-- Section 2: Core Course Materials Grid -->
+        <div class="section-heading-wrapper">
+            <h2 class="section-heading">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <folder></folder>
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Course Materials &amp; Downloads
+            </h2>
+        </div>
 
-                <ul class="pdf-list">
-                    <li>
-                        <a href="pdf/ch1-foundations.pdf" class="pdf-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z" />
-                            </svg>
-                            Chapter 1: Foundations
+        <div class="materials-grid">
+            <!-- 1. Chapter Notes Column -->
+            <div class="resource-card" data-category="notes">
+                <div class="resource-card-header">
+                    <div class="resource-card-icon icon-notes">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="resource-card-title">
+                        <h3>Course Notes (PDF)</h3>
+                        <p>Complete chapter writeups</p>
+                    </div>
+                </div>
+
+                <ul class="item-list">
+                    <li class="doc-item" data-search="chapter 1 foundations engineering economy">
+                        <a href="pdf/ch1-foundations.pdf" target="_blank" class="doc-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 1</span>
+                                    <span class="doc-meta">Foundations of Engineering Economy</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">PDF</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="pdf/ch2-time-interest-money.pdf" class="pdf-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z" />
-                            </svg>
-                            Chapter 2: Time & Interest
+                    <li class="doc-item" data-search="chapter 2 time interest value of money">
+                        <a href="pdf/ch2-time-interest-money.pdf" target="_blank" class="doc-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 2</span>
+                                    <span class="doc-meta">Time &amp; Interest Affect Money</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">PDF</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="pdf/ch4-nominal-effective-interest.pdf" class="pdf-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z" />
-                            </svg>
-                            Chapter 4: Nominal & Effective Interest
+                    <li class="doc-item" data-search="chapter 4 nominal effective interest rates">
+                        <a href="pdf/ch4-nominal-effective-interest.pdf" target="_blank" class="doc-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 4</span>
+                                    <span class="doc-meta">Nominal &amp; Effective Interest Rates</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">PDF</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="pdf/ch5-present-worth-analysis.pdf" class="pdf-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z" />
-                            </svg>
-                            Chapter 5: Present Worth Analysis
+                    <li class="doc-item" data-search="chapter 5 present worth analysis criteria">
+                        <a href="pdf/ch5-present-worth-analysis.pdf" target="_blank" class="doc-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 5</span>
+                                    <span class="doc-meta">Present Worth Analysis</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">PDF</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="pdf/ch6-annual-worth.pdf" class="pdf-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z" />
-                            </svg>
-                            Chapter 6: Annual Worth
+                    <li class="doc-item" data-search="chapter 6 annual worth analysis equivalent">
+                        <a href="pdf/ch6-annual-worth.pdf" target="_blank" class="doc-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 6</span>
+                                    <span class="doc-meta">Annual Worth Analysis</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">PDF</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="pdf/ch7-rate-of-return-single.pdf" class="pdf-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z" />
-                            </svg>
-                            Chapter 7: Rate of Return
+                    <li class="doc-item" data-search="chapter 7 rate of return analysis single alternative ror">
+                        <a href="pdf/ch7-rate-of-return-single.pdf" target="_blank" class="doc-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 7</span>
+                                    <span class="doc-meta">Rate of Return: Single Alternative</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">PDF</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="pdf/ch8-rate-of-return-multiple.pdf" class="pdf-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24">
-                                <path
-                                    d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z" />
-                            </svg>
-                            Chapter 8: ROR (Multiple Alternatives)
+                    <li class="doc-item" data-search="chapter 8 rate of return analysis multiple alternatives incremental ror">
+                        <a href="pdf/ch8-rate-of-return-multiple.pdf" target="_blank" class="doc-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 8</span>
+                                    <span class="doc-meta">Rate of Return: Multiple Alternatives</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">PDF</span>
                         </a>
                     </li>
                 </ul>
             </div>
+
+            <!-- 2. Lecture Presentations Column -->
+            <div class="resource-card" data-category="presentations">
+                <div class="resource-card-header">
+                    <div class="resource-card-icon icon-presentations">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div class="resource-card-title">
+                        <h3>Presentations (Slides)</h3>
+                        <p>Lecture decks &amp; visual summaries</p>
+                    </div>
+                </div>
+
+                <ul class="item-list">
+                    <li class="doc-item" data-search="prologue course overview introduction motivation">
+                        <a href="presentations/prologue.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Prologue</span>
+                                    <span class="doc-meta">Course Overview &amp; Introduction</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                    <li class="doc-item" data-search="chapter 1 intro introduction foundations presentation">
+                        <a href="presentations/Chapter%201%20-%20Intro.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 1</span>
+                                    <span class="doc-meta">Introduction &amp; Fundamentals</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                    <li class="doc-item" data-search="chapter 2 time value of money interest presentation">
+                        <a href="presentations/Chapter%202%20-%20Time%20value%20of%20money.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 2</span>
+                                    <span class="doc-meta">Time Value of Money</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                    <li class="doc-item" data-search="chapter 4 presentation nominal effective interest rates">
+                        <a href="presentations/Chapter%204%20-%20Presentation.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 4</span>
+                                    <span class="doc-meta">Nominal &amp; Effective Rates</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                    <li class="doc-item" data-search="chapter 5 presentation present worth analysis">
+                        <a href="presentations/Chapter%205%20Presentation.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 5</span>
+                                    <span class="doc-meta">Present Worth Analysis</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                    <li class="doc-item" data-search="chapter 6 presentation annual worth analysis">
+                        <a href="presentations/Chapter%206.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 6</span>
+                                    <span class="doc-meta">Annual Worth Analysis</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                    <li class="doc-item" data-search="chapter 7 rate of return single alternative presentation">
+                        <a href="presentations/Chapters%207.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 7</span>
+                                    <span class="doc-meta">Rate of Return: Single Alt.</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                    <li class="doc-item" data-search="chapter 8 rate of return multiple alternatives presentation">
+                        <a href="presentations/Chapters%208.pdf" target="_blank" class="doc-link pres-link">
+                            <div class="doc-left">
+                                <span class="doc-file-icon" style="color:#10b981;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </span>
+                                <div class="doc-text">
+                                    <span class="doc-title">Chapter 8</span>
+                                    <span class="doc-meta">Rate of Return: Multiple Alts.</span>
+                                </div>
+                            </div>
+                            <span class="download-pill">Slides</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3. Homework & Solutions Column -->
+            <div class="resource-card" data-category="homework">
+                <div class="resource-card-header">
+                    <div class="resource-card-icon icon-homework">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                    <div class="resource-card-title">
+                        <h3>Homework &amp; Solutions</h3>
+                        <p>Assignments &amp; detailed solutions</p>
+                    </div>
+                </div>
+
+                <ul class="item-list">
+                    <!-- Ch 1 HW -->
+                    <li class="hw-entry" data-search="chapter 1 homework solutions foundations">
+                        <div class="hw-top">
+                            <span class="hw-chapter-title">Chapter 1</span>
+                            <span class="hw-topic">Foundations</span>
+                        </div>
+                        <div class="hw-btn-group">
+                            <a href="homework/homework_ch1.pdf" target="_blank" class="hw-btn hw-btn-assignment">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                <span>Assignment</span>
+                            </a>
+                            <a href="homework/homework_ch1_solutions.pdf" target="_blank" class="hw-btn hw-btn-solutions">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Solutions</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- Ch 2 HW -->
+                    <li class="hw-entry" data-search="chapter 2 homework solutions time value interest money">
+                        <div class="hw-top">
+                            <span class="hw-chapter-title">Chapter 2</span>
+                            <span class="hw-topic">Time Value of Money</span>
+                        </div>
+                        <div class="hw-btn-group">
+                            <a href="homework/homework_ch2.pdf" target="_blank" class="hw-btn hw-btn-assignment">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                <span>Assignment</span>
+                            </a>
+                            <a href="homework/homework_ch2_solutions.pdf" target="_blank" class="hw-btn hw-btn-solutions">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Solutions</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- Ch 4 HW -->
+                    <li class="hw-entry" data-search="chapter 4 homework solutions nominal effective interest rates">
+                        <div class="hw-top">
+                            <span class="hw-chapter-title">Chapter 4</span>
+                            <span class="hw-topic">Nominal &amp; Effective Rates</span>
+                        </div>
+                        <div class="hw-btn-group">
+                            <a href="homework/Ch4.pdf" target="_blank" class="hw-btn hw-btn-assignment">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                <span>Assignment</span>
+                            </a>
+                            <a href="homework/Ch4_solutions.pdf" target="_blank" class="hw-btn hw-btn-solutions">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Solutions</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- Ch 5 HW -->
+                    <li class="hw-entry" data-search="chapter 5 homework solutions present worth analysis">
+                        <div class="hw-top">
+                            <span class="hw-chapter-title">Chapter 5</span>
+                            <span class="hw-topic">Present Worth Analysis</span>
+                        </div>
+                        <div class="hw-btn-group">
+                            <a href="homework/Ch5HW.pdf" target="_blank" class="hw-btn hw-btn-assignment">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                <span>Assignment</span>
+                            </a>
+                            <a href="homework/Ch5_solutions.pdf" target="_blank" class="hw-btn hw-btn-solutions">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Solutions</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- Ch 6 HW -->
+                    <li class="hw-entry" data-search="chapter 6 homework solutions annual worth analysis">
+                        <div class="hw-top">
+                            <span class="hw-chapter-title">Chapter 6</span>
+                            <span class="hw-topic">Annual Worth Analysis</span>
+                        </div>
+                        <div class="hw-btn-group">
+                            <a href="homework/Ch6.pdf" target="_blank" class="hw-btn hw-btn-assignment">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                <span>Assignment</span>
+                            </a>
+                            <a href="homework/Ch6_solutions.pdf" target="_blank" class="hw-btn hw-btn-solutions">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Solutions</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- Ch 7 & 8 HW -->
+                    <li class="hw-entry" data-search="chapter 7 8 homework solutions rate of return single multiple ror">
+                        <div class="hw-top">
+                            <span class="hw-chapter-title">Chapters 7 &amp; 8</span>
+                            <span class="hw-topic">Rate of Return Analysis</span>
+                        </div>
+                        <div class="hw-btn-group">
+                            <a href="homework/ROR%20Single%20%26%20Multiple.pdf" target="_blank" class="hw-btn hw-btn-assignment">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                <span>Assignment</span>
+                            </a>
+                            <a href="homework/ROR_solutions.pdf" target="_blank" class="hw-btn hw-btn-solutions">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span>Solutions</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>INDE 301: Engineering Economy • American University of Beirut (AUB)</p>
+            <p style="margin-top: 0.35rem;">Maroun Semaan Faculty of Engineering and Architecture (MSFEA)</p>
+            <p style="margin-top: 0.35rem; font-size: 0.78rem; opacity: 0.75;">Instructor: Naim Al Khoury</p>
+        </footer>
     </div>
+
+    <!-- Live Search Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('resource-search');
+            const items = document.querySelectorAll('[data-search]');
+
+            searchInput.addEventListener('input', function (e) {
+                const query = e.target.value.toLowerCase().trim();
+
+                items.forEach(function (item) {
+                    const searchData = item.getAttribute('data-search') || '';
+                    const text = item.textContent.toLowerCase();
+
+                    if (!query || searchData.includes(query) || text.includes(query)) {
+                        item.classList.remove('is-hidden');
+                    } else {
+                        item.classList.add('is-hidden');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
